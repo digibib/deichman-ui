@@ -21,6 +21,7 @@ const Input = ({ type, value, placeholder, error, disabled, onChange }) => {
         disabled={disabled}
         onChange={onChange}
       />
+      {error && <div className="input__error">{error}</div>}
     </div>
   );
 };

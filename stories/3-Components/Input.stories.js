@@ -15,6 +15,7 @@ stories.add('Input', () => (
     <Input
       value={text('value', '')}
       placeholder={text('placeholder', 'Fornavn')}
+      error={text('error', '')}
       onChange={() => {}}
     />
   </div>

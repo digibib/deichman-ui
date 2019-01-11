@@ -1,6 +1,8 @@
 .input {
   display: block;
 
+  /* Elements */
+
   &__inner {
     display: block;
     width: 100%;
@@ -28,6 +30,21 @@
 
     &::-webkit-input-placeholder {
       color: #919191;
+    }
+  }
+
+  &__error {
+    display: block;
+    margin-left: var(--spacing-2);
+    color: var(--col-red);
+    font-size: 12px;
+  }
+
+  /* Modifiers */
+
+  &--error {
+    .input__inner {
+      border-color: var(--col-red);
     }
   }
 }
