@@ -6,6 +6,8 @@ React component library.
 
 `npm install --save deichman-ui`
 
+Without react TBC
+
 ### Usage
 
 `import { Button } from "deichman-ui"`
@@ -17,9 +19,3 @@ React component library.
 ```
 
 ### License
-
-
-
-
-
-
