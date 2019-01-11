@@ -5,8 +5,8 @@
   min-width: 90px;
   padding: 0 30px;
   color: var(--col-black);
-  background: var(--col-ok-5);
-  border: 1px solid var(--col-ok-5);
+  background: var(--col-white);
+  border: 1px solid var(--col-gray-6);
   font-family: var(--font-family);
   text-align: center;
   border-radius: var(--border-radius);
@@ -14,4 +14,15 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
+
+  /* Modifiers */
+
+  &--primary {
+    background: var(--col-ok-5);
+    border: 1px solid var(--col-ok-5);
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
 }

@@ -11,7 +11,11 @@ stories.addDecorator(withKnobs);
 
 stories.add('Button', () => (
   <div className="sg-container">
-    <Button primary={boolean('primary', false)} onClick={() => {}}>
+    <Button
+      primary={boolean('primary', false)}
+      disabled={boolean('disabled', false)}
+      onClick={() => {}}
+    >
       Button text
     </Button>
   </div>

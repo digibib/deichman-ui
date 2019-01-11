@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Input from '../../src/components/Input';
+import Block from '../../src/components/Block';
 
 const stories = storiesOf('Components', module);
 

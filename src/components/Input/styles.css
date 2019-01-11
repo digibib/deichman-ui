@@ -23,6 +23,7 @@
     &:focus {
       background: var(--col-gray-1);
       border-color: var(--col-ok-5);
+      box-shadow: none;
     }
 
     &::-webkit-input-placeholder {
