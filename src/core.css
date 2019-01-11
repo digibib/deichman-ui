@@ -54,7 +54,7 @@ li {
 /* Global Focus */
 :focus {
   outline: 0;
-  box-shadow: pink;
+  box-shadow: 0 0 0 8px var(--col-ok-5);
 }
 
 /* Text selection */

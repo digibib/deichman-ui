@@ -1,6 +1,7 @@
 import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from '@storybook/addon-options';
+import outlinewatcher from '../src/helpers/outlineWatcher';
 
 // Apply custom Storybook config
 addDecorator(
@@ -15,6 +16,8 @@ import '../src/index.css';
 
 // Import custom storybook styles
 import '../stories/stories.css';
+
+outlinewatcher();
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.js$/);
