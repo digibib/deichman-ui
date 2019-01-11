@@ -1,0 +1,129 @@
+.block {
+  display: block;
+
+  /* Modifiers */
+
+  &--top-1 {
+    margin-top: var(--spacing-1);
+  }
+  &--top-2 {
+    margin-top: var(--spacing-2);
+  }
+  &--top-3 {
+    margin-top: var(--spacing-3);
+  }
+  &--top-4 {
+    margin-top: var(--spacing-4);
+  }
+  &--top-5 {
+    margin-top: var(--spacing-5);
+  }
+  &--top-6 {
+    margin-top: var(--spacing-6);
+  }
+  &--top-7 {
+    margin-top: var(--spacing-7);
+  }
+  &--top-8 {
+    margin-top: var(--spacing-8);
+  }
+  &--top-9 {
+    margin-top: var(--spacing-9);
+  }
+  &--top-10 {
+    margin-top: var(--spacing-10);
+  }
+
+  &--bottom-1 {
+    margin-bottom: var(--spacing-1);
+  }
+  &--bottom-2 {
+    margin-bottom: var(--spacing-2);
+  }
+  &--bottom-3 {
+    margin-bottom: var(--spacing-3);
+  }
+  &--bottom-4 {
+    margin-bottom: var(--spacing-4);
+  }
+  &--bottom-5 {
+    margin-bottom: var(--spacing-5);
+  }
+  &--bottom-6 {
+    margin-bottom: var(--spacing-6);
+  }
+  &--bottom-7 {
+    margin-bottom: var(--spacing-7);
+  }
+  &--bottom-8 {
+    margin-bottom: var(--spacing-8);
+  }
+  &--bottom-9 {
+    margin-bottom: var(--spacing-9);
+  }
+  &--bottom-10 {
+    margin-bottom: var(--spacing-10);
+  }
+
+  &--left-1 {
+    margin-left: var(--spacing-1);
+  }
+  &--left-2 {
+    margin-left: var(--spacing-2);
+  }
+  &--left-3 {
+    margin-left: var(--spacing-3);
+  }
+  &--left-4 {
+    margin-left: var(--spacing-4);
+  }
+  &--left-5 {
+    margin-left: var(--spacing-5);
+  }
+  &--left-6 {
+    margin-left: var(--spacing-6);
+  }
+  &--left-7 {
+    margin-left: var(--spacing-7);
+  }
+  &--left-8 {
+    margin-left: var(--spacing-8);
+  }
+  &--left-9 {
+    margin-left: var(--spacing-9);
+  }
+  &--left-10 {
+    margin-left: var(--spacing-10);
+  }
+
+  &--right-1 {
+    margin-right: var(--spacing-1);
+  }
+  &--right-2 {
+    margin-right: var(--spacing-2);
+  }
+  &--right-3 {
+    margin-right: var(--spacing-3);
+  }
+  &--right-4 {
+    margin-right: var(--spacing-4);
+  }
+  &--right-5 {
+    margin-right: var(--spacing-5);
+  }
+  &--right-6 {
+    margin-right: var(--spacing-6);
+  }
+  &--right-7 {
+    margin-right: var(--spacing-7);
+  }
+  &--right-8 {
+    margin-right: var(--spacing-8);
+  }
+  &--right-9 {
+    margin-right: var(--spacing-9);
+  }
+  &--right-10 {
+    margin-right: var(--spacing-10);
+  }
+}

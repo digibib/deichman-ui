@@ -1,0 +1,112 @@
+:root {
+  /**
+     * Typography.
+     */
+
+  --font-family: 'OsloSans';
+  --font-size-default: calc(var(--root-unit) / 16 * 1rem);
+  --font-size-small: calc(var(--font-size-default) - 2px);
+  --font-size-large: calc(var(--font-size-default) + 2px);
+
+  /**
+     * Colours.
+     */
+
+  --col-brand: black;
+  --col-white: white;
+  --col-black: black;
+  --col-link: #5499c7;
+  --col-alpha: hsla(0, 0%, 100%, 0.5);
+  --col-focus: var(--col-brand);
+  --col-focus-alternate: var(--col-white);
+
+  --col-yellow: #fffe07;
+  --col-red: #fa4343;
+
+  --col-gray-1: #f5f5f5;
+  --col-gray-2: #eaeaea;
+  --col-gray-3: #d6d6d6;
+  --col-gray-4: #bfbfbf;
+  --col-gray-5: #a9a9a9;
+  --col-gray-6: #606060;
+  --col-gray-7: #424242;
+  --col-gray-8: #222222;
+
+  --col-ok-1: #38396a;
+  --col-ok-2: #53f3c5;
+  --col-ok-3: #085c58;
+  --col-ok-4: #dac9bc;
+  --col-ok-5: #fbcd83;
+  --col-ok-6: #fb9688;
+
+  /**
+     * Global rules.
+     */
+
+  --border-radius: 5px;
+  --border-radius-tag: 20px;
+
+  /**
+     * Spacing.
+     *
+     */
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 56px;
+  --spacing-9: 64px;
+  --spacing-10: 80px;
+
+  /**
+     * Transitions.
+     */
+
+  --transition-smooth: 0.2s linear;
+
+  /**
+     * Z-indexes.
+     */
+
+  --z-index-header: 3;
+  --z-index-main: 2;
+  --z-index-footer: 1;
+
+  /**
+     * Components.
+     */
+
+  /* Contact CTAs */
+  --c-contact-ctas-background-alternate: var(--col-brand);
+  --c-contact-ctas-color: var(--col-link);
+  --c-contact-ctas-color-hover: var(--col-brand);
+  --c-contact-ctas-color-alternate: var(--col-white);
+
+  /* Container */
+  --c-container-max-width: calc(1260 / var(--root-unit) * 1rem);
+  --c-container-gutter: var(--spacing-large1x);
+
+  /* Footer */
+  --c-footer-spacing-ends: var(--spacing-large2x);
+
+  /* Header */
+  --c-header-spacing-ends: var(--spacing-default);
+  --c-header-spacing-ends-large: var(--spacing-large1x);
+  --c-header-color: var(--col-brand);
+
+  /* Mobile menu */
+  --c-mobile-menu-top-offset: var(--c-header-spacing-ends);
+
+  /* Mobile menu trigger */
+  --c-mobile-menu-trigger-size: var(--touch-target-size);
+  --c-mobile-menu-trigger-padding: var(--spacing-small1x);
+  --c-mobile-menu-trigger-open-bar-position-offset: 6px;
+  --c-mobile-menu-trigger-close-rotate: 45deg;
+
+  /* Nav */
+  --c-nav-mobile-link-padding-ends: var(--spacing-small3x);
+}

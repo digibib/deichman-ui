@@ -1,0 +1,63 @@
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: 'OsloSans', Helvetica, Arial;
+  font-weight: normal;
+}
+
+/* Global prefill styling for webkit (remove yellow fill) */
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+blockquote,
+p,
+a {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  cursor: pointer;
+}
+
+hr {
+  border-bottom: 1px solid var(--col-gray-3);
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Focus */
+:focus {
+  outline: 0;
+  box-shadow: pink;
+}
+
+/* Text selection */
+::selection {
+  background: #ffda39;
+}

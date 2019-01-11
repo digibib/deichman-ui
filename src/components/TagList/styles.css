@@ -1,0 +1,17 @@
+.tag-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  &__item {
+    margin-left: var(--spacing-3);
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__show-more {
+    margin-left: var(--spacing-5);
+  }
+}

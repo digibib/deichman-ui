@@ -1,0 +1,45 @@
+.work {
+  display: block;
+
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__meta {
+    margin-top: var(--spacing-3);
+  }
+
+  &__title {
+    margin-top: var(--spacing-1);
+  }
+
+  &__author {
+    display: inline-block;
+    margin-top: var(--spacing-1);
+    font-size: 11px;
+    color: black;
+  }
+
+  &__footer {
+    margin-top: var(--spacing-1);
+  }
+
+  &--small {
+    max-width: 170px;
+  }
+
+  &--medium {
+    max-width: 200px;
+  }
+
+  &--large {
+    max-width: 300px;
+  }
+
+  &--show-tabs .work__image {
+    border-top-right-radius: 0px;
+  }
+}

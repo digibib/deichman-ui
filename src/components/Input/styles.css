@@ -1,0 +1,32 @@
+.input {
+  display: block;
+
+  &__inner {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-family: var(--font-family);
+
+    color: var(--col-black);
+    background: var(--col-gray-1);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-3) var(--spacing-4);
+    border: 1px solid var(--col-gray-1);
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: var(--col-gray-2);
+      border-color: var(--col-gray-2);
+    }
+
+    &:focus {
+      background: var(--col-gray-1);
+      border-color: var(--col-ok-5);
+    }
+
+    &::-webkit-input-placeholder {
+      color: #919191;
+    }
+  }
+}

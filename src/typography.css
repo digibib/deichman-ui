@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'OsloSans';
+  src: url('/assets/fonts/OsloSans-BETA0.1-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OsloSans';
+  src: url('/assets/fonts/OsloSans-BETA0.1-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'OsloSans';
+  src: url('/assets/fonts/OsloSans-BETA0.1-Medium.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OsloSans';
+  src: url('/assets/fonts/OsloSans-BETA0.1-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: 'OsloSans';
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1,
+.h1 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.overline {
+  color: var(--col-gray-6);
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}

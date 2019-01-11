@@ -1,0 +1,71 @@
+/* Colors */
+
+.col-yellow {
+  background-color: var(--col-yellow);
+}
+.col-red {
+  background-color: var(--col-red);
+}
+
+.col-brand {
+  background-color: var(--col-brand);
+}
+.col-white {
+  background-color: var(--col-white);
+}
+.col-black {
+  background-color: var(--col-black);
+}
+.col-gray-1 {
+  background-color: var(--col-gray-1);
+}
+.col-gray-2 {
+  background-color: var(--col-gray-2);
+}
+.col-gray-3 {
+  background-color: var(--col-gray-3);
+}
+.col-gray-4 {
+  background-color: var(--col-gray-4);
+}
+.col-gray-5 {
+  background-color: var(--col-gray-5);
+}
+.col-gray-6 {
+  background-color: var(--col-gray-6);
+}
+.col-gray-7 {
+  background-color: var(--col-gray-7);
+}
+.col-gray-8 {
+  background-color: var(--col-gray-8);
+}
+.col-ok-1 {
+  background-color: var(--col-ok-1);
+}
+.col-ok-2 {
+  background-color: var(--col-ok-2);
+}
+.col-ok-3 {
+  background-color: var(--col-ok-3);
+}
+.col-ok-4 {
+  background-color: var(--col-ok-4);
+}
+.col-ok-5 {
+  background-color: var(--col-ok-5);
+}
+.col-ok-6 {
+  background-color: var(--col-ok-6);
+}
+
+/* Accessibility */
+
+.screenReaders {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
