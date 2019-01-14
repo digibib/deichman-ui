@@ -22,133 +22,133 @@ stories.add(
         <div className="sg-icons">
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="add-to-calendar" />
+              <Icon type="add-to-calendar" />
             </div>
             <p className="sg-icon__name">add-to-calendar</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="date" />
+              <Icon type="date" />
             </div>
             <p className="sg-icon__name">date</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="time" />
+              <Icon type="time" />
             </div>
             <p className="sg-icon__name">time</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="map" />
+              <Icon type="map" />
             </div>
             <p className="sg-icon__name">map</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="share" />
+              <Icon type="share" />
             </div>
             <p className="sg-icon__name">share</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="location" />
+              <Icon type="location" />
             </div>
             <p className="sg-icon__name">location</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="user" />
+              <Icon type="user" />
             </div>
             <p className="sg-icon__name">user</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="search" />
+              <Icon type="search" />
             </div>
             <p className="sg-icon__name">search</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="bookmark" />
+              <Icon type="bookmark" />
             </div>
             <p className="sg-icon__name">bookmark</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="home" />
+              <Icon type="home" />
             </div>
             <p className="sg-icon__name">home</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="e-book" />
+              <Icon type="e-book" />
             </div>
             <p className="sg-icon__name">e-book</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="new-tab" />
+              <Icon type="new-tab" />
             </div>
             <p className="sg-icon__name">new-tab</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="soundbook" />
+              <Icon type="soundbook" />
             </div>
             <p className="sg-icon__name">soundbook</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="book" />
+              <Icon type="book" />
             </div>
             <p className="sg-icon__name">book</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="grid" />
+              <Icon type="grid" />
             </div>
             <p className="sg-icon__name">grid</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="list" />
+              <Icon type="list" />
             </div>
             <p className="sg-icon__name">list</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="large-list" />
+              <Icon type="large-list" />
             </div>
             <p className="sg-icon__name">large-list</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="menu" />
+              <Icon type="menu" />
             </div>
             <p className="sg-icon__name">menu</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="arrow-up" />
+              <Icon type="arrow-up" />
             </div>
             <p className="sg-icon__name">arrow-up</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="arrow-right" />
+              <Icon type="arrow-right" />
             </div>
             <p className="sg-icon__name">arrow-right</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="arrow-down" />
+              <Icon type="arrow-down" />
             </div>
             <p className="sg-icon__name">arrow-down</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon icon="arrow" />
+              <Icon type="arrow" />
             </div>
             <p className="sg-icon__name">arrow</p>
           </div>

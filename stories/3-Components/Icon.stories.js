@@ -16,7 +16,7 @@ stories.add(
   withReadme(readme, () => (
     <div className="sg-container">
       <Icon
-        icon={text('icon', 'book')}
+        type={text('type', 'book')}
         size={number('size', 24)}
         full={boolean('full', false)}
         inverted={boolean('inverted', false)}

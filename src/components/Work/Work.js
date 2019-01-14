@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import Block from '../Block';
-
 import Meta from './Meta';
 import Languages from './Languages';
 import Tabs from './Tabs';

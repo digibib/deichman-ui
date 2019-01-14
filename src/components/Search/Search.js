@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import autoBind from 'auto-bind';
 import classNames from 'classnames';
 
-import magnifierSrc from '../../../public/images/magnifier.png';
-
-import { Tag } from '../../index';
+import { Tag, Icon } from '../../index';
 
 import './styles.css';
 
@@ -132,7 +130,7 @@ class Search extends Component {
 
     return (
       <form className={searchClass} onSubmit={this.onSubmit}>
-        <img src={magnifierSrc} alt="Søk" />
+        <Icon type="search" inverted />
 
         <div className="search__inner">
           <ul className="search__active-filters">

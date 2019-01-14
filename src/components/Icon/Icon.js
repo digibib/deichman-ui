@@ -6,7 +6,7 @@ import iconMap from '../../../public/icons.svg';
 
 import './styles.css';
 
-const Icon = ({ size, icon, title, inverted, full }) => {
+const Icon = ({ size, type, title, inverted, full }) => {
   const iconClass = classNames({
     icon: true,
     'icon--full': full,
@@ -16,7 +16,7 @@ const Icon = ({ size, icon, title, inverted, full }) => {
   return (
     <span className={iconClass}>
       <svg role="img" title={title} width={size} height={size}>
-        <use xlinkHref={`${iconMap}#${icon}`} />
+        <use xlinkHref={`${iconMap}#${type}`} />
       </svg>
     </span>
   );
@@ -31,7 +31,7 @@ Icon.defaultProps = {
 };
 
 Icon.propTypes = {
-  icon: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   title: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   full: PropTypes.bool,

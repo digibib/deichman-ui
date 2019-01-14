@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import logoSrc from '../../../public/images/logo.svg';
-import personSrc from '../../../public/images/person.png';
-import searchSrc from '../../../public/images/search.png';
+import { Icon } from '../../index';
 
 import './styles.css';
 
@@ -22,11 +21,11 @@ const Header = ({ navItems }) => {
       </nav>
       <div className="header__actions">
         <a href="#" className="header__action">
-          <img src={personSrc} alt="Din konto" />
+          <Icon type="user" inverted />
           <span>Din konto</span>
         </a>
         <a href="#" className="header__action">
-          <img src={searchSrc} alt="Søk" />
+          <Icon type="search" inverted />
           <span>Søk</span>
         </a>
       </div>

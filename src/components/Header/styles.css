@@ -44,11 +44,8 @@
     font-weight: bold;
     background: transparent;
 
-    > img {
-      width: 25px;
-      height: 25px;
+    svg {
       margin-right: 5px;
-      vertical-align: middle;
     }
   }
 }

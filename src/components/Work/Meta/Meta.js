@@ -1,18 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import bookSrc from '../../../../public/images/book.png';
-
 const WORK_TYPES = {
   book: 'Bok',
   film: 'Film',
   music: 'Musikk',
-};
-
-const MEDIA_ICONS = {
-  book: bookSrc,
-  film: '#',
-  music: '#',
 };
 
 const Meta = ({ media, category }) => {
