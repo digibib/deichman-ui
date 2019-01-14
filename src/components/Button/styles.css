@@ -22,6 +22,14 @@
     border: 1px solid var(--col-ok-5);
   }
 
+  &--with-icon {
+    padding: 0 30px 0 10px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
   &[disabled] {
     cursor: not-allowed;
   }
