@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import logoSrc from '../../assets/images/logo.svg';
-import personSrc from '../../assets/images/person.png';
-import searchSrc from '../../assets/images/search.png';
+import logoSrc from '../../../public/images/logo.svg';
+import personSrc from '../../../public/images/person.png';
+import searchSrc from '../../../public/images/search.png';
 
 import './styles.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import bookSrc from '../../../assets/images/book.png';
+import bookSrc from '../../../../public/images/book.png';
 
 const WORK_TYPES = {
   book: 'Bok',

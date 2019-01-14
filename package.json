@@ -18,9 +18,10 @@
     "build": "webpack",
     "build:css": "postcss src/**/*.css -o src/index.css",
     "prepublish": "rm -rf ./dist && npm run build",
-    "storybook": "start-storybook -s ./src -p 6006",
+    "storybook": "start-storybook -s ./public -p 9001",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "icons": "svg-sprite-generate -d src/assets/icons -o public/icons.svg"
   },
   "author": {
     "name": "Bård Nyheim Hovde"
@@ -52,7 +53,9 @@
     "postcss-preset-env": "^6.5.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "storybook-readme": "^4.0.5",
     "style-loader": "^0.23.1",
+    "svg-sprite-generator": "0.0.7",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.0.4"
   }

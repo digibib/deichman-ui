@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { Block } from '../../src/index';
 
-import logoSrc from '../../src/assets/images/logo-inverted.svg';
+import logoSrc from '../../public/images/logo-inverted.svg';
 
 const stories = storiesOf('Introduction', module);
 

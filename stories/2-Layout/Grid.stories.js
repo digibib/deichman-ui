@@ -1,9 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, select } from '@storybook/addon-knobs';
+import { withReadme } from 'storybook-readme';
+import { withKnobs } from '@storybook/addon-knobs';
 
 import Block from '../../src/components/Block';
 import Grid, { GridItem } from '../../src/components/Grid';
+import readme from '../../src/components/Grid/Grid.md';
 
 const stories = storiesOf('Layout', module);
 
@@ -24,116 +26,80 @@ const sizeOptions = {
 };
 const sizeDefault = 1;
 
-stories.add('Grid', () => (
-  <div className="sg-container">
-    <p className="sg-heading">Grid</p>
+stories.add(
+  'Grid',
+  withReadme(readme, () => (
+    <div className="sg-container">
+      <p className="sg-heading">Grid</p>
 
-    <Block top={6}>
-      <h4>Example</h4>
-    </Block>
+      <Block top={6}>
+        <h4>Example</h4>
+      </Block>
 
-    <Block top={4}>
-      <Grid>
-        <GridItem base="one-half">
-          <div className="sg-grid-wrapper">
-            <small>one-half</small>
-          </div>
-        </GridItem>
-        <GridItem base="one-half">
-          <div className="sg-grid-wrapper">
-            <small>one-half</small>
-          </div>
-        </GridItem>
-      </Grid>
-    </Block>
+      <Block top={4}>
+        <Grid>
+          <GridItem base="one-half">
+            <div className="sg-grid-wrapper">
+              <small>one-half</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-half">
+            <div className="sg-grid-wrapper">
+              <small>one-half</small>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
 
-    <Block top={5}>
-      <Grid>
-        <GridItem base="one-quarter">
-          <div className="sg-grid-wrapper">
-            <small>one-quarter</small>
-          </div>
-        </GridItem>
-        <GridItem base="three-quarters">
-          <div className="sg-grid-wrapper">
-            <small>three-quarters</small>
-          </div>
-        </GridItem>
-      </Grid>
-    </Block>
+      <Block top={5}>
+        <Grid>
+          <GridItem base="one-quarter">
+            <div className="sg-grid-wrapper">
+              <small>one-quarter</small>
+            </div>
+          </GridItem>
+          <GridItem base="three-quarters">
+            <div className="sg-grid-wrapper">
+              <small>three-quarters</small>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
 
-    <Block top={5}>
-      <Grid>
-        <GridItem base="one-sixth">
-          <div className="sg-grid-wrapper">
-            <small>one-sixth</small>
-          </div>
-        </GridItem>
-        <GridItem base="one-sixth">
-          <div className="sg-grid-wrapper">
-            <small>one-sixth</small>
-          </div>
-        </GridItem>
-        <GridItem base="one-sixth">
-          <div className="sg-grid-wrapper">
-            <small>one-sixth</small>
-          </div>
-        </GridItem>
-        <GridItem base="one-sixth">
-          <div className="sg-grid-wrapper">
-            <small>one-sixth</small>
-          </div>
-        </GridItem>
-        <GridItem base="one-sixth">
-          <div className="sg-grid-wrapper">
-            <small>one-sixth</small>
-          </div>
-        </GridItem>
-        <GridItem base="one-sixth">
-          <div className="sg-grid-wrapper">
-            <small>one-sixth</small>
-          </div>
-        </GridItem>
-      </Grid>
-    </Block>
-
-    <Block top={6}>
-      <h4>Usage</h4>
-    </Block>
-    <Block top={4}>
-      <figure>
-        <figcaption>With React:</figcaption>
-        <pre>
-          <code>
-            {`import { Grid, GridItem } from 'deichman-ui';`}
-            <br />
-            <br />
-            {`<Grid >`}
-            <br />
-            {`  <GridItem large="one-half">...</GridItem>`}
-            <br />
-            {`  <GridItem large="one-half">...</GridItem>`}
-            <br />
-            {`</Grid>`}
-          </code>
-        </pre>
-      </figure>
-    </Block>
-    <Block top={4}>
-      <figure>
-        <figcaption>Without React:</figcaption>
-        <pre>
-          <code>
-            {`<div class="grid">`}
-            <br />
-            {`  <div class="grid__item large--one-half">...</div>`}
-            <br />
-            {`  <div class="grid__item large--one-half">...</div>`}
-            <br />
-            {`</div>`}
-          </code>
-        </pre>
-      </figure>
-    </Block>
-  </div>
-));
+      <Block top={5}>
+        <Grid>
+          <GridItem base="one-sixth">
+            <div className="sg-grid-wrapper">
+              <small>one-sixth</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-sixth">
+            <div className="sg-grid-wrapper">
+              <small>one-sixth</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-sixth">
+            <div className="sg-grid-wrapper">
+              <small>one-sixth</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-sixth">
+            <div className="sg-grid-wrapper">
+              <small>one-sixth</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-sixth">
+            <div className="sg-grid-wrapper">
+              <small>one-sixth</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-sixth">
+            <div className="sg-grid-wrapper">
+              <small>one-sixth</small>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
+    </div>
+  )),
+);

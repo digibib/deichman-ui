@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import featuredSrc from '../../../assets/images/featured.png';
+import featuredSrc from '../../../../public/images/featured.png';
 
 import './styles.css';
 

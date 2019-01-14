@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  line-height: 1;
+
+  svg {
+    color: black;
+    fill: none;
+  }
+
+  /* Modifiers */
+
+  &--full {
+    width: 100%;
+
+    svg {
+      height: auto !important;
+      width: 100% !important;
+    }
+  }
+
+  &--inverted {
+    svg {
+      color: white;
+    }
+  }
+}

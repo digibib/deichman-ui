@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import autoBind from 'auto-bind';
 import classNames from 'classnames';
 
-import magnifierSrc from '../../assets/images/magnifier.png';
+import magnifierSrc from '../../../public/images/magnifier.png';
 
 import { Tag } from '../../index';
 
