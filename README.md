@@ -1,6 +1,6 @@
 ## Deichman-ui
 
-React component library.
+Style-guide and component library.
 
 ### Installation
 
