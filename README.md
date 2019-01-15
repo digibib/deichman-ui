@@ -4,7 +4,7 @@ Style-guide and component library.
 
 ### Developing
 
-Developing is done via React-storybook:
+Local development is done via React-storybook. Clone the repo and run:
 
 ```
   npm i
@@ -13,4 +13,8 @@ Developing is done via React-storybook:
 
 ### Publishing
 
-WIP
+To publish the docs to the [docs](https://digibib.github.io/deichman-ui):
+`npm run storybook-deploy`
+
+To publish a new version of the library to npm:
+`[WIP]`

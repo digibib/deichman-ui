@@ -19,6 +19,7 @@ stories.add('About', () => (
     <Block top={6}>
       <h4>Usage [WIP]</h4>
     </Block>
+
     <Block top={4}>
       <figure>
         <figcaption>With React:</figcaption>
@@ -34,6 +35,10 @@ stories.add('About', () => (
           <code>{'<link rel="stylesheet" href="https://tbc/deichman-ui.css">'}</code>
         </pre>
       </figure>
+    </Block>
+
+    <Block top={4}>
+      <a href="https://github.com/digibib/deichman-ui">View on github</a>
     </Block>
   </article>
 ));
