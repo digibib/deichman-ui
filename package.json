@@ -8,17 +8,14 @@
     "url": ""
   },
   "peerDependencies": {
-    "classnames": "^2.2.6",
     "react": ">=16.4.0",
-    "react-dom": ">=16.6.1",
-    "prop-types": "^15.6.2"
+    "react-dom": ">=16.6.1"
   },
   "scripts": {
-    "start": "webpack --watch",
+    "start": "start-storybook -s ./public -p 9001",
     "build": "webpack",
     "build:css": "postcss src/**/*.css -o src/index.css",
     "prepublish": "rm -rf ./dist && npm run build",
-    "storybook": "start-storybook -s ./public -p 9001",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "icons": "svg-sprite-generate -d src/assets/icons -o public/icons.svg"
@@ -27,6 +24,10 @@
     "name": "Bård Nyheim Hovde"
   },
   "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^4.0.4",
     "@storybook/addon-knobs": "^4.1.2",
