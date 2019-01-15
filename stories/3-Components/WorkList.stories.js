@@ -65,8 +65,7 @@ const listDefaults = [
     data: {
       id: '456',
       title: 'Station Eleven',
-      image:
-        'https://www.bookscrolling.com/wp-content/uploads/2017/11/Station-Eleven-by-Emily-St.-John-Mandel.jpg',
+      image: 'https://images-na.ssl-images-amazon.com/images/I/919wLDRgyuL.jpg',
       media: 'book',
       category: 'Sci-fi',
       languages: ['en', 'no'],
