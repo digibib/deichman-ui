@@ -13,11 +13,11 @@ stories.add('About', () => (
       <img style={{ width: '300px' }} src={logoSrc} />
     </Block>
     <Block top={4}>
-      <p>Style-guide and pattern library</p>
+      <p>Style-guide and component library</p>
     </Block>
 
     <Block top={6}>
-      <h4>Usage</h4>
+      <h4>Usage [WIP]</h4>
     </Block>
     <Block top={4}>
       <figure>

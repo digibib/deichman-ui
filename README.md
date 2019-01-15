@@ -2,7 +2,7 @@
 
 Style-guide and component library.
 
-### Installation
+### Installation [WIP]
 
 `npm install --save deichman-ui`
 

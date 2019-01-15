@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'OsloSans';
-  src: url('/fonts/OsloSans-BETA0.1-Regular.woff') format('woff');
+  src: url('/fonts/OsloSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OsloSans';
-  src: url('/fonts/OsloSans-BETA0.1-Regular.woff') format('woff');
+  src: url('/fonts/OsloSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'OsloSans';
-  src: url('/fonts/OsloSans-BETA0.1-Medium.woff') format('woff');
+  src: url('/fonts/OsloSans-Medium.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'OsloSans';
-  src: url('/fonts/OsloSans-BETA0.1-Bold.woff') format('woff');
+  src: url('/fonts/OsloSans-Bold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
