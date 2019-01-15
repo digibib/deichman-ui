@@ -2,7 +2,7 @@
  * Breakpoints.
  */
 
-@custom-media --small (min-width: 10em);
-@custom-media --medium (min-width: 50em);
-@custom-media --large (min-width: 70em);
-@custom-media --xlarge (min-width: 100em);
+@custom-media --small (min-width: 20em);
+@custom-media --medium (min-width: 48em);
+@custom-media --large (min-width: 67.5em);
+@custom-media --xlarge (min-width: 83em);

@@ -13,8 +13,8 @@
      */
 
   --col-brand: black;
-  --col-white: white;
-  --col-black: black;
+  --col-white: #ffffff;
+  --col-black: #000000;
   --col-link: #5499c7;
   --col-alpha: hsla(0, 0%, 100%, 0.5);
   --col-focus: var(--col-brand);

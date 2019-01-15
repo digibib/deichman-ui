@@ -13,8 +13,8 @@ Local development is done via React-storybook. Clone the repo and run:
 
 ### Tech
 
-JS: [React](https://reactjs.org/)
-CSS: [PostCSS](https://preset-env.cssdb.org/)
+- JS: [React](https://reactjs.org/)
+- CSS: [PostCSS](https://preset-env.cssdb.org/)
 
 ### Publishing
 
