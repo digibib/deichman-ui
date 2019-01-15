@@ -100,6 +100,25 @@ stories.add(
           </GridItem>
         </Grid>
       </Block>
+
+      <Block top={6}>
+        <h4>Responsive Grid</h4>
+      </Block>
+
+      <Block top={5}>
+        <Grid>
+          <GridItem medium="one-half">
+            <div className="sg-grid-wrapper">
+              <small>Full on mobile, half-width on medium screens</small>
+            </div>
+          </GridItem>
+          <GridItem medium="one-half">
+            <div className="sg-grid-wrapper">
+              <small>Full on mobile, half-width on medium screens</small>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
     </div>
   )),
 );

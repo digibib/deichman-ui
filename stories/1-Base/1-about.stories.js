@@ -5,7 +5,7 @@ import { Block } from '../../src/index';
 
 import logoSrc from '../../public/images/logo-inverted.svg';
 
-const stories = storiesOf('Introduction', module);
+const stories = storiesOf('Base', module);
 
 stories.add('About', () => (
   <article className="sg-container">

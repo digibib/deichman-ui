@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { Block } from '../../src/index';
 
-const stories = storiesOf('Introduction', module);
+const stories = storiesOf('Base', module);
 
 stories.add('Typography', () => (
   <article className="sg-container">

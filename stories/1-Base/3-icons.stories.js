@@ -6,7 +6,7 @@ import Icon from '../../src/components/Icon';
 import { Block } from '../../src/index';
 import readme from './3-icons.stories.md';
 
-const stories = storiesOf('Introduction', module);
+const stories = storiesOf('Base', module);
 
 stories.add(
   'Icons',

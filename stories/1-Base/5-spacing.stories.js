@@ -5,7 +5,7 @@ import { withReadme } from 'storybook-readme';
 import { Block } from '../../src/index';
 import readme from './5-spacing.stories.md';
 
-const stories = storiesOf('Introduction', module);
+const stories = storiesOf('Base', module);
 
 stories.add(
   'Spacing',

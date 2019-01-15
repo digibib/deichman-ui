@@ -8,10 +8,10 @@ const GridItem = ({ base, small, medium, large, xlarge, children }) => {
   const gridClass = classNames({
     grid__item: true,
     [`${base}`]: base,
-    [`${small}`]: small,
-    [`${medium}`]: medium,
-    [`${large}`]: large,
-    [`${xlarge}`]: xlarge,
+    [`small--${small}`]: small,
+    [`medium--${medium}`]: medium,
+    [`large--${large}`]: large,
+    [`xlarge--${xlarge}`]: xlarge,
   });
 
   return <div className={gridClass}>{children}</div>;
