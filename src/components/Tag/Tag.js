@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import './styles.css';
 import { Icon } from '../../index';
 
-const Tag = ({ text, link, active, removable }) => {
+const Tag = ({ text, link, active, onClick, removable }) => {
   const tagClass = classNames({
     tag: true,
     'tag--active': active,
