@@ -1,5 +1,6 @@
 const pkg = require('./package.json');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const libraryName = pkg.name;
 
@@ -13,8 +14,21 @@ module.exports = {
     publicPath: '/dist/',
     umdNamedDefine: true,
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+  },
   module: {
     rules: [
+      // Handle javascript
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src'),
@@ -26,27 +40,47 @@ module.exports = {
           },
         },
       },
-      // Handle .css files
+      // Handle postcss files
       {
         test: /\.css$/,
-        test: /\.css$/,
         use: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+          },
         ],
         include: path.resolve(__dirname, '../'),
       },
+      // Handle assets
+      {
+        test: /\.(jpg|png|gif|eot|ttf|woff|woff2|svg)$/,
+        use: ['file-loader'],
+      },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+  ],
   resolve: {
     alias: {
       react: path.resolve(__dirname, './node_modules/react'),
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
+      classnames: path.resolve(__dirname, './node_modules/classnames'),
+      'prop-types': path.resolve(__dirname, './node_modules/prop-types'),
     },
   },
   externals: {
-    // Don't bundle react or react-dom
+    // Don't bundle react react-dom, prop-types or classnames
     react: {
       commonjs: 'react',
       commonjs2: 'react',

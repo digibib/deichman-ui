@@ -33,8 +33,8 @@ Tag.propTypes = {
   text: PropTypes.string,
   active: PropTypes.bool,
   removable: PropTypes.bool,
-  link: PropTypes.oneOfType([propTypes.string, propTypes.bool]),
-  onClick: PropTypes.oneOfType([propTypes.func, propTypes.bool]),
+  link: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  onClick: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
 };
 
 export default Tag;

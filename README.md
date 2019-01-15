@@ -1,21 +1,16 @@
-## Deichman-ui
+## Deichman-ui [WIP]
 
 Style-guide and component library.
 
-### Installation [WIP]
+### Developing
 
-`npm install --save deichman-ui`
-
-Without react TBC
-
-### Usage
-
-`import { Button } from "deichman-ui"`
+Developing is done via React-storybook:
 
 ```
-  <Button>
-    Let's go!
-  </Button>
+  npm i
+  npm start
 ```
 
-### License
+### Publishing
+
+WIP
