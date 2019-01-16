@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 
 import Header from '../../src/components/Header';
 
-const stories = storiesOf('Temp', module);
+const stories = storiesOf('WIP', module);
 
 // Add knobs to stories
 stories.addDecorator(withKnobs);
