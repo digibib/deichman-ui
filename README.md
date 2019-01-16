@@ -32,4 +32,7 @@ To publish a new version of the library to npm:
 
 ```
   npm version {major/minor/patch}
+  git push --tags
+  git push origin master
+  npm publish
 ```
