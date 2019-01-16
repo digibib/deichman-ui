@@ -31,5 +31,5 @@ To publish the docs:
 To publish a new version of the library to npm:
 
 ```
-  [WIP]
+  npm version {major/minor/patch}
 ```

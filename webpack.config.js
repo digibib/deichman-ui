@@ -62,7 +62,15 @@ module.exports = {
       // Handle assets
       {
         test: /\.(jpg|png|gif|eot|ttf|woff|woff2|svg)$/,
-        use: ['file-loader'],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              publicPath: 'dist',
+            },
+          },
+        ],
       },
     ],
   },
