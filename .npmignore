@@ -1,3 +1,9 @@
 webpack.config.js
+postcss.config.js
 .eslintrc
 .gitignore
+.prettierrc
+.vscode
+src
+stories
+public
