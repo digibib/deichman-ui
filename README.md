@@ -1,6 +1,10 @@
-## Deichman-ui [WIP]
+## Deichman-ui
+
+![NPM version](https://img.shields.io/npm/v/@digibib/deichman-ui.svg)
 
 Style-guide and component library.
+
+[Live docs](https://digibib.github.io/deichman-ui)
 
 ### Developing
 
@@ -13,13 +17,19 @@ Local development is done via React-storybook. Clone the repo and run:
 
 ### Tech
 
-- JS: [React](https://reactjs.org/)
-- CSS: [PostCSS](https://preset-env.cssdb.org/)
+- [React](https://reactjs.org/)
+- [PostCSS](https://preset-env.cssdb.org/)
 
 ### Publishing
 
-To publish the docs to the [docs](https://digibib.github.io/deichman-ui):
-`npm run storybook-deploy`
+To publish the docs:
+
+```
+  npm run storybook-deploy
+```
 
 To publish a new version of the library to npm:
-`[WIP]`
+
+```
+  [WIP]
+```
