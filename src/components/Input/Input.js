@@ -4,17 +4,18 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Input = ({ type, value, placeholder, error, disabled, onChange }) => {
+const Input = ({ type, value, placeholder, error, disabled, onChange, full }) => {
   const inputClass = classNames({
     input: true,
     'input--disabled': disabled,
     'input--error': error,
+    'input--full': full,
   });
 
   return (
     <div className={inputClass}>
       <input
-        className="input__inner"
+        className="input__field"
         type={type}
         value={value}
         placeholder={placeholder}
@@ -27,20 +28,21 @@ const Input = ({ type, value, placeholder, error, disabled, onChange }) => {
 };
 
 Input.defaultProps = {
-  value: '',
   type: 'text',
   placeholder: '',
   error: false,
   disabled: false,
+  full: false,
 };
 
 Input.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   type: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
   onChange: PropTypes.func.isRequired,
+  full: PropTypes.bool,
 };
 
 export default Input;

@@ -1,9 +1,9 @@
 .input {
-  display: block;
+  display: inline-block;
 
   /* Elements */
 
-  &__inner {
+  &__field {
     display: block;
     width: 100%;
     font-size: 14px;
@@ -43,8 +43,12 @@
   /* Modifiers */
 
   &--error {
-    .input__inner {
+    .input__field {
       border-color: var(--col-red);
     }
+  }
+
+  &--full {
+    display: block;
   }
 }

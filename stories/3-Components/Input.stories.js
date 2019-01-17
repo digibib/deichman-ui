@@ -1,9 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 import Input from '../../src/components/Input';
-import Block from '../../src/components/Block';
 
 const stories = storiesOf('Components', module);
 
@@ -17,6 +16,7 @@ stories.add('Input', () => (
       placeholder={text('placeholder', 'Fornavn')}
       error={text('error', '')}
       onChange={() => {}}
+      full={boolean('full', false)}
     />
   </div>
 ));
