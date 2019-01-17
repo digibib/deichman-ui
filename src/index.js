@@ -14,6 +14,7 @@ import Tag from './components/Tag';
 import TagList from './components/TagList';
 import Work from './components/Work';
 import WorkList from './components/WorkList';
+import Table from './components/Table';
 
 export {
   Accordion,
@@ -28,4 +29,5 @@ export {
   TagList,
   Work,
   WorkList,
+  Table,
 };

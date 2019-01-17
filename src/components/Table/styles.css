@@ -1,0 +1,41 @@
+.table {
+  /* Elements */
+
+  &__head {
+    text-align: left;
+    vertical-align: bottom;
+
+    .table__cell {
+      font-weight: bold;
+      padding: var(--spacing-2) var(--spacing-4);
+    }
+
+    /* Force bg-color for header row */
+    > .table__row {
+      background: var(--col-white) !important;
+    }
+  }
+
+  &__body {
+    padding: 0;
+  }
+
+  &__row {
+    background: var(--col-white);
+
+    &:nth-child(odd) {
+      background: var(--col-gray-2);
+    }
+  }
+
+  &__cell {
+    padding: var(--spacing-5) var(--spacing-4);
+    font-weight: normal;
+  }
+
+  /* Modifiers */
+
+  &--full {
+    width: 100%;
+  }
+}
