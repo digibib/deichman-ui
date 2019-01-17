@@ -15,7 +15,11 @@ stories.add(
   'Table',
   withReadme(readme, () => (
     <div className="sg-container">
-      <Table full={boolean('full', true)}>
+      <Table
+        full={boolean('full', true)}
+        dark={boolean('dark', false)}
+        condensed={boolean('condensed', false)}
+      >
         <Table.Head>
           <Table.Row>
             <Table.Cell isHeadCell>Pages</Table.Cell>

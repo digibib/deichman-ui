@@ -24,7 +24,7 @@
     background: var(--col-white);
 
     &:nth-child(odd) {
-      background: var(--col-gray-2);
+      background: var(--col-gray-1);
     }
   }
 
@@ -37,5 +37,17 @@
 
   &--full {
     width: 100%;
+  }
+
+  &--dark {
+    .table__row:nth-child(odd) {
+      background: var(--col-gray-2);
+    }
+  }
+
+  &--condensed {
+    .table__cell {
+      padding: var(--spacing-3) var(--spacing-3);
+    }
   }
 }
