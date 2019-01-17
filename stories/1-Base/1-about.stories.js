@@ -40,7 +40,7 @@ stories.add('About', () => (
         <pre>
           <code>
             {
-              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@digibib/deichman-ui@0.0.1/dist/styles.css">'
+              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@digibib/deichman-ui@{version}/dist/styles.css">'
             }
           </code>
         </pre>
