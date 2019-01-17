@@ -9,7 +9,7 @@ import { Icon } from 'deichman-ui';
 #### Without React:
 
 Make sure iconmap is included just after the opening `<body>` tag:
-`<img src="{..}/iconmap.svg" />`
+`<img class="icon-map" src="https://cdn.jsdelivr.net/npm/@digibib/deichman-ui@{version}/dist/icons.svg" />`
 
 ```html
 <div class="icon">
