@@ -3,6 +3,7 @@
   margin: 0;
   margin-left: calc(-1 * var(--spacing-5));
   list-style: none;
+  letter-spacing: -0.31em;
 }
 
 /**
@@ -124,6 +125,8 @@
   box-sizing: border-box;
   padding-left: var(--spacing-5);
   vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 
 /**

@@ -29,7 +29,7 @@ const selectedItem = '1';
 <div class="select">
   <div class="select__arrow">
     <div class="icon">
-      <svg><use xlink:href="iconmap.svg#arrow-down" /></svg>
+      <svg width="24" height="24"><use xlink:href="iconmap.svg#arrow-down" /></svg>
     </div>
   </div>
   <select className="select__field">
