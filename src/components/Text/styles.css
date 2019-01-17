@@ -1,0 +1,18 @@
+.text {
+  display: inline-block;
+
+  /* Modifiers */
+
+  &--highlight {
+    background: var(--col-yellow);
+    padding: 0 var(--spacing-2);
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--strikeThrough {
+    text-decoration: line-through;
+  }
+}
