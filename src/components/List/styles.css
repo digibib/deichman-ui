@@ -1,0 +1,21 @@
+.list {
+  list-style: none;
+
+  /* Elements */
+
+  &__item {
+    margin-top: var(--spacing-1);
+  }
+
+  /* Modifiers */
+
+  &--numbered {
+    padding-left: var(--spacing-5);
+    list-style: decimal;
+  }
+
+  &--bulleted {
+    padding-left: var(--spacing-5);
+    list-style: disc;
+  }
+}
