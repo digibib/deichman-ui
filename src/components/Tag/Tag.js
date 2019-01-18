@@ -16,7 +16,7 @@ const Tag = ({ text, link, active, onClick, removable }) => {
   return (
     <a href={link} className={tagClass}>
       {text}
-      {removable && <Icon type="arrow-right" />}
+      {removable && <Icon type="delete" />}
     </a>
   );
 };
