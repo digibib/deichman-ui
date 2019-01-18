@@ -21,9 +21,9 @@ import WorkList from './components/WorkList';
 export {
   Accordion,
   Block,
+  Button,
   Grid,
   GridItem,
-  Button,
   Icon,
   Input,
   List,
