@@ -4,6 +4,7 @@
   vertical-align: middle;
 
   svg {
+    display: block;
     color: black;
     fill: none;
   }

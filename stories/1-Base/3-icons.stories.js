@@ -152,6 +152,18 @@ stories.add(
             </div>
             <p className="sg-icon__name">arrow</p>
           </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="close" />
+            </div>
+            <p className="sg-icon__name">close</p>
+          </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="add" />
+            </div>
+            <p className="sg-icon__name">add</p>
+          </div>
         </div>
       </Block>
     </article>

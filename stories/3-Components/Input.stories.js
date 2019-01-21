@@ -16,6 +16,7 @@ stories.add('Input', () => (
       placeholder={text('placeholder', 'Fornavn')}
       error={text('error', '')}
       onChange={() => {}}
+      showClear={boolean('showClear', false)}
       full={boolean('full', false)}
     />
   </div>

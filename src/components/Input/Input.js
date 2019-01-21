@@ -2,9 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { Icon } from '../../index';
+
 import './styles.css';
 
-const Input = ({ type, value, placeholder, error, disabled, onChange, full }) => {
+const Input = ({
+  type,
+  value,
+  placeholder,
+  error,
+  disabled,
+  showClear,
+  onClear,
+  onChange,
+  full,
+}) => {
   const inputClass = classNames({
     input: true,
     'input--disabled': disabled,
@@ -22,6 +34,11 @@ const Input = ({ type, value, placeholder, error, disabled, onChange, full }) =>
         disabled={disabled}
         onChange={onChange}
       />
+      {showClear && (
+        <button className="input__clear" onClick={onClear}>
+          <Icon type="close" />
+        </button>
+      )}
       {error && <div className="input__error">{error}</div>}
     </div>
   );
@@ -32,7 +49,9 @@ Input.defaultProps = {
   placeholder: '',
   error: false,
   disabled: false,
+  showClear: false,
   full: false,
+  onClear: () => {},
 };
 
 Input.propTypes = {
@@ -40,7 +59,9 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   type: PropTypes.string,
   disabled: PropTypes.bool,
+  showClear: PropTypes.bool,
   error: PropTypes.bool,
+  onClear: PropTypes.func,
   onChange: PropTypes.func.isRequired,
   full: PropTypes.bool,
 };

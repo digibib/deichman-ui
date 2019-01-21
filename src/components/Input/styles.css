@@ -1,4 +1,5 @@
 .input {
+  position: relative;
   display: inline-block;
 
   /* Elements */
@@ -38,6 +39,15 @@
     margin-left: var(--spacing-2);
     color: var(--col-red);
     font-size: 12px;
+  }
+
+  &__clear {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: var(--spacing-2);
+    transform: translateY(-50%);
+    cursor: pointer;
   }
 
   /* Modifiers */
