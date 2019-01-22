@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import iconMap from '../../../public/icons.svg';
-
 import './styles.css';
 
 const Icon = ({ size, type, title, light, dark, full }) => {
@@ -17,7 +15,7 @@ const Icon = ({ size, type, title, light, dark, full }) => {
   return (
     <span className={iconClass}>
       <svg role="img" title={title} width={size} height={size}>
-        <use xlinkHref={`${iconMap}#${type}`} />
+        <use xlinkHref={`icon-map#${type}`} />
       </svg>
     </span>
   );

@@ -22,10 +22,15 @@ export default {
       sourcemap: true,
     },
   ],
+  external: ['react', 'react-dom'],
+  globals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+  },
   plugins: [
     external(),
     postcss({
-      modules: true,
+      extract: true,
     }),
     url(),
     svgr(),
