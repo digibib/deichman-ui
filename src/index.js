@@ -8,6 +8,7 @@ import Grid, { GridItem } from './components/Grid';
 import Accordion from './components/Accordion';
 import Button from './components/Button';
 import Icon from './components/Icon';
+import IconLoader from './components/IconLoader';
 import Input from './components/Input';
 import List from './components/List';
 import Select from './components/Select';
@@ -26,6 +27,7 @@ export {
   Grid,
   GridItem,
   Icon,
+  IconLoader,
   Input,
   List,
   Select,

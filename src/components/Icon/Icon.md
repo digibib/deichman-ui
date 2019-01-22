@@ -1,9 +1,6 @@
 ### Usage
 
-Make sure iconmap is included just after the opening `<body>` tag:
-`<img class="icon-map" src="https://cdn.jsdelivr.net/npm/@digibib/deichman-ui@{version}/dist/icons.svg" />`
-
-Tip: The color of the icon is set to `currentColor`, which means you can control it by just setting `color` to whatever you want in the parent container. It will revert to the body color.
+First, add the global svg code to your document (See SVG ref code below).
 
 ```jsx
 import { Icon } from 'deichman-ui';
@@ -16,5 +13,20 @@ import { Icon } from 'deichman-ui';
 ```html
 <div class="icon">
   <svg><use xlink:href="iconmap.svg#book" /></svg>
+</div>
+```
+
+Tip: The color of the icon is set to `currentColor`, which means you can control it by just setting `color` to whatever you want in the parent container. It will revert to the body color.
+
+#### SVG ref code
+
+To make the SVG icons avaiable on all pages: 
+
+1: Copy the svg code from the [latest icon map](https://cdn.jsdelivr.net/npm/@digibib/deichman-ui@latest/dist/icons.svg)
+2: Add this code just after the opening `<body>` tag, wrapped in a hidden div. Example:
+
+```html
+<div style="display: none">
+  {svg contents}
 </div>
 ```

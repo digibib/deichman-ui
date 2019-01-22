@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withReadme } from 'storybook-readme';
 
+import IconLoader from '../../src/components/IconLoader';
 import Icon from '../../src/components/Icon';
 import { Block } from '../../src/index';
 import readme from './3-icons.stories.md';
@@ -12,6 +13,8 @@ stories.add(
   'Icons',
   withReadme(readme, () => (
     <article className="sg-container">
+      <IconLoader />
+
       <p className="sg-heading">Icons</p>
 
       <Block top={8}>
