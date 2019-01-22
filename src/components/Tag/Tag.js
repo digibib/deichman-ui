@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './styles.css';
-import { Icon } from '../../index';
+import Icon from '../Icon';
 
 const Tag = ({ text, link, active, onClick, onClear, showClear }) => {
   const tagClass = classNames({
