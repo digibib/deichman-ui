@@ -6,11 +6,12 @@ import iconMap from '../../../public/icons.svg';
 
 import './styles.css';
 
-const Icon = ({ size, type, title, inverted, full }) => {
+const Icon = ({ size, type, title, light, dark, full }) => {
   const iconClass = classNames({
     icon: true,
     'icon--full': full,
-    'icon--inverted': inverted,
+    'icon--light': light,
+    'icon--dark': dark,
   });
 
   return (
@@ -23,11 +24,11 @@ const Icon = ({ size, type, title, inverted, full }) => {
 };
 
 Icon.defaultProps = {
-  inverted: false,
   title: 'ikon',
   size: 24,
   full: false,
-  inverted: false,
+  light: false,
+  dark: false,
 };
 
 Icon.propTypes = {
@@ -35,7 +36,8 @@ Icon.propTypes = {
   title: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   full: PropTypes.bool,
-  inverted: PropTypes.bool,
+  light: PropTypes.bool,
+  dark: PropTypes.bool,
 };
 
 export default Icon;

@@ -21,11 +21,11 @@ const Header = ({ navItems }) => {
       </nav>
       <div className="header__actions">
         <a href="#" className="header__action">
-          <Icon type="user" inverted />
+          <Icon type="user" />
           <span>Din konto</span>
         </a>
         <a href="#" className="header__action">
-          <Icon type="search" inverted />
+          <Icon type="search" />
           <span>Søk</span>
         </a>
       </div>

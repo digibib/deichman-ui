@@ -130,7 +130,7 @@ class Search extends Component {
 
     return (
       <form className={searchClass} onSubmit={this.onSubmit}>
-        <Icon type="search" inverted />
+        <Icon type="search" />
 
         <div className="search__inner">
           <ul className="search__active-filters">

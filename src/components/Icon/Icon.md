@@ -6,6 +6,8 @@ import { Icon } from 'deichman-ui';
 <Icon type="book" />;
 ```
 
+The color of the icon is set to `currentColor`, which means you can control it by just setting `color` to whatever you want in the parent container. It will revert to the body color.
+
 #### Without React:
 
 Make sure iconmap is included just after the opening `<body>` tag:

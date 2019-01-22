@@ -47,6 +47,7 @@
     top: 50%;
     right: var(--spacing-2);
     transform: translateY(-50%);
+    color: currentColor;
     cursor: pointer;
   }
 
@@ -55,6 +56,12 @@
   &--error {
     .input__field {
       border-color: var(--col-red);
+    }
+  }
+
+  &--show-clear {
+    .input__field {
+      padding-right: var(--spacing-7);
     }
   }
 

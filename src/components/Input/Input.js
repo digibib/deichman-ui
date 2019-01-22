@@ -21,6 +21,7 @@ const Input = ({
     input: true,
     'input--disabled': disabled,
     'input--error': error,
+    'input--show-clear': showClear,
     'input--full': full,
   });
 

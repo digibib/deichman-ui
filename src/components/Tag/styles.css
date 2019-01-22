@@ -1,4 +1,5 @@
 .tag {
+  position: relative;
   font-size: 14px;
   display: inline-block;
   margin: 0;
@@ -15,4 +16,31 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease;
+
+  /* Elements */
+
+  &__clear {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: var(--spacing-2);
+    transform: translateY(-50%);
+    color: currentColor;
+    cursor: pointer;
+  }
+
+  /* Modifiers */
+
+  &--active {
+    color: var(--col-white);
+    background: var(--col-black);
+  }
+
+  &--show-clear {
+    padding-right: var(--spacing-7);
+  }
+
+  &--full {
+    display: block;
+  }
 }

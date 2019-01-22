@@ -5,18 +5,22 @@ import classNames from 'classnames';
 import './styles.css';
 import { Icon } from '../../index';
 
-const Tag = ({ text, link, active, onClick, removable }) => {
+const Tag = ({ text, link, active, onClick, onClear, showClear }) => {
   const tagClass = classNames({
     tag: true,
     'tag--active': active,
     'tag--link': link,
     'tag--button': onClick,
-    'tag--show-remove': removable,
+    'tag--show-clear': showClear,
   });
   return (
     <a href={link} className={tagClass}>
       {text}
-      {removable && <Icon type="delete" />}
+      {showClear && (
+        <button className="tag__clear" onClick={onClear && onClear}>
+          <Icon type="close" />
+        </button>
+      )}
     </a>
   );
 };
@@ -24,17 +28,19 @@ const Tag = ({ text, link, active, onClick, removable }) => {
 Tag.defaultProps = {
   text: '',
   active: false,
-  removable: false,
+  showClear: false,
   link: false,
   onClick: false,
+  onClear: false,
 };
 
 Tag.propTypes = {
   text: PropTypes.string,
   active: PropTypes.bool,
-  removable: PropTypes.bool,
+  showClear: PropTypes.bool,
   link: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   onClick: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
+  onClear: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
 };
 
 export default Tag;

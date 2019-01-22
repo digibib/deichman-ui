@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
 import Tag from '../../src/components/Tag';
 
@@ -11,6 +11,11 @@ stories.addDecorator(withKnobs);
 
 stories.add('Tag', () => (
   <div className="sg-container">
-    <Tag text={text('text', 'Trolldom')} link={text('link', '#')} />
+    <Tag
+      text={text('text', 'Trolldom')}
+      link={text('link', '#')}
+      active={boolean('active', false)}
+      showClear={boolean('showClear', false)}
+    />
   </div>
 ));

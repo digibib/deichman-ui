@@ -19,7 +19,8 @@ stories.add(
         type={text('type', 'book')}
         size={number('size', 24)}
         full={boolean('full', false)}
-        inverted={boolean('inverted', false)}
+        light={boolean('light', false)}
+        dark={boolean('dark', false)}
       />
     </div>
   )),

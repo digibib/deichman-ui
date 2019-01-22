@@ -5,7 +5,6 @@
 
   svg {
     display: block;
-    color: black;
     fill: none;
   }
 
@@ -20,9 +19,15 @@
     }
   }
 
-  &--inverted {
+  &--light {
     svg {
-      color: white;
+      color: var(--col-white);
+    }
+  }
+
+  &--dark {
+    svg {
+      color: var(--col-black);
     }
   }
 }
