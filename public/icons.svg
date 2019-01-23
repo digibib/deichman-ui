@@ -25,8 +25,8 @@
 
 </symbol>
 <symbol id="arrow" viewBox="0 0 24 24">
-<path d="M4 20L19 5" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M20 16V4H8" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M4 20L19 5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20 16V4H8" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
 
 </symbol>
 <symbol id="book" viewBox="0 0 24 24">
@@ -36,6 +36,14 @@
 </symbol>
 <symbol id="bookmark" viewBox="0 0 24 24">
 <path d="M17 19L12 15L7 19V7C7 6.46957 7.21074 5.96086 7.58582 5.58578C7.96089 5.21071 8.46957 5 9 5H15C15.5304 5 16.0391 5.21071 16.4142 5.58578C16.7893 5.96086 17 6.46957 17 7V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</symbol>
+<symbol id="close" viewBox="0 0 24 24">
+  <g transform="translate(-158 -438)">
+    <line id="Line_2082" data-name="Line 2082" x2="17.143" transform="translate(163.5 455.622) rotate(-45)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+    <line id="Line_2084" data-name="Line 2084" x2="17.143" transform="translate(163.5 443.5) rotate(45)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+    <rect id="Rectangle_8372" data-name="Rectangle 8372" width="24" height="24" transform="translate(158 438)" fill="none"/>
+  </g>
 
 </symbol>
 <symbol id="date" viewBox="0 0 24 24">
@@ -134,13 +142,5 @@
 <symbol id="user" viewBox="0 0 24 24">
 <path d="M9.993 13H14.007C14.6627 13 15.312 13.1291 15.9177 13.3801C16.5235 13.631 17.0739 13.9988 17.5376 14.4624C18.0012 14.9261 18.369 15.4765 18.6199 16.0823C18.8709 16.688 19 17.3373 19 17.993V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V17.993C5 16.6688 5.52605 15.3988 6.46242 14.4624C7.39878 13.526 8.66877 13 9.993 13V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12 10C13.933 10 15.5 8.433 15.5 6.5C15.5 4.567 13.933 3 12 3C10.067 3 8.5 4.567 8.5 6.5C8.5 8.433 10.067 10 12 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-
-</symbol>
-<symbol id="close" viewBox="0 0 24 24">
-  <g id="Close" transform="translate(-158 -438)">
-    <line id="Line_2082" data-name="Line 2082" x2="17.143" transform="translate(163.5 455.622) rotate(-45)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
-    <line id="Line_2084" data-name="Line 2084" x2="17.143" transform="translate(163.5 443.5) rotate(45)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
-    <rect id="Rectangle_8372" data-name="Rectangle 8372" width="24" height="24" transform="translate(158 438)" fill="none"/>
-  </g>
 
 </symbol></svg>
