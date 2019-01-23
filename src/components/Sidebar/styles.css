@@ -1,0 +1,30 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  visibility: hidden;
+  z-index: var(--z-index-sidebar);
+
+  /* Elements */
+
+  &__inner {
+    display: inline-block;
+    width: 300px;
+    height: 100%;
+    max-width: 100%;
+    background: var(--col-white);
+    transform: translateX(-100%);
+    transition: all var(--transition-smooth);
+  }
+
+  /* Modifiers */
+
+  &--open {
+    visibility: visible;
+
+    .sidebar__inner {
+      transform: translateX(0);
+    }
+  }
+}

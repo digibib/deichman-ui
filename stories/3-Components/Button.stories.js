@@ -18,6 +18,7 @@ stories.add(
       <Button
         primary={boolean('primary', false)}
         disabled={boolean('disabled', false)}
+        full={boolean('full', false)}
         icon={text('icon', '')}
         onClick={() => {}}
       >

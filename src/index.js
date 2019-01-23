@@ -12,6 +12,7 @@ import IconLoader from './components/IconLoader';
 import Input from './components/Input';
 import List from './components/List';
 import Select from './components/Select';
+import Page from './components/Page';
 import Table from './components/Table';
 import Tag from './components/Tag';
 import TagList from './components/TagList';
@@ -30,6 +31,7 @@ export {
   IconLoader,
   Input,
   List,
+  Page,
   Select,
   Table,
   Tag,

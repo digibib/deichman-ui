@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { withReadme } from 'storybook-readme';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 
-import IconLoader from '../../src/components/IconLoader';
 import Icon from '../../src/components/Icon';
 import readme from '../../src/components/Icon/Icon.md';
 
@@ -16,7 +15,6 @@ stories.add(
   'Icon',
   withReadme(readme, () => (
     <div className="sg-container">
-      <IconLoader />
       <Icon
         type={text('type', 'book')}
         size={number('size', 24)}

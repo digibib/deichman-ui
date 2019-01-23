@@ -1,0 +1,6 @@
+.page {
+  display: block;
+  margin: 0 auto;
+  max-width: var(--page-width-max);
+  /* Modifiers */
+}

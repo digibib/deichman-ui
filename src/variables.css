@@ -1,7 +1,7 @@
 :root {
   /**
-     * Typography.
-     */
+   * Typography.
+   */
 
   --font-family: 'OsloSans';
   --font-size-default: calc(var(--root-unit) / 16 * 1rem);
@@ -9,8 +9,8 @@
   --font-size-large: calc(var(--font-size-default) + 2px);
 
   /**
-     * Colours.
-     */
+   * Colours.
+   */
 
   --col-brand: black;
   --col-white: #ffffff;
@@ -40,16 +40,16 @@
   --col-ok-6: #fb9688;
 
   /**
-     * Global rules.
-     */
+   * Global rules.
+   */
 
   --border-radius: 5px;
   --border-radius-tag: 20px;
+  --page-width-max: 1440px;
 
   /**
-     * Spacing.
-     *
-     */
+   * Spacing.
+   */
 
   --spacing-1: 4px;
   --spacing-2: 8px;
@@ -63,16 +63,17 @@
   --spacing-10: 80px;
 
   /**
-     * Transitions.
-     */
+   * Transitions.
+   */
 
-  --transition-smooth: 0.2s linear;
+  --transition-stiff: 0.2s linear;
+  --transition-smooth: 0.3s ease;
 
   /**
-     * Z-indexes.
-     */
+   * Z-indexes.
+   */
 
-  --z-index-header: 3;
-  --z-index-main: 2;
-  --z-index-footer: 1;
+  --z-index-overlay: 1;
+  --z-index-sidebar: 2;
+  --z-index-modal: 3;
 }

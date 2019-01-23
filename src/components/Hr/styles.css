@@ -1,0 +1,18 @@
+.hr {
+  display: block;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  background: var(--col-gray-3);
+
+  /* Modifiers */
+
+  &--dark {
+    background: var(--col-black);
+  }
+
+  &--light {
+    background: var(--col-gray-1);
+  }
+}

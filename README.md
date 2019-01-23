@@ -25,7 +25,7 @@ Local development is done via React-storybook. Clone the repo and run:
 To publish the docs:
 
 ```
-  npm run storybook-deploy
+  npm run deploy-storybook
 ```
 
 To publish a new version of the library to npm:
