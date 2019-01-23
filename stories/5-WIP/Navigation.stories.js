@@ -41,7 +41,7 @@ class Navigation extends Component {
           </Block>
         </Sidebar>
         <Overlay visible={isOpen} />
-        <div style={{ position: 'fixed', bottom: '0', left: '0', zIndex: '3', padding: '32px' }}>
+        <div style={{ position: 'fixed', bottom: '0', left: '0', zIndex: '3', padding: '40px' }}>
           <Burger open={isOpen} onClick={this.onToggle} />
         </div>
       </Page>
