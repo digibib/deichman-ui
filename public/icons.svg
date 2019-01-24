@@ -8,11 +8,12 @@
 <path d="M16 4V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
 </symbol>
-<symbol id="add">
-  <line id="svg_1" x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
-  <line id="svg_2" x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" transform="rotate(90 12.034283638000488,11.95264530181885) " x2="18.034284"/>
 
+<symbol id="add">
+  <line x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
+  <line x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" transform="rotate(90 12.034283638000488,11.95264530181885) " x2="18.034284"/>
 </symbol>
+
 <symbol id="arrow-down" viewBox="0 0 24 24">
 <path d="M16 10L12 14L8 10" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 
@@ -117,10 +118,11 @@
 <path d="M7 4H6C5.46957 4 4.96089 4.21071 4.58582 4.58578C4.21074 4.96086 4 5.46957 4 6V18C4 18.5304 4.21074 19.0391 4.58582 19.4142C4.96089 19.7893 5.46957 20 6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
 </symbol>
-<symbol id="remove">
-  <line id="svg_1" x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
 
+<symbol id="remove">
+  <line x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
 </symbol>
+
 <symbol id="search" viewBox="0 0 24 24">
 <path d="M13.5 17C17.0899 17 20 14.0899 20 10.5C20 6.91015 17.0899 4 13.5 4C9.91015 4 7 6.91015 7 10.5C7 14.0899 9.91015 17 13.5 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M4 20L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

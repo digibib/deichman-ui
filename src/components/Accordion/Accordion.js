@@ -36,7 +36,7 @@ class Accordion extends Component {
       <section className={accordionClass}>
         <button className="accordion__button" name={name} onClick={this.onToggle}>
           <div className="accordion__button-inner">
-            <h3>{text}</h3>
+            <h4>{text}</h4>
             <Icon type={isOpen ? 'arrow-up' : 'arrow-down'} />
           </div>
         </button>

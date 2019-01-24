@@ -2,5 +2,17 @@
   display: block;
   margin: 0 auto;
   max-width: var(--page-width-max);
-  padding: 0 var(--page-gutters);
+  padding: 0 var(--page-gutters-small);
+}
+
+@media (--medium) {
+  .page {
+    padding: 0 var(--page-gutters-medium);
+  }
+}
+
+@media (--large) {
+  .page {
+    padding: 0 var(--page-gutters-large);
+  }
 }

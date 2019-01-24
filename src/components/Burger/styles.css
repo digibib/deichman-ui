@@ -46,7 +46,7 @@
   }
 
   &__text {
-    display: block;
+    display: none;
     position: absolute;
     left: 20px;
     bottom: 11px;
@@ -54,6 +54,10 @@
     transition: all var(--transition-smooth);
     transform: rotate(-90deg);
     transform-origin: left center;
+
+    @media (--large) {
+      display: block;
+    }
   }
 
   &__lines {

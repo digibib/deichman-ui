@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import test from '../../../public/icons.svg';
+
 import './styles.css';
 
 const Icon = ({ size, type, title, light, dark, full }) => {

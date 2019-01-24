@@ -22,12 +22,6 @@ Local development is done via React-storybook. Clone the repo and run:
 
 ### Publishing
 
-To publish the docs:
-
-```
-  npm run deploy-storybook
-```
-
 To publish a new version of the library to npm:
 
 ```
@@ -35,4 +29,10 @@ To publish a new version of the library to npm:
   git push --tags
   git push origin master
   npm publish
+```
+
+To publish/update the docs:
+
+```
+  npm run deploy-storybook
 ```

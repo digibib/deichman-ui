@@ -46,7 +46,10 @@
   --border-radius: 5px;
   --border-radius-tag: 20px;
   --page-width-max: 1440px;
-  --page-gutters: 145px;
+
+  --page-gutters-small: 24px;
+  --page-gutters-medium: 80px;
+  --page-gutters-large: 145px;
 
   /**
    * Spacing.
