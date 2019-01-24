@@ -6,5 +6,4 @@ postcss.config.js
 .vscode
 src
 stories
-public
 storybook-static
