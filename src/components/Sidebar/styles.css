@@ -7,6 +7,10 @@
   visibility: hidden;
   z-index: var(--z-index-sidebar);
 
+  @media (min-width: 390px) {
+    right: initial;
+  }
+
   /* Elements */
 
   &__inner {

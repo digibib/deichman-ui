@@ -1,4 +1,4 @@
-.page {
+.container {
   display: block;
   margin: 0 auto;
   max-width: var(--page-width-max);
@@ -6,13 +6,13 @@
 }
 
 @media (--medium) {
-  .page {
+  .container {
     padding: 0 var(--page-gutters-medium);
   }
 }
 
 @media (--large) {
-  .page {
+  .container {
     padding: 0 var(--page-gutters-large);
   }
 }

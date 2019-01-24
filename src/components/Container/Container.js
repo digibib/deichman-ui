@@ -4,16 +4,16 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Page = ({ children }) => {
+const Container = ({ children }) => {
   const pageClass = classNames({
     page: true,
   });
 
-  return <main className={pageClass}>{children}</main>;
+  return <div className={pageClass}>{children}</div>;
 };
 
-Page.propTypes = {
+Container.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Page;
+export default Container;
