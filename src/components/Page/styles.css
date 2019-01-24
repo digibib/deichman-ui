@@ -2,5 +2,5 @@
   display: block;
   margin: 0 auto;
   max-width: var(--page-width-max);
-  /* Modifiers */
+  padding: 0 var(--page-gutters);
 }
