@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
-import Page from '../../src/components/Page';
+import Container from '../../src/components/Container';
 import Block from '../../src/components/Block';
 import Overlay from '../../src/components/Overlay';
 import Sidebar from '../../src/components/Sidebar';
@@ -34,7 +34,7 @@ class Navigation extends Component {
     const { isOpen } = this.state;
 
     return (
-      <Page>
+      <Container>
         <Sidebar open={isOpen}>
           <Block top={6} left={6} right={6}>
             <h4>Welcome!</h4>
@@ -44,7 +44,7 @@ class Navigation extends Component {
         <div style={{ position: 'fixed', bottom: '0', left: '0', zIndex: '3', padding: '40px' }}>
           <Burger open={isOpen} onClick={this.onToggle} />
         </div>
-      </Page>
+      </Container>
     );
   }
 }

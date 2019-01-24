@@ -1,18 +1,25 @@
 .container {
-  display: block;
+  display: inline-block;
+  width: 100%;
   margin: 0 auto;
   max-width: var(--page-width-max);
   padding: 0 var(--page-gutters-small);
-}
 
-@media (--medium) {
-  .container {
+  @media (--medium) {
     padding: 0 var(--page-gutters-medium);
   }
-}
 
-@media (--large) {
-  .container {
+  @media (--large) {
     padding: 0 var(--page-gutters-large);
+  }
+
+  /* Modifiers */
+
+  &--gray {
+    background: var(--col-gray-1);
+  }
+
+  &--dark {
+    background: var(--col-black);
   }
 }

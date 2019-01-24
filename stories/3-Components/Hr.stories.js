@@ -11,7 +11,7 @@ const stories = storiesOf('Components', module);
 // Add knobs to stories
 stories.addDecorator(withKnobs);
 
-// Size options
+// Options
 const colorOptions = {
   default: 'default',
   dark: 'dark',

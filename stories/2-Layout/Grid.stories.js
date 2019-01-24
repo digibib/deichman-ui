@@ -30,11 +30,7 @@ stories.add(
   'Grid',
   withReadme(readme, () => (
     <div className="sg-container">
-      <p className="sg-heading">Grid</p>
-
-      <Block top={6}>
-        <h4>Example</h4>
-      </Block>
+      <h4>Example</h4>
 
       <Block top={4}>
         <Grid>
