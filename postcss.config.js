@@ -13,6 +13,6 @@ module.exports = ({ file, options, env }) => ({
       },
     },
     autoprefixer: {},
-    // cssnano: {},
+    cssnano: {},
   },
 });

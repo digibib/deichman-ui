@@ -4,7 +4,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import resolve from 'rollup-plugin-node-resolve';
 import url from 'rollup-plugin-url';
-import copy from 'rollup-plugin-copy';
+import copy from 'rollup-plugin-copy-glob';
 import svgr from '@svgr/rollup';
 
 import pkg from './package.json';
@@ -16,18 +16,22 @@ export default {
       file: pkg.main,
       format: 'cjs',
       sourcemap: true,
+      globals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+      },
     },
     {
       file: pkg.module,
       format: 'es',
       sourcemap: true,
+      globals: {
+        react: 'React',
+        'react-dom': 'ReactDOM',
+      },
     },
   ],
   external: ['react', 'react-dom'],
-  globals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
   plugins: [
     external(),
     postcss({
@@ -40,9 +44,6 @@ export default {
     }),
     resolve(),
     commonjs(),
-    copy({
-      'public/icons.svg': 'dist/icons.svg',
-      verbose: true,
-    }),
+    copy([{ files: 'public/icons.svg', dest: 'dist' }], { verbose: true }),
   ],
 };
