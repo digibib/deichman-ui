@@ -27,11 +27,15 @@ class Modal extends React.Component {
   }
 
   render() {
-    const { name, visible, onClose, children } = this.props;
+    const { name, width, visible, onClose, children } = this.props;
 
     const modalClass = classNames({
       modal: true,
       'modal--visible': visible,
+      'modal--narrow': width === 'narrow',
+      'modal--medium': width === 'medium',
+      'modal--wide': width === 'wide',
+      'modal--full': width === 'full',
     });
 
     return (
@@ -48,11 +52,13 @@ class Modal extends React.Component {
 Overlay.defaultProps = {
   visible: false,
   onClose: false,
+  width: 'default',
 };
 
 Modal.propTypes = {
   visible: PropTypes.bool,
   name: PropTypes.string.isRequired,
+  width: PropTypes.string,
   onClose: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
   children: PropTypes.node.isRequired,
 };

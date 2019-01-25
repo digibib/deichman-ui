@@ -32,4 +32,16 @@
       transform: scale(1);
     }
   }
+
+  &--medium {
+    .modal__inner {
+      max-width: 500px;
+    }
+  }
+
+  &--full {
+    .modal__inner {
+      max-width: 100%;
+    }
+  }
 }
