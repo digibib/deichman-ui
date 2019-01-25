@@ -2,7 +2,7 @@
 
 ![NPM version](https://img.shields.io/npm/v/@digibib/deichman-ui.svg)
 
-Style-guide and component library.
+Style-guide and component library for the Oslo public libraries
 
 [Live docs](https://digibib.github.io/deichman-ui)
 
@@ -15,10 +15,13 @@ Local development is done via React-storybook. Clone the repo and run:
   npm start
 ```
 
-### Tech
+### Built with
 
 - [React](https://reactjs.org/)
-- [PostCSS](https://preset-env.cssdb.org/)
+- [PostCSS](https://preset-env.cssdb.org/) CSS foundation for applications
+- [Backpack.css](https://github.com/chris-pearce/backpack.css) CSS foundation for applications
+- [Rollup](https://rollupjs.org/guide/en) JavaScript module bundler
+- [Storybook](https://storybook.js.org/) UI Development Environment
 
 ### Publishing
 
