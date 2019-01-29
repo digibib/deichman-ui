@@ -14,7 +14,7 @@
     "react-dom": ">=16.6.1"
   },
   "scripts": {
-    "start": "start-storybook -s ./public -p 9001",
+    "start": "STORYBOOK_ENV=dev start-storybook -s ./public -p 9001",
     "build": "rollup -c",
     "build:css": "postcss src/**/*.css -o src/styles.css",
     "prepublish": "rm -rf ./dist && npm run build",

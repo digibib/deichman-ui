@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './styles.css';
 
 const iconUrl =
-  process.env.NODE_ENV === 'development'
+  process.env.STORYBOOK_ENV === 'dev'
     ? 'http://localhost:9001/icons.svg'
     : 'https://cdn.jsdelivr.net/npm/@digibib/deichman-ui@latest/dist/icons.svg';
 

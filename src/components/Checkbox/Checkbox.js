@@ -15,8 +15,15 @@ const Button = ({ name, label, onChange, checked, disabled, full }) => {
   });
 
   return (
-    <label className={checkboxClass} onClick={onChange} htmlFor={name} disabled={disabled}>
-      <input className="checkbox__input" type="checkbox" name={name} id={name} checked={checked} />
+    <label className={checkboxClass} htmlFor={name} disabled={disabled}>
+      <input
+        className="checkbox__input"
+        type="checkbox"
+        name={name}
+        id={name}
+        checked={checked}
+        onChange={onChange}
+      />
       <span className="checkbox__box">
         <Icon type="check" />
       </span>
