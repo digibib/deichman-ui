@@ -1,0 +1,66 @@
+.checkbox {
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+
+  /* Elements */
+
+  &__input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  &__box {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--col-gray-5);
+    color: var(--col-white);
+    vertical-align: middle;
+
+    /* Checkbox icon */
+    > span {
+      display: none;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+    }
+  }
+
+  &__label {
+    margin-left: var(--spacing-2);
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  /* Modifiers */
+
+  &--checked {
+    .checkbox__box {
+      background: var(--col-black);
+      border-color: var(--col-black);
+
+      > span {
+        display: block;
+      }
+    }
+  }
+
+  &--full {
+    display: block;
+    width: 100%;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

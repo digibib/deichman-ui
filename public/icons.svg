@@ -8,12 +8,19 @@
 <path d="M16 4V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
 </symbol>
-
 <symbol id="add">
-  <line x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
-  <line x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" transform="rotate(90 12.034283638000488,11.95264530181885) " x2="18.034284"/>
-</symbol>
 
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_1" x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
+  <line id="svg_2" x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" transform="rotate(90 12.034283638000488,11.95264530181885) " x2="18.034284"/>
+ </g>
+
+</symbol>
 <symbol id="arrow-down" viewBox="0 0 24 24">
 <path d="M16 10L12 14L8 10" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 
@@ -38,6 +45,12 @@
 </symbol>
 <symbol id="bookmark" viewBox="0 0 24 24">
 <path d="M17 19L12 15L7 19V7C7 6.46957 7.21074 5.96086 7.58582 5.58578C7.96089 5.21071 8.46957 5 9 5H15C15.5304 5 16.0391 5.21071 16.4142 5.58578C16.7893 5.96086 17 6.46957 17 7V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</symbol>
+<symbol id="check" viewBox="0 0 24 24">
+  <g transform="translate(-138.793 -307.841)">
+    <path d="M105,98.4l-5.6,6.4L97,102.4" transform="translate(49.5 217.099)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
 
 </symbol>
 <symbol id="close" viewBox="0 0 24 24">
@@ -118,11 +131,18 @@
 <path d="M7 4H6C5.46957 4 4.96089 4.21071 4.58582 4.58578C4.21074 4.96086 4 5.46957 4 6V18C4 18.5304 4.21074 19.0391 4.58582 19.4142C4.96089 19.7893 5.46957 20 6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
 </symbol>
-
 <symbol id="remove">
-  <line x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
-</symbol>
 
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_1" x1="6.034284" y1="11.952645" y2="11.952645" stroke-width="2" stroke-linecap="round" stroke="currentColor" fill="none" x2="18.034284"/>
+ </g>
+
+</symbol>
 <symbol id="search" viewBox="0 0 24 24">
 <path d="M13.5 17C17.0899 17 20 14.0899 20 10.5C20 6.91015 17.0899 4 13.5 4C9.91015 4 7 6.91015 7 10.5C7 14.0899 9.91015 17 13.5 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M4 20L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

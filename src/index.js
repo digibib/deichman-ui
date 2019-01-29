@@ -8,6 +8,7 @@ import Grid, { GridItem } from './components/Grid';
 import Accordion from './components/Accordion';
 import Burger from './components/Burger';
 import Button from './components/Button';
+import Checkbox from './components/Checkbox';
 import Container from './components/Container';
 import Hr from './components/Hr';
 import Icon from './components/Icon';
@@ -32,6 +33,7 @@ export {
   Burger,
   Button,
   Container,
+  Checkbox,
   Hr,
   Grid,
   GridItem,

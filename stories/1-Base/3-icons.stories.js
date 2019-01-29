@@ -170,6 +170,12 @@ stories.add(
             </div>
             <p className="sg-icon__name">remove</p>
           </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="check" />
+            </div>
+            <p className="sg-icon__name">check</p>
+          </div>
         </div>
       </Block>
     </article>
