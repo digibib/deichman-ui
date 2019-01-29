@@ -21,6 +21,7 @@ stories.add(
         checked={boolean('checked', false)}
         full={boolean('full', false)}
         disabled={boolean('disabled', false)}
+        onChange={() => {}}
       />
     </div>
   )),

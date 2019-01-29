@@ -3,13 +3,13 @@
 ```jsx
 import { Checkbox } from 'deichman-ui';
 
-<Checkbox name={name} onClick={onClick} label={Click me}>;
+<Checkbox name={name} onChange={onChange} label={Click me}>;
 ```
 
 #### Without React:
 
 ```html
-<label class="checkbox" onClick="{onClick}" htmlFor="{name}">
+<label class="checkbox" onChange="{onChange}" htmlFor="{name}">
   <input
     className="checkbox__input"
     type="checkbox"
