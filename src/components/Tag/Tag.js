@@ -18,7 +18,7 @@ const Tag = ({ text, link, active, onClick, onClear, showClear }) => {
       {text}
       {showClear && (
         <button className="tag__clear" onClick={onClear && onClear}>
-          <Icon type="close" />
+          <Icon size="16" type="close" />
         </button>
       )}
     </a>
