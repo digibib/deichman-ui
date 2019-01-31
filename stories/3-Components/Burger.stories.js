@@ -14,8 +14,11 @@ stories.addDecorator(withKnobs);
 stories.add(
   'Burger',
   withReadme(readme, () => (
+    <div>
+
     <div className="sg-container" style={{ paddingTop: '100px' }}>
       <Burger open={boolean('open', false)} />
+    </div>
     </div>
   )),
 );

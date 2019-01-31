@@ -17,9 +17,9 @@ const Burger = ({ open, openText, closeText, onClick }) => {
       <span className="burger__text">{open ? closeText : openText}</span>
       <span className="burger__inner">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 18H20" />
-          <path d="M4 12H20" />
-          <path d="M4 6H20" />
+          <path d="M5 6H19" />
+          <path d="M5 12H19" />
+          <path d="M5 18H19" />
         </svg>
       </span>
     </button>
