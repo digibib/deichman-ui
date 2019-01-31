@@ -52,9 +52,9 @@
   &__text {
     display: none;
     position: absolute;
-    left: 20px;
-    bottom: 11px;
-    padding-left: calc(20px + var(--spacing-4));
+    left: 23px;
+    bottom: 15px;
+    padding-left: calc(23px + var(--spacing-4));
     transition: all var(--transition-smooth);
     transform: rotate(-90deg);
     transform-origin: left center;
