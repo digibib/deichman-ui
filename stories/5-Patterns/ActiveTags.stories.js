@@ -45,7 +45,7 @@ class TagSelection extends Component {
 
     return (
       <div className="sg-container">
-        <h4>All tags (Click to add)</h4>
+        <strong>All tags (Click to add)</strong>
         <Block top={5} bottom={5}>
           <TagList>
             {availableTags.map(tag => (
@@ -55,7 +55,7 @@ class TagSelection extends Component {
             ))}
           </TagList>
         </Block>
-        <h4>Selected tags (Click to remove)</h4>
+        <strong>Selected tags (Click to remove)</strong>
         <Block top={5}>
           <TagList>
             {activeTags.map(tag => (
