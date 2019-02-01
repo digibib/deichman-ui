@@ -26,11 +26,11 @@ GridItem.defaultProps = {
 };
 
 GridItem.propTypes = {
-  base: PropTypes.string,
-  small: PropTypes.string,
-  medium: PropTypes.string,
-  large: PropTypes.string,
-  xlarge: PropTypes.string,
+  base: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  small: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  medium: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  large: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  xlarge: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   children: PropTypes.node,
 };
 

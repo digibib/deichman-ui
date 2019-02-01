@@ -40,8 +40,8 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  name: PropTypes.bool.isRequired,
-  label: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
   full: PropTypes.bool,
