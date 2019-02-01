@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import './styles.css';
 import Icon from '../Icon';
 
-const Tag = ({ text, link, active, onClick, onClear, showClear }) => {
+const Tag = ({ text, link, active, onClick, showClear }) => {
   const tagClass = classNames({
     tag: true,
     'tag--active': active,
@@ -14,12 +14,12 @@ const Tag = ({ text, link, active, onClick, onClear, showClear }) => {
     'tag--show-clear': showClear,
   });
   return (
-    <a href={link} className={tagClass}>
+    <a href={link} className={tagClass} onClick={onClick && onClick}>
       {text}
       {showClear && (
-        <button className="tag__clear" onClick={onClear && onClear}>
+        <div className="tag__clear">
           <Icon size="16" type="close" />
-        </button>
+        </div>
       )}
     </a>
   );
@@ -40,7 +40,6 @@ Tag.propTypes = {
   showClear: PropTypes.bool,
   link: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   onClick: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
-  onClear: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
 };
 
 export default Tag;

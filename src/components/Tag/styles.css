@@ -15,7 +15,12 @@
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  user-select: none;
+  transition: transform var(--transition-smooth);
+
+  &:active {
+    transform: scale(0.9);
+  }
 
   /* Elements */
 
