@@ -17,6 +17,7 @@ import Input from './components/Input';
 import List from './components/List';
 import Modal from './components/Modal';
 import Overlay from './components/Overlay';
+import Overflow from './components/Overflow';
 import Select from './components/Select';
 import Sidebar from './components/Sidebar';
 import Table from './components/Table';
@@ -43,6 +44,7 @@ export {
   List,
   Modal,
   Overlay,
+  Overflow,
   Select,
   Sidebar,
   Table,
