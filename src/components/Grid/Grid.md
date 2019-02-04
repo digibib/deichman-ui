@@ -32,3 +32,12 @@ Example grid where the items are full-width up until the "large" breakpoint, and
   <GridItem large="one-half">...</GridItem>
 </Grid>
 ```
+
+#### Without React:
+
+```jsx
+<div class="grid">
+  <div class="grid__item large--one-half">...</div>
+  <div class="grid__item large--one-half">...</div>
+</div>
+```

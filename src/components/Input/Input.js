@@ -8,8 +8,10 @@ import './styles.css';
 
 const Input = ({
   type,
+  name,
   value,
   placeholder,
+  label,
   error,
   disabled,
   showClear,
@@ -27,9 +29,16 @@ const Input = ({
 
   return (
     <div className={inputClass}>
+      {label && (
+        <label htmlFor={name} className="caption">
+          {label}
+        </label>
+      )}
       <input
         className="input__field"
         type={type}
+        name={name}
+        id={name}
         value={value}
         placeholder={placeholder}
         disabled={disabled}
@@ -47,6 +56,7 @@ const Input = ({
 
 Input.defaultProps = {
   type: 'text',
+  label: '',
   placeholder: '',
   error: false,
   disabled: false,
@@ -57,6 +67,8 @@ Input.defaultProps = {
 
 Input.propTypes = {
   value: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,
   disabled: PropTypes.bool,

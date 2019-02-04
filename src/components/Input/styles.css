@@ -44,9 +44,8 @@
   &__clear {
     display: block;
     position: absolute;
-    top: 50%;
     right: var(--spacing-2);
-    transform: translateY(-50%);
+    transform: translateY(-33px);
     color: currentColor;
     cursor: pointer;
   }
