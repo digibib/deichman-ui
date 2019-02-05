@@ -19,6 +19,7 @@ import Modal from './components/Modal';
 import Overlay from './components/Overlay';
 import Overflow from './components/Overflow';
 import Select from './components/Select';
+import ShowMore from './components/ShowMore';
 import Sidebar from './components/Sidebar';
 import Table from './components/Table';
 import Tag from './components/Tag';
@@ -46,6 +47,7 @@ export {
   Overlay,
   Overflow,
   Select,
+  ShowMore,
   Sidebar,
   Table,
   Tag,
