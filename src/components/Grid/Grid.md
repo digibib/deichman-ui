@@ -50,6 +50,7 @@ Example grid where the items are full-width up until the "large" breakpoint, and
 | right     | bool | grid--right   | Aligns items to the right  |
 | center    | bool | grid--center  | Centers items horizontally |
 | middle    | bool | grid--middle  | Centers items vertically   |
+| narrow    | bool | grid--narrow  | Smaller gutters            |
 
 #### Props (On GridItem)
 

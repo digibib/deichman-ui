@@ -119,7 +119,7 @@ pre > code {
 
 .sg-grid-wrapper {
   background: #fbcd83;
-  height: 40px;
+  min-height: 40px;
   border-radius: 3px;
   display: flex;
   align-items: center;

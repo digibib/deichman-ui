@@ -1,9 +1,13 @@
 .grid {
   padding: 0;
   margin: 0;
-  margin-left: calc(-1 * var(--spacing-5));
+  margin-left: calc(-1 * var(--spacing-4));
   list-style: none;
   letter-spacing: -0.31em;
+
+  @media (--medium) {
+    margin-left: calc(-1 * var(--spacing-5));
+  }
 }
 
 /**
@@ -25,7 +29,7 @@
  * Extends '.grid'.
  */
 .grid--full {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 
 .grid--full > .grid__item {
@@ -67,52 +71,6 @@
   vertical-align: bottom !important;
 }
 
-/**
- * Create grids with narrower gutters. Extends '.grid'.
- */
-.grid--narrow {
-  margin-left: -var(--spacing-smaller);
-}
-
-.grid--narrow > .grid__item {
-  padding-left: var(--spacing-smaller);
-}
-
-/**
- * Create grids with wider gutters. Extends '.grid'.
- */
-.grid--wide {
-  margin-left: -var(--spacing-small);
-}
-
-@media (--medium) {
-  .grid--wide {
-    margin-left: -var(--spacing);
-  }
-}
-
-@media (--xlarge) {
-  .grid--wide {
-    margin-left: -var(--spacing-large);
-  }
-}
-
-.grid--wide > .grid__item {
-  padding-left: var(--spacing-small);
-}
-
-@media (--medium) {
-  .grid--wide > .grid__item {
-    padding-left: var(--spacing);
-  }
-}
-
-@media (--xlarge) {
-  .grid--wide > .grid__item {
-    padding-left: var(--spacing-large);
-  }
-}
-
 /*
  * Grid item styles
  */
@@ -123,10 +81,14 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: var(--spacing-5);
+  padding-left: var(--spacing-4);
   vertical-align: top;
   letter-spacing: normal;
   word-spacing: normal;
+
+  @media (--medium) {
+    padding-left: var(--spacing-5);
+  }
 }
 
 /**

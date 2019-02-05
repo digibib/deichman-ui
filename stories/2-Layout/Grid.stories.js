@@ -34,6 +34,16 @@ stories.add(
 
       <Block top={4}>
         <Grid>
+          <GridItem base="one-whole">
+            <div className="sg-grid-wrapper">
+              <small>one-whole</small>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
+
+      <Block top={5}>
+        <Grid>
           <GridItem base="one-half">
             <div className="sg-grid-wrapper">
               <small>one-half</small>
@@ -42,6 +52,26 @@ stories.add(
           <GridItem base="one-half">
             <div className="sg-grid-wrapper">
               <small>one-half</small>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
+
+      <Block top={5}>
+        <Grid>
+          <GridItem base="one-third">
+            <div className="sg-grid-wrapper">
+              <small>one-third</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-third">
+            <div className="sg-grid-wrapper">
+              <small>one-third</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-third">
+            <div className="sg-grid-wrapper">
+              <small>one-third</small>
             </div>
           </GridItem>
         </Grid>
@@ -97,7 +127,7 @@ stories.add(
         </Grid>
       </Block>
 
-      <Block top={6}>
+      <Block top={8}>
         <h4>Responsive Grid</h4>
       </Block>
 
@@ -111,6 +141,41 @@ stories.add(
           <GridItem medium="one-half">
             <div className="sg-grid-wrapper">
               <small>Full on mobile, half-width on medium screens</small>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
+
+      <Block top={8}>
+        <h4>Vertically centered Grid</h4>
+      </Block>
+
+      <Block top={5}>
+        <Grid middle>
+          <GridItem base="one-half">
+            <div className="sg-grid-wrapper">
+              <small>I've got no padding</small>
+            </div>
+          </GridItem>
+          <GridItem base="one-half">
+            <div className="sg-grid-wrapper">
+              <Block top={5} bottom={5}>
+                <small>I've got padding</small>
+              </Block>
+            </div>
+          </GridItem>
+        </Grid>
+      </Block>
+
+      <Block top={8}>
+        <h4>Horizontally centered Grid</h4>
+      </Block>
+
+      <Block top={5}>
+        <Grid center>
+          <GridItem base="one-half">
+            <div className="sg-grid-wrapper">
+              <small>one-half</small>
             </div>
           </GridItem>
         </Grid>

@@ -4,6 +4,7 @@ import { withReadme } from 'storybook-readme';
 import { withKnobs } from '@storybook/addon-knobs';
 
 import Block from '../../src/components/Block';
+import Grid, { GridItem } from '../../src/components/Grid';
 import readme from './7-getting-started.stories.md';
 
 const stories = storiesOf('Base', module);
@@ -23,37 +24,33 @@ stories.add(
         <h4>General usage</h4>
       </Block>
 
-      <Block top={2}>
-        <p>Try to follow the below rules:</p>
-      </Block>
+      <Grid>
+        <GridItem medium="one-half">
+          <Block top={2}>
+            <ul class="list list--bulleted">
+              <li class="list__item">
+                Start with the "Container" component, which limits the width of the content
+              </li>
+              <li class="list__item">
+                If you need multiple columns, for example on wider screens, use the "Grid"
+              </li>
+              <li class="list__item">
+                Place "Block" components inside the grid items if you need vertical spacing between
+                Components
+              </li>
+              <li class="list__item">
+                Components has no margin/padding. They should be laid out on the page using a
+                combination of the Grid and Block components.
+              </li>
+              <li class="list__item">test</li>
+            </ul>
+          </Block>
 
-      <Block top={2}>
-        <ul class="list list--bulleted">
-          <li class="list__item">
-            Start with the "Container" component, which limits the width of the content
-          </li>
-          <li class="list__item">
-            If you need multiple columns, for example on wider screens, use the "Grid"
-          </li>
-          <li class="list__item">
-            Place "Block" components inside the grid items if you need vertical spacing between
-            Components
-          </li>
-          <li class="list__item">
-            Components has no margin/padding. They should be laid out on the page using a
-            combination of the Grid and Block components.
-          </li>
-          <li class="list__item">test</li>
-        </ul>
-      </Block>
-
-      <Block top={6}>
-        <h4>Example page:</h4>
-      </Block>
-
-      <Block top={2}>
-        <p>See the "Readme" tab at the bottom for an exampke of the above</p>
-      </Block>
+          <Block top={2}>
+            <p>See the "Readme" tab at the bottom for an example of the above</p>
+          </Block>
+        </GridItem>
+      </Grid>
     </article>
   )),
 );
