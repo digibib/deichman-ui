@@ -1,5 +1,5 @@
 .container {
-  display: inline-block;
+  display: block;
   width: 100%;
   margin: 0 auto;
   max-width: var(--page-width-max);
@@ -11,6 +11,10 @@
 
   @media (--large) {
     padding: 0 var(--page-gutters-large);
+  }
+
+  @media (--xlarge) {
+    margin: 0 auto;
   }
 
   /* Modifiers */
