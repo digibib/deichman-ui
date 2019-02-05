@@ -1,0 +1,34 @@
+.show-more {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--col-gray-3);
+
+  /* Elements */
+
+  &__button {
+    display: inline-block;
+    margin: 0;
+    line-height: 37px;
+    min-width: 90px;
+    padding: 0 var(--spacing-5);
+    color: var(--col-black);
+    background: var(--col-white);
+    font-family: var(--font-family);
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid var(--col-gray-3);
+    border-top: 0;
+    border-radius: var(--border-radius);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+}
