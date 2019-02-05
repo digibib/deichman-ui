@@ -15,3 +15,11 @@ import { Overlay } from 'deichman-ui';
 ```html
 <div class="overflow overflow--visible">...</div>
 ```
+
+### Props/modifiers:
+
+| prop name | type | without react    |
+| --------- | ---- | ---------------- |
+| visible   | bool | overlay--visible |
+| opaque    | bool | overlay--opaque  |
+| white     | bool | overlay--white   |

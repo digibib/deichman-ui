@@ -15,7 +15,11 @@ stories.add(
   'Overlay',
   withReadme(readme, () => (
     <div className="sg-container">
-      <Overlay visible={boolean('visible', false)} />
+      <Overlay
+        visible={boolean('visible', false)}
+        opaque={boolean('opaque', false)}
+        white={boolean('white', false)}
+      />
     </div>
   )),
 );
