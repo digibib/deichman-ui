@@ -18,3 +18,11 @@ import { ShowMore } from 'deichman-ui';
 
 - Give the button an ARIAControls prop to define what piece of content the button expands.
 - Give that piece of content an ID with this name.
+
+#### Props
+
+| prop name    | type   | without react | Description      |
+| ------------ | ------ | ------------- | ---------------- |
+| text         | string | N/A           | Text contents    |
+| ARIAControls | string | N/A           | See ARIA section |
+| onClick      | func   | N/A           | onClick action   |
