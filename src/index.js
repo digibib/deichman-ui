@@ -26,8 +26,6 @@ import Tag from './components/Tag';
 import TagList from './components/TagList';
 import Text from './components/Text';
 import Textarea from './components/Textarea';
-import Work from './components/Work';
-import WorkList from './components/WorkList';
 
 export {
   Accordion,
@@ -54,6 +52,4 @@ export {
   TagList,
   Text,
   Textarea,
-  Work,
-  WorkList,
 };
