@@ -38,6 +38,7 @@
   "dependencies": {
     "auto-bind": "^2.0.0",
     "classnames": "^2.2.6",
+    "postcss-responsive-type": "^1.0.0",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {

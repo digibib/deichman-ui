@@ -3,6 +3,7 @@ module.exports = ({ file, options, env }) => ({
     'postcss-import': {},
     'postcss-nested': {},
     'postcss-pixels-to-rem': {},
+    'postcss-responsive-type': {},
     'postcss-preset-env': {
       stage: 1,
       features: {

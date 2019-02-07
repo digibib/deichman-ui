@@ -31,15 +31,19 @@ body {
 
 h1,
 .h1 {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: responsive 32px 48px;
+  font-range: 420px 1440px;
+  line-height: responsive 40px 60px;
+  line-height-range: 420px 1440px;
   font-weight: bold;
 }
 
 h2,
 .h2 {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: responsive 24px 32px;
+  font-range: 420px 1440px;
+  line-height: responsive 32px 40px;
+  line-height-range: 420px 1440px;
   font-weight: bold;
 }
 
