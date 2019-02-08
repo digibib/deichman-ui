@@ -39,3 +39,7 @@ To publish/update the docs:
 ```
   npm run deploy-storybook
 ```
+
+### CDN Cache
+
+jsDelivr will cache the `@latest` tag for 24 hours, if you're using the latest version and wish to purge the cache, visit https://purge.jsdelivr.net/npm/@digibib/deichman-ui@latest/dist/index.css
