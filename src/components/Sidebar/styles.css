@@ -7,7 +7,7 @@
   visibility: hidden;
   z-index: var(--z-index-sidebar);
 
-  @media (min-width: 390px) {
+  @media (min-width: 600px) {
     right: initial;
   }
 
@@ -21,7 +21,7 @@
     transform: translateX(-100%);
     transition: all var(--transition-smooth);
 
-    @media (min-width: 390px) {
+    @media (min-width: 600px) {
       width: 300px;
       max-width: 100%;
     }

@@ -17,6 +17,7 @@
   }
 
   &__icon {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,15 +26,27 @@
     font-size: 27px;
     cursor: pointer;
     border-radius: var(--border-radius);
-    transition: all var(--transition-smooth);
+    overflow: hidden;
 
     &:before {
       content: '+';
       display: block;
     }
 
-    &:hover {
-      background: var(--col-gray-2);
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: currentColor;
+      opacity: 0;
+      transition: opacity var(--transition-smooth);
+    }
+
+    &:hover:after {
+      opacity: 0.1;
     }
   }
 
