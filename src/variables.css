@@ -51,6 +51,8 @@
   --page-gutters-medium: 80px;
   --page-gutters-large: 145px;
 
+  --min-touch-area: 40px;
+
   /**
    * Spacing.
    */

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import Icon from '../Icon';
-
 import './styles.css';
 
 class Accordion extends Component {
@@ -34,26 +32,37 @@ class Accordion extends Component {
 
     return (
       <section className={accordionClass}>
-        <button className="accordion__button" name={name} onClick={this.onToggle}>
+        <button
+          className="accordion__button"
+          onClick={this.onToggle}
+          id={`accordion-${name}`}
+          aria-controls={`accordion-section-${name}`}
+          aria-expanded={isOpen}
+        >
           <div className="accordion__button-inner">
             <h4>{text}</h4>
-            <Icon type={isOpen ? 'arrow-up' : 'arrow-down'} />
+            <span className="accordion__icon" />
           </div>
         </button>
-        <div className="accordion__contents">{isOpen && children}</div>
+        <div
+          className="accordion__contents"
+          id={`accordion-section-${name}`}
+          aria-labelledby={`accordion-${name}`}
+        >
+          {isOpen && children}
+        </div>
       </section>
     );
   }
 }
 
 Accordion.defaultProps = {
-  name: 'Accordion',
   text: 'Show contents',
   openByDefault: false,
 };
 
 Accordion.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   text: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.arrayOf(PropTypes.element)])
     .isRequired,

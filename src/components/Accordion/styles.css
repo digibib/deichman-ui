@@ -16,14 +16,42 @@
     justify-content: space-between;
   }
 
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--min-touch-area);
+    height: var(--min-touch-area);
+    font-size: 27px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-smooth);
+
+    &:before {
+      content: '+';
+      display: block;
+    }
+
+    &:hover {
+      background: var(--col-gray-2);
+    }
+  }
+
   &__contents {
     position: relative;
     top: 0;
     transition: all 0.2s ease;
   }
 
-  &--open .accordion__contents {
-    top: var(--spacing-3);
-    padding-bottom: var(--spacing-3);
+  &--open {
+    .accordion__contents {
+      top: var(--spacing-3);
+      padding-bottom: var(--spacing-3);
+    }
+    .accordion__icon {
+      &:before {
+        content: '−';
+      }
+    }
   }
 }
