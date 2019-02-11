@@ -23,3 +23,11 @@ import { Container } from 'deichman-ui';
 ```html
 <main class="container"><p>Container contents</p></main>
 ```
+
+### Props/modifiers:
+
+| prop name       | type   | without react               | description                           |
+| --------------- | ------ | --------------------------- | ------------------------------------- |
+| color           | string | container--{gray/dark}      | Controls background color             |
+| width           | string | container--{narrow/wide}    |                                       |
+| preventCollapse | bool   | container--prevent-collapse | Prevents margin collapse for children |

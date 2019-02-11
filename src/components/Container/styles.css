@@ -27,4 +27,8 @@
     background: var(--col-black);
     color: var(--col-white);
   }
+
+  &--prevent-collapse {
+    overflow: auto;
+  }
 }
