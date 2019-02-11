@@ -25,5 +25,6 @@
 
   &--dark {
     background: var(--col-black);
+    color: var(--col-white);
   }
 }
