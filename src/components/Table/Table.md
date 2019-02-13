@@ -1,25 +1,25 @@
 ### Usage
 
 ```jsx
-import { Table, TableHead, TableBody, TableRow, TableCell } from 'deichman-ui';
+import { Table } from 'deichman-ui';
 
 <Table>
-  <Head>
-    <Row>
-      <Cell isHead>Name</Cell>
-      <Cell isHead>Age</Cell>
-    </Row>
-  </Head>
-  <Body>
-    <Row>
-      <Cell>Amy</Cell>
-      <Cell>54</Cell>
-    </Row>
-    <Row>
-      <Cell>Franklin</Cell>
-      <Cell>34</Cell>
-    </Row>
-  </Body>
+  <Table.Head>
+    <Table.Row>
+      <Table.Cell isHead>Name</Table.Cell>
+      <Table.Cell isHead>Age</Table.Cell>
+    </Table.Row>
+  </Table.Head>
+  <Table.Body>
+    <Table.Row>
+      <Table.Cell>Amy</Table.Cell>
+      <Table.Cell>54</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell>Franklin</Table.Cell>
+      <Table.Cell>34</Table.Cell>
+    </Table.Row>
+  </Table.Body>
 </Table>;
 ```
 

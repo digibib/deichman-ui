@@ -12,7 +12,7 @@
 
     /* Force bg-color for header row */
     > .table__row {
-      background: var(--col-white) !important;
+      background: transparent !important;
     }
   }
 
@@ -21,7 +21,7 @@
   }
 
   &__row {
-    background: var(--col-white);
+    background: transparent;
 
     &:nth-child(odd) {
       background: var(--col-gray-1);
