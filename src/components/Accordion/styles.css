@@ -83,3 +83,9 @@
     }
   }
 }
+
+/* Prevent double borders when several accordions are stacked */
+
+.accordion--show-dividers + .accordion--show-dividers {
+  border-top: 0;
+}
