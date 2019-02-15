@@ -9,11 +9,12 @@ import Cell from './Cell';
 
 import './styles.css';
 
-const Table = ({ full, dark, condensed, children }) => {
+const Table = ({ full, dark, transparent, condensed, children }) => {
   const tableClass = classNames({
     table: true,
     'table--full': full,
     'table--dark': dark,
+    'table--transparent': transparent,
     'table--condensed': condensed,
   });
 
@@ -23,12 +24,14 @@ const Table = ({ full, dark, condensed, children }) => {
 Table.defaultProps = {
   full: false,
   dark: false,
+  transparent: false,
   condensed: false,
 };
 
 Table.propTypes = {
   full: PropTypes.bool,
   dark: PropTypes.bool,
+  transparent: PropTypes.bool,
   condensed: PropTypes.bool,
 };
 

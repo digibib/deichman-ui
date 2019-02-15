@@ -18,6 +18,7 @@ stories.add(
       <Table
         full={boolean('full', true)}
         dark={boolean('dark', false)}
+        transparent={boolean('transparent', false)}
         condensed={boolean('condensed', false)}
       >
         <Table.Head>

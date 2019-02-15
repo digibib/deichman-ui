@@ -53,3 +53,12 @@ import { Table } from 'deichman-ui';
   </tbody>
 </table>
 ```
+
+### Props/modifiers:
+
+| prop name   | type | without react      |
+| ----------- | ---- | ------------------ |
+| full        | bool | table--full        |
+| dark        | bool | table--dark        |
+| transparent | bool | table--transparent |
+| condensed   | bool | table--condensed   |

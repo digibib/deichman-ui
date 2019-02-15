@@ -15,7 +15,11 @@ stories.add(
   'Text',
   withReadme(readme, () => (
     <div className="sg-container">
-      <Text highlight={boolean('highlight', true)} strikeThrough={boolean('strikeThrough', false)}>
+      <Text
+        highlight={boolean('highlight', true)}
+        gray={boolean('gray', false)}
+        strikeThrough={boolean('strikeThrough', false)}
+      >
         Text here
       </Text>
     </div>

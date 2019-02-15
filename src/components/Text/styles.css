@@ -12,6 +12,10 @@
     font-weight: bold;
   }
 
+  &--gray {
+    color: var(--col-gray-6);
+  }
+
   &--strikeThrough {
     text-decoration: line-through;
   }

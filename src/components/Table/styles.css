@@ -45,6 +45,12 @@
     }
   }
 
+  &--transparent {
+    .table__row:nth-child(odd) {
+      background: transparent;
+    }
+  }
+
   &--condensed {
     .table__cell {
       padding: var(--spacing-3) var(--spacing-3);
