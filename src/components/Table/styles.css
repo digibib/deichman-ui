@@ -56,4 +56,10 @@
       padding: var(--spacing-3) var(--spacing-3);
     }
   }
+
+  &--no-padding {
+    .table__cell {
+      padding: 0;
+    }
+  }
 }

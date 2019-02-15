@@ -20,6 +20,7 @@ stories.add(
         dark={boolean('dark', false)}
         transparent={boolean('transparent', false)}
         condensed={boolean('condensed', false)}
+        noPadding={boolean('noPadding', false)}
       >
         <Table.Head>
           <Table.Row>

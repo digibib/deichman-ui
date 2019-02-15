@@ -62,3 +62,4 @@ import { Table } from 'deichman-ui';
 | dark        | bool | table--dark        |
 | transparent | bool | table--transparent |
 | condensed   | bool | table--condensed   |
+| noPadding   | bool | table--no-padding  |
