@@ -18,7 +18,7 @@ Local development is done via React-storybook. Clone the repo and run:
 ### Built with
 
 - [React](https://reactjs.org/)
-- [PostCSS](https://preset-env.cssdb.org/) CSS foundation for applications
+- [PostCSS](https://preset-env.cssdb.org/) CSS processing
 - [Backpack.css](https://github.com/chris-pearce/backpack.css) CSS foundation for applications
 - [Rollup](https://rollupjs.org/guide/en) JavaScript module bundler
 - [Storybook](https://storybook.js.org/) UI Development Environment
