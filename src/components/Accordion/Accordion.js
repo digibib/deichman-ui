@@ -23,11 +23,13 @@ class Accordion extends Component {
 
   render() {
     const { isOpen } = this.state;
-    const { text, name, children } = this.props;
+    const { text, name, large, showDividers, children } = this.props;
 
     const accordionClass = classNames({
       accordion: true,
       'accordion--open': isOpen,
+      'accordion--large': large,
+      'accordion--show-dividers': showDividers,
     });
 
     return (
@@ -40,7 +42,7 @@ class Accordion extends Component {
           aria-expanded={isOpen}
         >
           <div className="accordion__button-inner">
-            <h4>{text}</h4>
+            {large ? <h2>{text}</h2> : <h4>{text}</h4>}
             <span className="accordion__icon" />
           </div>
         </button>

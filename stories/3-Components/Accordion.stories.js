@@ -19,6 +19,8 @@ stories.add(
         name={text('name', 'dataveledning')}
         text={text('text', 'Les om dataveiledning')}
         openByDefault={boolean('openByDefault', false)}
+        showDividers={boolean('showDividers', false)}
+        large={boolean('large', false)}
       >
         <p>
           Gruer du deg for å bruke data? Det er vanskelig å stå utenfor den digitale utvikling

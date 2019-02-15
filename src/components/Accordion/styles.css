@@ -67,4 +67,19 @@
       }
     }
   }
+
+  &--show-dividers {
+    border: 1px solid var(--col-gray-3);
+    border-left: 0;
+    border-right: 0;
+    padding: var(--spacing-3) 0;
+  }
+
+  &--large {
+    padding: var(--spacing-5) 0;
+
+    .accordion__icon {
+      font-size: 35px;
+    }
+  }
 }
