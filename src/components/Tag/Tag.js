@@ -14,7 +14,7 @@ const Tag = ({ text, link, active, onClick, showClear }) => {
     'tag--show-clear': showClear,
   });
   return (
-    <a href={link} className={tagClass} onClick={onClick && onClick}>
+    <a href={link} className={tagClass} onClick={onClick ? onClick : undefined}>
       {text}
       {showClear && (
         <div className="tag__clear">

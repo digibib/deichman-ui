@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Overlay = ({ visible, opaque, white, onClick }) => {
+const Overlay = ({ visible, opaque, white, onClick, children }) => {
   const overlayClass = classNames({
     overlay: true,
     'overlay--visible': visible,
@@ -12,9 +12,11 @@ const Overlay = ({ visible, opaque, white, onClick }) => {
     'overlay--white': white,
   });
   return onClick ? (
-    <button className={overlayClass} onClick={onClick} />
+    <button className={overlayClass} onClick={onClick}>
+      {children}
+    </button>
   ) : (
-    <div className={overlayClass} />
+    <div className={overlayClass}>{children}</div>
   );
 };
 
