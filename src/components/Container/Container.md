@@ -31,3 +31,4 @@ import { Container } from 'deichman-ui';
 | color           | string | container--{gray/dark}      | Controls background color             |
 | width           | string | container--{narrow/wide}    |                                       |
 | preventCollapse | bool   | container--prevent-collapse | Prevents margin collapse for children |
+| noGutters       | bool   | container--no-gutters       | Removes side-gutters on mobile        |

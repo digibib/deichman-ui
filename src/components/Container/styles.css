@@ -31,4 +31,10 @@
   &--prevent-collapse {
     overflow: auto;
   }
+
+  &--no-gutters {
+    @media (--max-medium) {
+      padding: 0;
+    }
+  }
 }

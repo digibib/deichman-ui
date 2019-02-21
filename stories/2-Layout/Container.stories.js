@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withReadme } from 'storybook-readme';
-import { withKnobs, select } from '@storybook/addon-knobs';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 
 import Block from '../../src/components/Block';
 import Container from '../../src/components/Container';
@@ -32,6 +32,7 @@ stories.add(
       <Container
         color={select('color', colorOptions, 'default')}
         width={select('width', widthOptions, 'default')}
+        noGutters={boolean('noGutters', false)}
       >
         <Block top={5}>
           <h2>Container contents</h2>
