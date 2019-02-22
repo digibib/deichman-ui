@@ -1,6 +1,6 @@
 {
   "name": "@digibib/deichman-ui",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "Deichman style-guide and component library",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
