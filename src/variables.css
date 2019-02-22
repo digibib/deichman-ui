@@ -17,7 +17,7 @@
   --col-black: #000000;
   --col-link: #5499c7;
   --col-alpha: hsla(0, 0%, 100%, 0.5);
-  --col-focus: var(--col-brand);
+  --col-focus: #fbcd83;
   --col-focus-alternate: var(--col-white);
 
   --col-yellow: #fffe07;

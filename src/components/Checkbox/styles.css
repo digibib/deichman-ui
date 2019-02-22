@@ -59,8 +59,14 @@
     width: 100%;
   }
 
-  &[disabled] {
-    cursor: not-allowed;
+  &--disabled {
+    cursor: not-allowed !important;
     opacity: 0.5;
   }
+}
+
+/* A11y */
+
+.checkbox__input:focus + .checkbox__box {
+  background: var(--col-black);
 }
