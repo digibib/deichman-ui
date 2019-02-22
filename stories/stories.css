@@ -127,6 +127,7 @@ pre > code {
 }
 
 /* Icon examples */
+
 .sg-icons {
   display: flex;
   flex-wrap: wrap;
@@ -148,4 +149,24 @@ pre > code {
   font-size: 10px;
   margin-top: 5px;
   line-height: 1;
+}
+
+/* Flex example */
+
+.sg-flex-example-box-1 {
+  width: 50px;
+  height: 50px;
+  background: var(--col-ok-1);
+}
+
+.sg-flex-example-box-2 {
+  width: 75px;
+  height: 75px;
+  background: var(--col-ok-2);
+}
+
+.sg-flex-example-box-3 {
+  width: 100px;
+  height: 100px;
+  background: var(--col-ok-3);
 }
