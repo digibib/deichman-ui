@@ -5,7 +5,7 @@
     text-align: left;
     vertical-align: bottom;
 
-    .table__cell {
+    th {
       font-weight: bold;
       padding: var(--spacing-2) var(--spacing-4);
     }
@@ -60,6 +60,52 @@
   &--no-padding {
     .table__cell {
       padding: 0;
+    }
+  }
+
+  &--vertical {
+    /* No bg-color for vertical tables */
+    .table__row {
+      background: transparent !important;
+    }
+
+    /* Vertical table headers */
+    th {
+      font-weight: normal;
+      color: var(--col-gray-6);
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+
+  &--responsive {
+    @media (--max-medium) {
+      .table__head {
+        display: none !important;
+      }
+
+      .table__cell {
+        display: block;
+
+        padding: 0 var(--spacing-4);
+        margin: var(--spacing-4) 0;
+
+        &:before {
+          content: attr(data-label);
+          display: block;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &--responsive.table--vertical {
+    @media (--max-medium) {
+      .table__cell {
+        display: block;
+        padding: 0;
+        margin: var(--spacing-2) 0;
+      }
     }
   }
 }

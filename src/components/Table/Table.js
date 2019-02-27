@@ -9,7 +9,16 @@ import Cell from './Cell';
 
 import './styles.css';
 
-const Table = ({ full, dark, transparent, condensed, noPadding, children }) => {
+const Table = ({
+  full,
+  dark,
+  transparent,
+  condensed,
+  noPadding,
+  responsive,
+  vertical,
+  children,
+}) => {
   const tableClass = classNames({
     table: true,
     'table--full': full,
@@ -17,6 +26,8 @@ const Table = ({ full, dark, transparent, condensed, noPadding, children }) => {
     'table--transparent': transparent,
     'table--condensed': condensed,
     'table--no-padding': noPadding,
+    'table--vertical': vertical,
+    'table--responsive': responsive,
   });
 
   return <table className={tableClass}>{children}</table>;
@@ -28,6 +39,8 @@ Table.defaultProps = {
   transparent: false,
   condensed: false,
   noPadding: false,
+  vertical: false,
+  responsive: true,
 };
 
 Table.propTypes = {
@@ -36,6 +49,8 @@ Table.propTypes = {
   transparent: PropTypes.bool,
   condensed: PropTypes.bool,
   noPadding: PropTypes.bool,
+  vertical: PropTypes.bool,
+  responsive: PropTypes.bool,
 };
 
 Table.Head = Head;
