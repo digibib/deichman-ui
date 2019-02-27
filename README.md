@@ -4,7 +4,8 @@
 
 Style-guide and component library for the Oslo public libraries
 
-[Live docs](https://digibib.github.io/deichman-ui)
+- [Documentation](https://digibib.github.io/deichman-ui)
+- [Changelog](CHANGELOG.md)
 
 ### Developing
 
@@ -24,6 +25,8 @@ Local development is done via React-storybook. Clone the repo and run:
 - [Storybook](https://storybook.js.org/) UI Development Environment
 
 ### Publishing
+
+Make sure to update the [changelog](CHANGELOG.md)
 
 To publish a new version of the library to npm:
 

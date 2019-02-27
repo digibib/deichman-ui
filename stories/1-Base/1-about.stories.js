@@ -47,11 +47,14 @@ stories.add('About', () => (
       </figure>
     </Block>
     <Block top={2}>
-      <p>PS: Check the version number</p>
+      <p>
+        PS: Check the version number (
+        <a href="https://github.com/digibib/deichman-ui/blob/master/CHANGELOG.md">Changelog</a>)
+      </p>
     </Block>
 
     <Block top={4}>
-      <a href="https://github.com/digibib/deichman-ui">View on github</a>
+      <a href="https://github.com/digibib/deichman-ui">Source code on github</a>
     </Block>
   </article>
 ));
