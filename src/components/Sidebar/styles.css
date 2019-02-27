@@ -19,7 +19,7 @@
     height: 100%;
     background: var(--col-white);
     transform: translateX(-100%);
-    transition: all var(--transition-smooth);
+    transition: transform var(--transition-smooth);
 
     @media (min-width: 600px) {
       width: 300px;

@@ -13,7 +13,7 @@
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
 
   /* Modifiers */
 
