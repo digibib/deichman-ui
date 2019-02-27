@@ -31,7 +31,7 @@ stories.add(
     <article className="sg-container">
       <Container
         color={select('color', colorOptions, 'default')}
-        width={select('width', widthOptions, 'default')}
+        preventCollapse={boolean('preventCollapse', false)}
         noGutters={boolean('noGutters', false)}
       >
         <Block top={5}>

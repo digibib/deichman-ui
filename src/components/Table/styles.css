@@ -108,4 +108,9 @@
       }
     }
   }
+  &--condensed.table--vertical {
+    .table__cell {
+      padding: var(--spacing-1) var(--spacing-3);
+    }
+  }
 }

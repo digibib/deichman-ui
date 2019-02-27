@@ -4,30 +4,30 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Container = ({ children, color, width, preventCollapse, noGutters }) => {
+const Container = ({ children, color, preventCollapse, noGutters }) => {
   const containerClass = classNames({
     container: true,
-    'container--narrow': width === 'narrow',
-    'container--wide': width === 'wide',
     'container--gray': color === 'gray',
     'container--dark': color === 'dark',
     'container--prevent-collapse': preventCollapse,
     'container--no-gutters': noGutters,
   });
 
-  return <div className={containerClass}>{children}</div>;
+  return (
+    <div className={containerClass}>
+      <div className="container__inner">{children}</div>
+    </div>
+  );
 };
 
 Container.defaultProps = {
   color: 'default',
-  width: 'default',
   preventCollapse: false,
   noGutters: false,
 };
 
 Container.propTypes = {
   color: PropTypes.string,
-  width: PropTypes.string,
   preventCollapse: PropTypes.bool,
   noGutters: PropTypes.bool,
   children: PropTypes.node.isRequired,

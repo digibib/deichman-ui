@@ -1,20 +1,25 @@
 .container {
   display: block;
   width: 100%;
-  margin: 0 auto;
-  max-width: var(--page-width-max);
-  padding: 0 var(--page-gutters-small);
 
-  @media (--medium) {
-    padding: 0 var(--page-gutters-medium);
-  }
+  /* Elements */
 
-  @media (--large) {
-    padding: 0 var(--page-gutters-large);
-  }
-
-  @media (--xlarge) {
+  &__inner {
     margin: 0 auto;
+    max-width: var(--page-width-max);
+    padding: 0 var(--page-gutters-small);
+
+    @media (--medium) {
+      padding: 0 var(--page-gutters-medium);
+    }
+
+    @media (--large) {
+      padding: 0 var(--page-gutters-large);
+    }
+
+    @media (--xlarge) {
+      margin: 0 auto;
+    }
   }
 
   /* Modifiers */
@@ -34,7 +39,9 @@
 
   &--no-gutters {
     @media (--max-medium) {
-      padding: 0;
+      .container__inner {
+        padding: 0;
+      }
     }
   }
 }

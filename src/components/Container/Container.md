@@ -21,7 +21,11 @@ import { Container } from 'deichman-ui';
 #### Without React:
 
 ```html
-<main class="container"><p>Container contents</p></main>
+<section class="container">
+  <div class="container__inner">
+    <p>Container contents</p>
+  </div>
+</section>
 ```
 
 ### Props/modifiers:
@@ -29,6 +33,5 @@ import { Container } from 'deichman-ui';
 | prop name       | type   | without react               | description                           |
 | --------------- | ------ | --------------------------- | ------------------------------------- |
 | color           | string | container--{gray/dark}      | Controls background color             |
-| width           | string | container--{narrow/wide}    |                                       |
 | preventCollapse | bool   | container--prevent-collapse | Prevents margin collapse for children |
 | noGutters       | bool   | container--no-gutters       | Removes side-gutters on mobile        |
