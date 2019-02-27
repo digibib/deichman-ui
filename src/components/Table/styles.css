@@ -74,7 +74,7 @@
       font-weight: normal;
       color: var(--col-gray-6);
       text-align: left;
-      padding-left: 0;
+      padding-left: 0 !important;
     }
   }
 

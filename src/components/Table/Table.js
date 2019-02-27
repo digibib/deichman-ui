@@ -40,7 +40,7 @@ Table.defaultProps = {
   condensed: false,
   noPadding: false,
   vertical: false,
-  responsive: true,
+  responsive: false,
 };
 
 Table.propTypes = {
