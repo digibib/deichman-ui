@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 3.3.0
+
+### Changed
+
+- `Block` now accepts `responsive` prop, see docs for info
+
 ## 3.2.0
 
 ### Changed
