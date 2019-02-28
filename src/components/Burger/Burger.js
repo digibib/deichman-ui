@@ -6,14 +6,14 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const Burger = ({ open, openText, closeText, onClick }) => {
+const Burger = ({ open, openText, closeText, label, onClick }) => {
   const burgerClass = classNames({
     burger: true,
     'burger--open': open,
   });
 
   return (
-    <button className={burgerClass} onClick={onClick}>
+    <button className={burgerClass} onClick={onClick} aria-label={label}>
       <span className="burger__text">{open ? closeText : openText}</span>
       <span className="burger__inner">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -30,10 +30,12 @@ Burger.defaultProps = {
   open: false,
   openText: 'Meny',
   closeText: 'Lukk',
+  label: 'Open main menu',
 };
 
 Burger.propTypes = {
   open: PropTypes.bool,
+  label: PropTypes.string,
   openText: PropTypes.string,
   closeText: PropTypes.string,
   onClick: PropTypes.func.isRequired,
