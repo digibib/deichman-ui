@@ -12,11 +12,11 @@ const Overlay = ({ visible, opaque, white, onClick, children }) => {
     'overlay--white': white,
   });
   return onClick ? (
-    <button className={overlayClass} onClick={onClick} aria-hidden="true">
+    <button className={overlayClass} onClick={onClick} tabIndex="-1" aria-hidden="true">
       {children}
     </button>
   ) : (
-    <div className={overlayClass} aria-hidden="true">
+    <div className={overlayClass} tabIndex="-1" aria-hidden="true">
       {children}
     </div>
   );
