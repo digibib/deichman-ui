@@ -59,7 +59,8 @@
 
   &--no-padding {
     .table__cell {
-      padding: 0;
+      margin: 0 !important;
+      padding: 0 !important;
     }
   }
 
@@ -69,11 +70,16 @@
       background: transparent !important;
     }
 
+    .table__cell {
+      padding: var(--spacing-3) var(--spacing-5) 0 0;
+    }
+
     /* Vertical table headers */
     th {
       font-weight: normal;
       color: var(--col-gray-6);
       text-align: left;
+      vertical-align: top;
       padding-left: 0 !important;
     }
   }
@@ -104,13 +110,8 @@
       .table__cell {
         display: block;
         padding: 0;
-        margin: var(--spacing-2) 0;
+        margin: var(--spacing-1) 0;
       }
-    }
-  }
-  &--condensed.table--vertical {
-    .table__cell {
-      padding: var(--spacing-1) var(--spacing-3);
     }
   }
 }
