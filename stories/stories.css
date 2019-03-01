@@ -170,3 +170,25 @@ pre > code {
   height: 100px;
   background: var(--col-ok-3);
 }
+
+/* Logo examples */
+
+.sg-image-box-wrapper {
+  max-width: 1080px;
+}
+
+.sg-image-box {
+  padding: var(--spacing-8);
+  border: 1px solid #eaeaea;
+}
+
+.sg-image-box--inverted {
+  background: black;
+}
+
+.sg-image {
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+  max-height: 40px;
+}

@@ -45,6 +45,15 @@ export default {
     }),
     resolve(),
     commonjs(),
-    copy([{ files: 'public/icons.svg', dest: 'dist' }], { verbose: true }),
+    copy(
+      [
+        { files: 'public/icons.svg', dest: 'dist' },
+        { files: 'public/images/logo.svg', dest: 'dist' },
+        { files: 'public/images/logo-inverted.svg', dest: 'dist' },
+        { files: 'public/images/logo-small.svg', dest: 'dist' },
+        { files: 'public/images/logo-small-inverted.svg', dest: 'dist' },
+      ],
+      { verbose: true },
+    ),
   ],
 };
