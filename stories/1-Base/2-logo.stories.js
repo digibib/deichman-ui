@@ -59,7 +59,9 @@ stories.add('Logo', () => (
                 <img className="sg-image" src={logoSrcSmall} alt="logo" />
               </div>
               <pre>
-                <code>{'https://cdn.jsdelivr.net/npm/@digibib/deichman-ui/dist/logo.svg'}</code>
+                <code>
+                  {'https://cdn.jsdelivr.net/npm/@digibib/deichman-ui/dist/logo-small.svg'}
+                </code>
               </pre>
             </figure>
           </Block>
@@ -72,7 +74,7 @@ stories.add('Logo', () => (
               </div>
               <pre>
                 <code>
-                  {'https://cdn.jsdelivr.net/npm/@digibib/deichman-ui/dist/logo-inverted.svg'}
+                  {'https://cdn.jsdelivr.net/npm/@digibib/deichman-ui/dist/logo-small-inverted.svg'}
                 </code>
               </pre>
             </figure>
