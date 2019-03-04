@@ -38,7 +38,6 @@
   "dependencies": {
     "auto-bind": "^2.0.0",
     "classnames": "^2.2.6",
-    "postcss-responsive-type": "^1.0.0",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
@@ -66,6 +65,7 @@
     "postcss-nested": "^4.1.1",
     "postcss-pixels-to-rem": "^0.8.0",
     "postcss-preset-env": "^6.5.0",
+    "postcss-responsive-type": "^1.0.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "rollup": "^1.1.2",

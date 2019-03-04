@@ -61,7 +61,7 @@
 
 /* Accessibility */
 
-.screenReaders {
+.sr {
   position: absolute;
   left: -10000px;
   top: auto;

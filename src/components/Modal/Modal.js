@@ -41,7 +41,15 @@ class Modal extends React.Component {
     return (
       <div className={modalClass}>
         <Overlay visible={visible} onClick={onClose} />
-        <div className="modal__inner" role="dialog" aria-labelledby={name} aria-hidden={!visible}>
+        <div
+          className="modal__inner"
+          role="dialog"
+          aria-labelledby={`${name}-modal`}
+          aria-hidden={!visible}
+        >
+          <h1 className="modal__title sr" id={`${name}-modal`}>
+            {name}
+          </h1>
           {children}
         </div>
       </div>

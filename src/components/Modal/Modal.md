@@ -12,6 +12,13 @@ import { Modal } from 'deichman-ui';
 
 #### Without React:
 
-```html
-<div class="modal">...</div>
-```
+N/A
+
+### Props/modifiers:
+
+| prop name | type   | comments                |
+| --------- | ------ | ----------------------- |
+| visible   | bool   |                         |
+| name      | string | required                |
+| width     | string | narrow/medium/wide/full |
+| onClose   | func   |                         |
