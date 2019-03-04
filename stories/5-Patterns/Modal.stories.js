@@ -37,7 +37,7 @@ class ModalWrapper extends Component {
         <Block top={6}>
           <h1>Welcome!</h1>
         </Block>
-        <Block top={2}>
+        <Block top={4}>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quo rerum! Temporibus,
             modi dolore corrupti at ipsam et sed aut praesentium blanditiis repellat, suscipit

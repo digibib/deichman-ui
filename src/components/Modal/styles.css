@@ -12,14 +12,23 @@
   /* Elements */
 
   &__inner {
+    max-height: 90vh;
+    width: 100%;
     background: var(--col-white);
     border-radius: var(--border-radius);
+    margin: var(--spacing-5);
     padding: var(--spacing-5);
     max-width: 400px;
     transform: translateY(5px);
     opacity: 0;
     transition: all var(--transition-smooth);
     z-index: var(--z-index-modal);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   /* Modifiers */
@@ -36,6 +45,12 @@
   &--medium {
     .modal__inner {
       max-width: 500px;
+    }
+  }
+
+  &--wide {
+    .modal__inner {
+      max-width: 1150px;
     }
   }
 
