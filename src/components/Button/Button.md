@@ -23,10 +23,12 @@ import { Button } from 'deichman-ui';
 
 ### Props/modifiers:
 
-| prop name | type | without react     |
-| --------- | ---- | ----------------- |
-| primary   | bool | button--primary   |
-| disabled  | bool | button--disabled  |
-| full      | bool | button--full      |
-| icon      | bool | button--with-icon |
-| onClick   | func |                   |
+| prop name | type | without react     | Description       |
+| --------- | ---- | ----------------- | ----------------- |
+| primary   | bool | button--primary   |                   |
+| disabled  | bool | button--disabled  |                   |
+| full      | bool | button--full      |                   |
+| condensed | bool | button--condensed | Less side padding |
+| small     | bool | button--small     | Smaller font size |
+| icon      | bool | button--with-icon |                   |
+| onClick   | func |                   |                   |

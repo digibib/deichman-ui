@@ -27,6 +27,15 @@
     width: 100%;
   }
 
+  &--condensed {
+    padding: 0 var(--spacing-4);
+  }
+
+  &--small {
+    font-size: 14px;
+    line-height: 2.7;
+  }
+
   &--with-icon {
     padding: 0 30px 0 10px;
 

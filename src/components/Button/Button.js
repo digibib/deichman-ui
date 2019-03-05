@@ -6,11 +6,13 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const Button = ({ onClick, primary, disabled, children, full, icon }) => {
+const Button = ({ onClick, primary, disabled, small, condensed, children, full, icon }) => {
   const buttonClass = classNames({
     button: true,
     'button--primary': primary,
     'button--disabled': disabled,
+    'button--small': small,
+    'button--condensed': condensed,
     'button--with-icon': icon !== '',
     'button--full': full,
   });
@@ -26,6 +28,8 @@ const Button = ({ onClick, primary, disabled, children, full, icon }) => {
 Button.defaultProps = {
   primary: false,
   disabled: false,
+  small: false,
+  condensed: false,
   full: false,
   icon: '',
 };
@@ -33,6 +37,8 @@ Button.defaultProps = {
 Button.propTypes = {
   primary: PropTypes.bool,
   disabled: PropTypes.bool,
+  small: PropTypes.bool,
+  condensed: PropTypes.bool,
   full: PropTypes.bool,
   icon: PropTypes.string,
   onClick: PropTypes.func.isRequired,
