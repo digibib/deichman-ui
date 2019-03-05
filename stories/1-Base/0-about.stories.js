@@ -9,21 +9,14 @@ const stories = storiesOf('Base', module);
 
 stories.add('About', () => (
   <article className="sg-container">
-    <Block top={3}>
-      <img style={{ width: '300px' }} src={logoSrc} />
-    </Block>
-    <Block top={4}>
-      <p>Style-guide and component library</p>
-    </Block>
-
+    <h1>Deichman-ui</h1>
+    <p>Style-guide and component library</p>
     <Block top={4}>
       <img src="https://img.shields.io/npm/v/@digibib/deichman-ui.svg" alt="version" />
     </Block>
-
     <Block top={6}>
       <h4>Usage</h4>
     </Block>
-
     <Block top={4}>
       <figure>
         <figcaption>With React:</figcaption>
@@ -52,7 +45,6 @@ stories.add('About', () => (
         <a href="https://github.com/digibib/deichman-ui/blob/master/CHANGELOG.md">Changelog</a>)
       </p>
     </Block>
-
     <Block top={4}>
       <a href="https://github.com/digibib/deichman-ui">Source code on github</a>
     </Block>

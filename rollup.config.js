@@ -52,6 +52,7 @@ export default {
         { files: 'public/images/logo-inverted.svg', dest: 'dist' },
         { files: 'public/images/logo-small.svg', dest: 'dist' },
         { files: 'public/images/logo-small-inverted.svg', dest: 'dist' },
+        { files: 'public/logo-styleguide.svg', dest: 'dist' },
       ],
       { verbose: true },
     ),

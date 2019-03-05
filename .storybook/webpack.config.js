@@ -1,7 +1,13 @@
 const path = require('path');
 
-module.exports = (storybookBaseConfig, env) => {
-  storybookBaseConfig.module.rules.push(
+module.exports = ({ config, mode }) => {
+  // Remove existing css rules
+  const newRules = config.module.rules
+    .filter(r => !r.test.test('.css'))
+    .filter(r => !r.test.test('.svg'));
+
+  // Add new rules
+  newRules.push(
     {
       test: /\.css$/,
       use: [
@@ -33,5 +39,7 @@ module.exports = (storybookBaseConfig, env) => {
     },
   );
 
-  return storybookBaseConfig;
+  config.module.rules = newRules;
+
+  return config;
 };

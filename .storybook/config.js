@@ -1,17 +1,20 @@
 import React from 'react';
-import { configure, addDecorator } from '@storybook/react';
-import { withOptions } from '@storybook/addon-options';
+import { configure, addDecorator, addParameters } from '@storybook/react';
+import { create } from '@storybook/theming';
 import outlinewatcher from '../src/helpers/outlineWatcher';
 
 import IconLoader from '../src/components/IconLoader';
 
 // Apply custom Storybook config
-addDecorator(
-  withOptions({
-    name: 'Deichman UI',
-    url: '#',
-  }),
-);
+addParameters({
+  options: {
+    theme: create({
+      brandTitle: 'Deichman UI',
+      brandUrl: '#',
+      brandImage: '/logo-styleguide.svg',
+    }),
+  },
+});
 
 // Make SVG Icons available to all stories
 addDecorator(story => (
