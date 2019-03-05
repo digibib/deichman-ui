@@ -21,8 +21,12 @@
     opacity: 0.2;
   }
 
-  &--opaque {
+  &--opaque.overlay--visible {
     opacity: 1;
+  }
+
+  &--for-modal.overlay--visible {
+    opacity: 0.8;
   }
 
   &--white {

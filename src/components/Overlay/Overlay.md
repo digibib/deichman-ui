@@ -18,8 +18,9 @@ import { Overlay } from 'deichman-ui';
 
 ### Props/modifiers:
 
-| prop name | type | without react    |
-| --------- | ---- | ---------------- |
-| visible   | bool | overlay--visible |
-| opaque    | bool | overlay--opaque  |
-| white     | bool | overlay--white   |
+| prop name | type | without react      | description  |
+| --------- | ---- | ------------------ | ------------ |
+| visible   | bool | overlay--visible   |              |
+| opaque    | bool | overlay--opaque    |              |
+| white     | bool | overlay--white     |              |
+| forModal  | bool | overlay--for-modal | More opacity |

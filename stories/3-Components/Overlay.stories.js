@@ -19,6 +19,7 @@ stories.add(
         visible={boolean('visible', false)}
         opaque={boolean('opaque', false)}
         white={boolean('white', false)}
+        forModal={boolean('forModal', false)}
       />
     </div>
   )),

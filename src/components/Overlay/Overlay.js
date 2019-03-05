@@ -4,11 +4,12 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Overlay = ({ visible, opaque, white, onClick, children }) => {
+const Overlay = ({ visible, opaque, forModal, white, onClick, children }) => {
   const overlayClass = classNames({
     overlay: true,
     'overlay--visible': visible,
     'overlay--opaque': opaque,
+    'overlay--for-modal': forModal,
     'overlay--white': white,
   });
   return onClick ? (
@@ -25,6 +26,7 @@ const Overlay = ({ visible, opaque, white, onClick, children }) => {
 Overlay.defaultProps = {
   visible: false,
   opaque: false,
+  forModal: false,
   white: false,
   onClick: false,
 };
@@ -33,6 +35,7 @@ Overlay.propTypes = {
   visible: PropTypes.bool,
   opaque: PropTypes.bool,
   white: PropTypes.bool,
+  forModal: PropTypes.bool,
   onClick: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
 };
 

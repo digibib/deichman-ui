@@ -40,7 +40,7 @@ class Modal extends React.Component {
 
     return (
       <div className={modalClass}>
-        <Overlay visible={visible} onClick={onClose} />
+        <Overlay visible={visible} onClick={onClose} forModal />
         <div
           className="modal__inner"
           role="dialog"
