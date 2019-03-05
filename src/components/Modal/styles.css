@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  z-index: var(--z-index-modal);
 
   /* Elements */
 
