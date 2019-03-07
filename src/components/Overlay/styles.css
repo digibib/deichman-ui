@@ -27,6 +27,7 @@
 
   &--for-modal.overlay--visible {
     opacity: 0.8;
+    z-index: initial;
   }
 
   &--white {
