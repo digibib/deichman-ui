@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  z-index: var(--z-index-modal);
 
   /* Elements */
 
@@ -37,6 +36,7 @@
 
   &--visible {
     visibility: visible;
+    z-index: var(--z-index-modal);
 
     .modal__inner {
       opacity: 1;

@@ -19,7 +19,7 @@
     height: 100%;
     background: var(--col-white);
     transform: translateX(-100%);
-    transition: transform var(--transition-smooth);
+    transition: all var(--transition-smooth);
 
     @media (min-width: 600px) {
       width: 300px;
@@ -34,6 +34,7 @@
 
     .sidebar__inner {
       transform: translateX(0);
+      transition: transform var(--transition-smooth);
     }
   }
 }
