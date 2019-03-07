@@ -22,7 +22,6 @@
     max-width: 400px;
     transform: translateY(5px);
     opacity: 0;
-    z-index: var(--z-index-modal);
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 
