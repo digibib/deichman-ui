@@ -6,6 +6,7 @@ import Grid, { GridItem } from './components/Grid';
 
 // Components
 import Accordion from './components/Accordion';
+import Banner from './components/Banner';
 import Burger from './components/Burger';
 import Button from './components/Button';
 import Checkbox from './components/Checkbox';
@@ -30,6 +31,7 @@ import Textarea from './components/Textarea';
 
 export {
   Accordion,
+  Banner,
   Block,
   Burger,
   Button,
