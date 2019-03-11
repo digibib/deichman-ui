@@ -15,7 +15,7 @@ stories.add(
   'Loader',
   withReadme(readme, () => (
     <div>
-      <div className="sg-container">
+      <div className="sg-loader-wrapper">
         <Loader />
       </div>
     </div>

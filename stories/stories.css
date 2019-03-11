@@ -192,3 +192,12 @@ pre > code {
   display: block;
   max-height: 40px;
 }
+
+/* Loader example */
+
+.sg-loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
