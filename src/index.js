@@ -17,6 +17,7 @@ import Icon from './components/Icon';
 import IconLoader from './components/IconLoader';
 import Input from './components/Input';
 import List from './components/List';
+import Loader from './components/Loader';
 import Modal from './components/Modal';
 import Overlay from './components/Overlay';
 import Overflow from './components/Overflow';
@@ -45,6 +46,7 @@ export {
   IconLoader,
   Input,
   List,
+  Loader,
   Modal,
   Overlay,
   Overflow,
