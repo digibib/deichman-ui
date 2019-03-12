@@ -19,4 +19,12 @@
   &--strikeThrough {
     text-decoration: line-through;
   }
+
+  &--drop-cap&::first-letter {
+    padding: 0.3em 0.2em 0 0;
+    initial-letter: 2;
+    font-size: 300%;
+    font-weight: bold;
+    float: left;
+  }
 }
