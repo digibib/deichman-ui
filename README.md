@@ -1,6 +1,7 @@
 ## Deichman-ui
 
 ![NPM version](https://img.shields.io/npm/v/@digibib/deichman-ui.svg)
+![Bundle size](https://badgen.net/bundlephobia/minzip/@digibib/deichman-ui)
 
 Style-guide and component library for the Oslo public libraries
 

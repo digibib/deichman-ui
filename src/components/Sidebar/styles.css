@@ -1,14 +1,16 @@
 .sidebar {
   position: fixed;
-  left: 0;
+  width: 100%;
+  right: 100%;
   top: 0;
   bottom: 0;
-  right: 0;
   visibility: hidden;
   z-index: var(--z-index-sidebar);
 
   @media (min-width: 600px) {
     right: initial;
+    width: initial;
+    left: -300px;
   }
 
   /* Elements */
@@ -18,7 +20,7 @@
     width: 100%;
     height: 100%;
     background: var(--col-white);
-    transform: translateX(-100%);
+    transform: translateX(0%);
     transition: all var(--transition-smooth);
 
     @media (min-width: 600px) {
@@ -33,7 +35,7 @@
     visibility: visible;
 
     .sidebar__inner {
-      transform: translateX(0);
+      transform: translateX(100%);
       transition: transform var(--transition-smooth);
     }
   }
