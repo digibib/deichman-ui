@@ -17,7 +17,7 @@ stories.add('About', () => (
     </Block>
 
     <Block top={4}>
-      <img src="https://img.shields.io/npm/v/@digibib/deichman-ui.svg" alt="version" />
+      <img src="https://img.shields.io/npm/v/@digibib/deichman-ui.svg" alt="version" />{' '}
       <img src="https://badgen.net/bundlephobia/minzip/@digibib/deichman-ui" alt="bundle size" />
     </Block>
 
