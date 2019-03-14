@@ -41,10 +41,10 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@storybook/addon-knobs": "^5.0.0",
-    "@storybook/addon-viewport": "^5.0.0",
-    "@storybook/addons": "^5.0.0",
-    "@storybook/react": "^5.0.0",
+    "@storybook/addon-knobs": "^5.0.1",
+    "@storybook/addon-viewport": "^5.0.1",
+    "@storybook/addons": "^5.0.1",
+    "@storybook/react": "^5.0.1",
     "@storybook/storybook-deployer": "^2.8.1",
     "@svgr/rollup": "^4.1.0",
     "autoprefixer": "^9.4.4",
