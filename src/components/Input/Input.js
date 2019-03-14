@@ -43,6 +43,7 @@ const Input = ({
         placeholder={placeholder}
         disabled={disabled}
         onChange={onChange}
+        {...props}
       />
       {showClear && (
         <button className="input__clear" onClick={onClear}>

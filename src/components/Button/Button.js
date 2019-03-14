@@ -35,6 +35,7 @@ const Button = ({
       disabled={disabled}
       type={type}
       aria-label={label}
+      {...props}
     >
       {icon && <Icon type={icon} />}
       {children}

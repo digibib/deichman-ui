@@ -15,7 +15,9 @@ const Container = ({ children, color, preventCollapse, noGutters }) => {
 
   return (
     <div className={containerClass}>
-      <div className="container__inner">{children}</div>
+      <div className="container__inner" {...props}>
+        {children}
+      </div>
     </div>
   );
 };

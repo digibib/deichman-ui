@@ -14,7 +14,11 @@ const Block = ({ top, bottom, left, right, responsive, children }) => {
     'block--responsive': responsive,
   });
 
-  return <div className={blockClass}>{children}</div>;
+  return (
+    <div className={blockClass} {...props}>
+      {children}
+    </div>
+  );
 };
 
 Block.defaultProps = {
