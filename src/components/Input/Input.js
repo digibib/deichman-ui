@@ -18,6 +18,7 @@ const Input = ({
   onClear,
   onChange,
   full,
+  ...props
 }) => {
   const inputClass = classNames({
     input: true,

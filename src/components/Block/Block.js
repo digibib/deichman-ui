@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Block = ({ top, bottom, left, right, responsive, children }) => {
+const Block = ({ top, bottom, left, right, responsive, children, ...props }) => {
   const blockClass = classNames({
     block: true,
     [`block--top-${top}`]: top,

@@ -17,6 +17,7 @@ const Button = ({
   icon,
   type,
   label,
+  ...props
 }) => {
   const buttonClass = classNames({
     button: true,
