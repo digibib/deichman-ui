@@ -13,7 +13,7 @@ class Modal extends React.Component {
   }
 
   keyDown(e) {
-    if (e.keyCode === 27) {
+    if (!this.props.visible && e.keyCode === 27) {
       this.props.onClose && this.props.onClose(e);
     }
   }
