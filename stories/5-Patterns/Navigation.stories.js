@@ -40,8 +40,8 @@ class Navigation extends Component {
             <h4>Welcome!</h4>
           </Block>
         </Sidebar>
-        <Overlay visible={isOpen} />
-        <div style={{ position: 'fixed', bottom: '0', left: '0', zIndex: '3', padding: '40px' }}>
+        <Overlay visible={isOpen} onClick={this.onToggle} />
+        <div style={{ position: 'fixed', bottom: '0', left: '0', zIndex: '300', padding: '40px' }}>
           <Burger open={isOpen} onClick={this.onToggle} />
         </div>
       </Container>

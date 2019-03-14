@@ -8,12 +8,11 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  z-index: var(--z-index-modal);
 
   /* Elements */
 
   &__inner {
-    max-height: 90vh;
+    max-height: calc(100% - var(--spacing-5) * 2);
     width: 100%;
     background: var(--col-white);
     border-radius: var(--border-radius);
@@ -22,10 +21,11 @@
     max-width: 400px;
     transform: translateY(5px);
     opacity: 0;
-    transition: all var(--transition-smooth);
-    z-index: var(--z-index-modal);
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+
+    /* Animate out appearance */
+    transition: all var(--transition-smooth);
 
     &::-webkit-scrollbar {
       display: none;
@@ -36,10 +36,14 @@
 
   &--visible {
     visibility: visible;
+    z-index: var(--z-index-modal);
 
     .modal__inner {
       opacity: 1;
-      transform: scale(1);
+      transform: translateY(0);
+
+      /* Animate in appearance */
+      transition: opacity var(--transition-smooth), transform var(--transition-smooth);
     }
   }
 

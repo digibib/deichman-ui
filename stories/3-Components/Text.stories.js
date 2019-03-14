@@ -18,9 +18,10 @@ stories.add(
       <Text
         highlight={boolean('highlight', true)}
         gray={boolean('gray', false)}
+        dropCap={boolean('dropCap', false)}
         strikeThrough={boolean('strikeThrough', false)}
       >
-        Text here
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       </Text>
     </div>
   )),

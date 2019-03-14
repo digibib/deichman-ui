@@ -39,7 +39,7 @@
 
   &--no-gutters {
     @media (--max-medium) {
-      .container__inner {
+      > .container__inner {
         padding: 0;
       }
     }

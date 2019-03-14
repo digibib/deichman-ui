@@ -6,6 +6,7 @@ import Grid, { GridItem } from './components/Grid';
 
 // Components
 import Accordion from './components/Accordion';
+import Banner from './components/Banner';
 import Burger from './components/Burger';
 import Button from './components/Button';
 import Checkbox from './components/Checkbox';
@@ -16,6 +17,7 @@ import Icon from './components/Icon';
 import IconLoader from './components/IconLoader';
 import Input from './components/Input';
 import List from './components/List';
+import Loader from './components/Loader';
 import Modal from './components/Modal';
 import Overlay from './components/Overlay';
 import Overflow from './components/Overflow';
@@ -30,6 +32,7 @@ import Textarea from './components/Textarea';
 
 export {
   Accordion,
+  Banner,
   Block,
   Burger,
   Button,
@@ -43,6 +46,7 @@ export {
   IconLoader,
   Input,
   List,
+  Loader,
   Modal,
   Overlay,
   Overflow,

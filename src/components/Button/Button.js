@@ -6,7 +6,18 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const Button = ({ onClick, primary, disabled, small, condensed, children, full, icon }) => {
+const Button = ({
+  onClick,
+  primary,
+  disabled,
+  small,
+  condensed,
+  children,
+  full,
+  icon,
+  type,
+  label,
+}) => {
   const buttonClass = classNames({
     button: true,
     'button--primary': primary,
@@ -18,7 +29,13 @@ const Button = ({ onClick, primary, disabled, small, condensed, children, full, 
   });
 
   return (
-    <button className={buttonClass} onClick={onClick} disabled={disabled}>
+    <button
+      className={buttonClass}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
+      aria-label={label}
+    >
       {icon && <Icon type={icon} />}
       {children}
     </button>
@@ -26,6 +43,8 @@ const Button = ({ onClick, primary, disabled, small, condensed, children, full, 
 };
 
 Button.defaultProps = {
+  type: 'button',
+  label: false,
   primary: false,
   disabled: false,
   small: false,
@@ -35,6 +54,8 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
+  type: PropTypes.string,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   primary: PropTypes.bool,
   disabled: PropTypes.bool,
   small: PropTypes.bool,
