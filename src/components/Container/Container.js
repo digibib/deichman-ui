@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Container = ({ children, color, preventCollapse, noGutters }) => {
+const Container = ({ children, color, preventCollapse, noGutters, ...props }) => {
   const containerClass = classNames({
     container: true,
     'container--gray': color === 'gray',
@@ -15,7 +15,9 @@ const Container = ({ children, color, preventCollapse, noGutters }) => {
 
   return (
     <div className={containerClass}>
-      <div className="container__inner">{children}</div>
+      <div className="container__inner" {...props}>
+        {children}
+      </div>
     </div>
   );
 };

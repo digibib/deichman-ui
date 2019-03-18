@@ -12,7 +12,8 @@ stories.add('About', () => (
     <h1>Deichman-ui</h1>
     <p>Style-guide and component library</p>
     <Block top={4}>
-      <img src="https://img.shields.io/npm/v/@digibib/deichman-ui.svg" alt="version" />
+      <img src="https://img.shields.io/npm/v/@digibib/deichman-ui.svg" alt="version" />{' '}
+      <img src="https://badgen.net/bundlephobia/minzip/@digibib/deichman-ui" alt="bundle size" />
     </Block>
     <Block top={6}>
       <h4>Usage</h4>
