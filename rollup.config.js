@@ -31,7 +31,7 @@ export default {
       },
     },
   ],
-  external: ['react', 'react-dom'],
+  external: Object.keys(pkg.dependencies),
   plugins: [
     external(),
     postcss({

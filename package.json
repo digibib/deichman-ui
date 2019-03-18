@@ -9,10 +9,6 @@
     "type": "git",
     "url": "https://github.com/digibib/deichman-ui.git"
   },
-  "peerDependencies": {
-    "react": ">=16.4.0",
-    "react-dom": ">=16.6.1"
-  },
   "scripts": {
     "start": "STORYBOOK_ENV=dev start-storybook -s ./public -p 9001",
     "build": "rollup -c",
@@ -38,7 +34,9 @@
   "dependencies": {
     "auto-bind": "^2.0.0",
     "classnames": "^2.2.6",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "react": ">=16.4.0",
+    "react-dom": ">=16.6.1"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^5.0.2",
