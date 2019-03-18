@@ -1,11 +1,11 @@
 ### Usage
 
 ```jsx
-import { Sidebar } from 'deichman-ui';
+import { Banner } from 'deichman-ui';
 
-<Sidebar>
-  <p>Sidebar contents</p>
-</Sidebar>;
+<Banner>
+  <p>Banner contents</p>
+</Banner>;
 ```
 
 #### Without React:

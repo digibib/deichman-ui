@@ -7,6 +7,7 @@
 
 .sg-container {
   padding: 40px;
+  width: 100vw;
 }
 .sg-heading {
   font-size: 30px;

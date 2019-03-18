@@ -2,6 +2,7 @@ import React from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import outlinewatcher from '../src/helpers/outlineWatcher';
+import { addReadme } from 'storybook-readme';
 
 import IconLoader from '../src/components/IconLoader';
 
@@ -23,6 +24,9 @@ addDecorator(story => (
     {story()}
   </div>
 ));
+
+// Add readme to all stories
+addDecorator(addReadme);
 
 // Import global styles
 import '../src/index.css';
