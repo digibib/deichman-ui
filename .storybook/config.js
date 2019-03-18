@@ -12,7 +12,7 @@ addParameters({
     theme: create({
       brandTitle: 'Deichman UI',
       brandUrl: '#',
-      brandImage: '/logo-styleguide.svg',
+      brandImage: 'https://cdn.jsdelivr.net/npm/@digibib/deichman-ui/dist/logo-styleguide.svg',
     }),
   },
 });
