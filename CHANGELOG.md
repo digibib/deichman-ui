@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.0.0
+
+### Changed
+
+- New version of storybook (Only affects docs)
+- Updated to [backpack.css](https://github.com/chris-pearce/backpack.css) v 2.0.0 [changelog](https://github.com/chris-pearce/backpack.css/blob/master/CHANGELOG.md#200-january-31-2019)
+- New banner component with pattern example
+
 ## 3.3.0
 
 ### Changed
