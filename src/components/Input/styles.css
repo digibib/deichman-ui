@@ -10,6 +10,7 @@
     font-size: 14px;
     font-family: var(--font-family);
 
+    appearance: none;
     color: var(--col-black);
     background: var(--col-gray-1);
     border-radius: var(--border-radius);
