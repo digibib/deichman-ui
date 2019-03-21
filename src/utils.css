@@ -59,13 +59,38 @@
   background-color: var(--col-ok-6);
 }
 
-/* Accessibility */
+/* Screenreader class (Hides content) */
 
 .sr {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
+  margin: -1px;
   overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* Screenreader class that can be focused */
+
+.sr--focusable:focus {
+  display: block;
+  background-color: #fff;
+  clip: auto !important;
+  -webkit-clip-path: none;
+  clip-path: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1em;
+  height: auto;
+  left: 20px;
+  line-height: normal;
+  padding: 16px 30px;
+  text-decoration: none;
+  top: 20px;
+  width: auto;
+  z-index: 100000;
 }
