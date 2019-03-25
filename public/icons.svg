@@ -25,17 +25,27 @@
 <path d="M16 10L12 14L8 10" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 
 </symbol>
+<symbol id="arrow-large-right" viewBox="0 0 24 24">
+  <g id="Group_7902" data-name="Group 7902" transform="translate(-144 -3139)">
+    <rect id="Rectangle_8291" data-name="Rectangle 8291" width="24" height="24" transform="translate(144 3139)" fill="none"/>
+    <g id="Group_7706" data-name="Group 7706" transform="translate(-29.484 2252.752) rotate(45)">
+      <line id="Line_2147" data-name="Line 2147" y1="11.25" x2="11.25" transform="translate(761 498.75)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_4693" data-name="Path 4693" d="M715,371v-9h-9" transform="translate(58 136)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+
+</symbol>
+<symbol id="arrow-large-up-right" viewBox="0 0 24 24">
+<path d="M4 20L19 5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20 16V4H8" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+
+</symbol>
 <symbol id="arrow-right" viewBox="0 0 24 24">
 <path d="M10 8L14 12L10 16" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 
 </symbol>
 <symbol id="arrow-up" viewBox="0 0 24 24">
 <path d="M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-
-</symbol>
-<symbol id="arrow" viewBox="0 0 24 24">
-<path d="M4 20L19 5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M20 16V4H8" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
 
 </symbol>
 <symbol id="book" viewBox="0 0 24 24">

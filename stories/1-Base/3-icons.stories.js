@@ -148,9 +148,15 @@ stories.add(
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
-              <Icon type="arrow" />
+              <Icon type="arrow-large-up-right" />
             </div>
-            <p className="sg-icon__name">arrow</p>
+            <p className="sg-icon__name">arrow-large-up-right</p>
+          </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="arrow-large-right" />
+            </div>
+            <p className="sg-icon__name">arrow-large-right</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
