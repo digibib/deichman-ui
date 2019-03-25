@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## 4.0.4
+## 4.1.0
 
 ### Changed
 
