@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.0.4
+
+### Changed
+
+- New `arrow-large-right` icon added
+
+### Breaking changes:
+
+- The icon previously named `arrow` is now named `arrow-large-up-right` to fit into the system
+
 ## 4.0.0
 
 ### Changed
