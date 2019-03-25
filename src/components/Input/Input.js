@@ -68,14 +68,14 @@ Input.defaultProps = {
 };
 
 Input.propTypes = {
-  value: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,
   disabled: PropTypes.bool,
   showClear: PropTypes.bool,
-  error: PropTypes.bool,
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   onClear: PropTypes.func,
   onChange: PropTypes.func.isRequired,
   full: PropTypes.bool,
