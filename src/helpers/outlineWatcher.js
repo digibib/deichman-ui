@@ -1,39 +1,33 @@
-function outlineWatcher() {
-  const styleEl = document.createElement('STYLE');
-  const domEvents = 'addEventListener' in document;
-  let previousAction = null;
+function outlineListener() {
+  try {
+    const domEvents = 'addEventListener' in document;
+    let previousAction = null;
 
-  const addListener = (type, callback) => {
-    if (domEvents) {
-      document.addEventListener(type, callback);
-    } else {
-      document.attachEvent(`on${type}`, callback);
-    }
-  };
-  const setCss = css => {
-    if (styleEl.styleSheet) {
-      styleEl.styleSheet.cssText = css;
-    } else {
-      styleEl.innerHTML = css;
-    }
-  };
+    const addListener = (type, callback) => {
+      if (domEvents) {
+        document.addEventListener(type, callback);
+      } else {
+        document.attachEvent(`on${type}`, callback);
+      }
+    };
 
-  document.getElementsByTagName('HEAD')[0].appendChild(styleEl);
-  addListener('mousedown', () => {
-    if (previousAction === 'mousedown') {
-      return;
-    }
-    setCss(':focus{outline:0; box-shadow: none;}::-moz-focus-inner{border:0;}');
-    previousAction = 'mousedown';
-  });
+    addListener('mousedown', () => {
+      if (previousAction === 'mousedown') {
+        return;
+      }
+      document.body.classList.remove('body--a11y');
+      previousAction = 'mousedown';
+    });
 
-  addListener('keydown', () => {
-    if (previousAction === 'keydown') {
-      return;
-    }
-    setCss('');
-    previousAction = 'keydown';
-  });
+    addListener('keydown', () => {
+      if (previousAction === 'keydown') {
+        return;
+      }
+      document.body.classList.add('body--a11y');
+      previousAction = 'keydown';
+    });
+  } catch {
+    // Oh well
+  }
 }
-
 export default outlineWatcher;

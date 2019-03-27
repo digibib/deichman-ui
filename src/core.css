@@ -52,9 +52,11 @@ li {
 }
 
 /* Global Focus */
-:focus {
-  outline: 0;
-  box-shadow: 0 0 0 8px var(--col-ok-5);
+.body--a11y {
+  :focus {
+    outline: 0;
+    box-shadow: 0 0 0 8px var(--col-ok-5);
+  }
 }
 
 /* Text selection */
