@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Block } from '../../src/index';
+import { Block, List } from '../../src/index';
 
 import logoSrc from '../../public/images/logo.svg';
 
@@ -48,6 +48,35 @@ stories.add('About', () => (
     </Block>
     <Block top={4}>
       <a href="https://github.com/digibib/deichman-ui">Source code on github</a>
+    </Block>
+
+    <Block top={8}>
+      <h4>A11y</h4>
+    </Block>
+    <Block top={4}>
+      <p>Deichman-ui has custom focus-styles for keyboard-users. To implement this:</p>
+    </Block>
+    <Block top={2}>
+      <List numbered>
+        <List.Item>
+          <p>
+            Add <code>`body--a11y`</code> class to your <code>{`<body />`}</code> tag by default
+          </p>
+        </List.Item>
+        <List.Item>
+          <p>
+            Add the outlineWatcher function to your code. This needs to run when the app/page boots
+            up.{' '}
+            <a href="https://github.com/digibib/deichman-ui/blob/master/src/helpers/outlineWatcher.js">
+              Source
+            </a>
+            .
+          </p>
+        </List.Item>
+        <List.Item>
+          <p>This will enable/disable focus styles if your user interacts with the keyboard.</p>
+        </List.Item>
+      </List>
     </Block>
   </article>
 ));

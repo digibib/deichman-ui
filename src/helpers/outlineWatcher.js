@@ -1,4 +1,4 @@
-function outlineListener() {
+function outlineWatcher() {
   try {
     const domEvents = 'addEventListener' in document;
     let previousAction = null;
@@ -26,7 +26,7 @@ function outlineListener() {
       document.body.classList.add('body--a11y');
       previousAction = 'keydown';
     });
-  } catch {
+  } catch (error) {
     // Oh well
   }
 }

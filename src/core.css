@@ -51,7 +51,16 @@ li {
   padding: 0;
 }
 
-/* Global Focus */
+/* Accessibility styles (when not using keyboard) */
+:focus {
+  outline: 0;
+  box-shadow: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Accessibility styles (when using keyboard) */
 .body--a11y {
   :focus {
     outline: 0;
