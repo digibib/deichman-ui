@@ -4,10 +4,6 @@ All notable changes to this project will be documented in this file.
 
 ## 4.3.0
 
-### Changed
-
-- New `arrow-large-right` icon added
-
 ### Breaking changes:
 
 - A11y: `:focus` system modified. Look at the "About" section in the storybook for details on implementation. If you just want to keep the same focus-styles as before, add `body--a11y` class to your `<body />` tag.
