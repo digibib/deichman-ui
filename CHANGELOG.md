@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 4.3.2
+
+### Changed
+
+- Icons now take a `rotation` prop which can be used to rotate an icon (like an arrow) by a set amount of degrees.
+
+### Breaking changes:
+
+- Table component: Minor change to `<th>` cells in vertical mode to prevent text wrapping. Only affects you if you have any `<Table>` components with the `vertical` prop set to true.
+
 ## 4.3.0
 
 ### Breaking changes:
