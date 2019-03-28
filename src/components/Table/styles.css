@@ -81,6 +81,7 @@
       text-align: left;
       vertical-align: top;
       padding-left: 0 !important;
+      white-space: nowrap;
     }
   }
 
