@@ -25,3 +25,5 @@ import { Checkbox } from 'deichman-ui';
   <span className="checkbox__label">{label}</span>
 </label>
 ```
+
+<!-- PROPS -->

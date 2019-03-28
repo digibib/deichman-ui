@@ -21,6 +21,7 @@ stories.add(
         full={boolean('full', false)}
         light={boolean('light', false)}
         dark={boolean('dark', false)}
+        rotation={number('rotation', 0)}
       />
     </div>
   )),

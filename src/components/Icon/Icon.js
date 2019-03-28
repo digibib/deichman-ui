@@ -6,7 +6,7 @@ import test from '../../../public/icons.svg';
 
 import './styles.css';
 
-const Icon = ({ size, type, title, light, dark, full }) => {
+const Icon = ({ size, type, title, light, dark, full, rotation }) => {
   const iconClass = classNames({
     icon: true,
     'icon--full': full,
@@ -14,8 +14,10 @@ const Icon = ({ size, type, title, light, dark, full }) => {
     'icon--dark': dark,
   });
 
+  const inlineStyle = rotation ? { transform: `rotate(${rotation}deg)` } : {};
+
   return (
-    <span className={iconClass}>
+    <span className={iconClass} style={inlineStyle}>
       <svg role="img" title={title} width={size} height={size}>
         <use xlinkHref={`#${type}`} />
       </svg>
@@ -29,12 +31,14 @@ Icon.defaultProps = {
   full: false,
   light: false,
   dark: false,
+  rotation: 0,
 };
 
 Icon.propTypes = {
   type: PropTypes.string.isRequired,
   title: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  rotation: PropTypes.number,
   full: PropTypes.bool,
   light: PropTypes.bool,
   dark: PropTypes.bool,

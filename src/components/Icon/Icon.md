@@ -31,3 +31,5 @@ To make the SVG icons avaiable on all pages:
   {svg contents}
 </div>
 ```
+
+<!-- PROPS -->

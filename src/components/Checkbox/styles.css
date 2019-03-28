@@ -71,5 +71,5 @@
 /* A11y */
 
 .checkbox__input:focus + .checkbox__box {
-  background: var(--col-black);
+  background: var(--col-gray-2);
 }
