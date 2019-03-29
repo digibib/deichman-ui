@@ -16,6 +16,10 @@
     color: var(--col-gray-6);
   }
 
+  &--error {
+    color: var(--col-red);
+  }
+
   &--strikeThrough {
     text-decoration: line-through;
   }
