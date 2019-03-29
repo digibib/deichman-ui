@@ -17,10 +17,6 @@
     position: absolute;
     width: 1px;
     word-wrap: normal !important;
-
-    &:focus + .checkbox__box {
-      background: var(--col-gray-2);
-    }
   }
 
   &__box {
@@ -69,5 +65,19 @@
   &--disabled {
     cursor: not-allowed !important;
     opacity: 0.5;
+  }
+}
+
+/* A11y */
+
+.checkbox--checked .checkbox__input {
+  &:focus + .checkbox__box {
+    background: var(--col-gray-5);
+  }
+}
+
+.checkbox__input {
+  &:focus + .checkbox__box {
+    background: var(--col-gray-2);
   }
 }
