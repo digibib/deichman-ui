@@ -20,6 +20,7 @@ stories.add(
         gray={boolean('gray', false)}
         dropCap={boolean('dropCap', false)}
         strikeThrough={boolean('strikeThrough', false)}
+        error={boolean('error', false)}
       >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       </Text>

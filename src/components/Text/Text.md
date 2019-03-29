@@ -20,3 +20,4 @@ import { Text } from 'deichman-ui';
 | gray          | bool | text--gray          |
 | highlight     | bool | text--highlight     |
 | strikeThrough | bool | text--strikeThrough |
+| error         | bool | text--error         |

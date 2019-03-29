@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Text = ({ bold, gray, highlight, dropCap, strikeThrough, children }) => {
+const Text = ({ bold, gray, highlight, dropCap, strikeThrough, error, children }) => {
   const textClass = classNames({
     text: true,
     'text--bold': bold,
@@ -12,6 +12,7 @@ const Text = ({ bold, gray, highlight, dropCap, strikeThrough, children }) => {
     'text--highlight': highlight,
     'text--drop-cap': dropCap,
     'text--strikeThrough': strikeThrough,
+    'text--error': error,
   });
   return <span className={textClass}>{children}</span>;
 };
@@ -22,6 +23,7 @@ Text.defaultProps = {
   highlight: false,
   dropCap: false,
   strikeThrough: false,
+  error: false,
 };
 
 Text.propTypes = {
@@ -30,6 +32,7 @@ Text.propTypes = {
   highlight: PropTypes.bool,
   dropCap: PropTypes.bool,
   strikeThrough: PropTypes.bool,
+  error: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 
