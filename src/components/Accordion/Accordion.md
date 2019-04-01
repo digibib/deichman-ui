@@ -10,8 +10,9 @@ import { Accordion } from 'deichman-ui';
 
 ### Props/modifiers:
 
-| prop name     | type   | description                                           |
-| ------------- | ------ | ----------------------------------------------------- |
-| name          | string | (REQUIRED) Unique name (for screenreaders)            |
-| text          | string | Label text for accordion                              |
-| openByDefault | bool   | set to true to make the accordion expanded by default |
+| prop name     | type   | description                                              |
+| ------------- | ------ | -------------------------------------------------------- |
+| name          | string | Unique name (for screenreaders) - Uses text if undefined |
+| text          | string | Label text for accordion                                 |
+| large         | bool   | Size of font                                             |
+| openByDefault | bool   | set to true to make the accordion expanded by default    |
