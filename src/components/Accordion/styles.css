@@ -81,6 +81,14 @@
     padding: var(--spacing-4) 0;
   }
 
+  &--small {
+    .accordion__title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
   &--large {
     padding: var(--spacing-5) 0;
 

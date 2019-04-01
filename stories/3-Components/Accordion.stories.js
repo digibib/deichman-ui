@@ -21,6 +21,7 @@ stories.add(
         openByDefault={boolean('openByDefault', false)}
         showDividers={boolean('showDividers', false)}
         large={boolean('large', false)}
+        small={boolean('small', false)}
       >
         <p>
           Gruer du deg for å bruke data? Det er vanskelig å stå utenfor den digitale utvikling
