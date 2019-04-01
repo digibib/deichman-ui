@@ -5,7 +5,6 @@
 
   &__button {
     width: 100%;
-    white-space: nowrap;
     cursor: pointer;
     color: currentColor;
   }
@@ -14,6 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   &__icon {
@@ -27,6 +32,7 @@
     cursor: pointer;
     border-radius: var(--border-radius);
     overflow: hidden;
+    flex-shrink: 0;
 
     &:before {
       content: '+';
@@ -72,11 +78,19 @@
     border: 1px solid var(--col-gray-3);
     border-left: 0;
     border-right: 0;
-    padding: var(--spacing-3) 0;
+    padding: var(--spacing-4) 0;
   }
 
   &--large {
     padding: var(--spacing-5) 0;
+
+    .accordion__title {
+      font-size: responsive 24px 32px;
+      font-range: 420px 1440px;
+      line-height: responsive 32px 40px;
+      line-height-range: 420px 1440px;
+      font-weight: bold;
+    }
 
     .accordion__icon {
       font-size: 35px;
