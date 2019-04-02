@@ -115,7 +115,7 @@ stories.add(
       </Block>
 
       <Block top={5}>
-        <h4>Oslo Kommune</h4>
+        <h4>Oslo kommune</h4>
       </Block>
 
       <Block top={5}>

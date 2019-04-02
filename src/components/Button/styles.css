@@ -1,7 +1,8 @@
 .button {
   display: inline-block;
   margin: 0;
-  line-height: var(--spacing-7);
+  height: 2.8em;
+  line-height: 2.8em;
   min-width: 90px;
   padding: 0 var(--spacing-6);
   color: var(--col-black);
@@ -14,6 +15,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: background 0.2s ease;
+  user-select: none;
 
   /* Modifiers */
 

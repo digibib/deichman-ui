@@ -72,7 +72,7 @@
 
 .checkbox--checked .checkbox__input {
   &:focus + .checkbox__box {
-    background: var(--col-gray-5);
+    background: var(--col-gray-6);
   }
 }
 

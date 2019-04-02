@@ -15,6 +15,7 @@ stories.add('Textarea', () => (
       value={text('value', '')}
       placeholder={text('placeholder', 'Fornavn')}
       rows={number('rows', 3)}
+      label={text('label', '')}
       error={text('error', '')}
       onChange={() => {}}
       full={boolean('full', false)}
