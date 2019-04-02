@@ -135,10 +135,6 @@ class FormExample extends Component {
                 Fortsett
               </Button>
             </Block>
-
-            <Block top={6}>
-              <a className="button">Fortsett</a>
-            </Block>
           </form>
         </Block>
       </Container>

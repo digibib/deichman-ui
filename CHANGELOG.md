@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5.0.0
+
+### Changed
+
+- Overhaul of font-sizes in input elements (Input, Select, Button) to ensure safari/iPhone users won't zoom in when using input fields. [Read more](https://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone)
+
+### Breaking changes:
+
+- There should be none, but if you've created your own input elements these may need to be updated to match the new font-size and line-heights.
+
 ## 4.4.0
 
 ### Changed
