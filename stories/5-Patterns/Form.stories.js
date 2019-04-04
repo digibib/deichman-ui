@@ -111,7 +111,7 @@ class FormExample extends Component {
 
             <Block top={4}>
               <Textarea
-                value={fields.book}4
+                value={fields.book}
                 name="book"
                 label="Skriv litt om din yndlingsbok"
                 placeholder="Jeg liker ..."
