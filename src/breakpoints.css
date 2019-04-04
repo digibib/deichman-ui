@@ -7,7 +7,7 @@
 @custom-media --large (min-width: 67.5em); /* 1080px */
 @custom-media --xlarge (min-width: 83em); /* 1328px */
 
-@custom-media --max-small (max-width: 20.063em); /* 320px */
-@custom-media --max-medium (max-width: 48.063em); /* 768px */
-@custom-media --max-large (max-width: 67.563em); /* 1080px */
-@custom-media --max-xlarge (max-width: 83.063em); /* 1328px */
+@custom-media --max-small (max-width: 19.938em); /* 320px */
+@custom-media --max-medium (max-width: 47.938em); /* 768px */
+@custom-media --max-large (max-width: 67.438em); /* 1080px */
+@custom-media --max-xlarge (max-width: 82.938em); /* 1328px */
