@@ -10,6 +10,7 @@ const Button = ({
   onClick,
   primary,
   disabled,
+  loading,
   small,
   condensed,
   children,
@@ -23,22 +24,35 @@ const Button = ({
     button: true,
     'button--primary': primary,
     'button--disabled': disabled,
+    'button--loading': loading,
     'button--small': small,
     'button--condensed': condensed,
     'button--with-icon': icon !== '',
     'button--full': full,
   });
 
+  const ariaProps = {};
+
+  if (label) {
+    ariaProps['aria-label'] = label;
+  }
+
+  if (loading) {
+    ariaProps['aria-busy'] = true;
+    ariaProps['aria-label'] = 'laster';
+  }
+
   return (
     <button
+      type={type}
       className={buttonClass}
       onClick={onClick}
-      disabled={disabled}
-      type={type}
-      aria-label={label}
+      disabled={disabled || loading}
+      {...ariaProps}
       {...props}
     >
       {icon && <Icon type={icon} />}
+      {loading && <span className="button__loader" />}
       {children}
     </button>
   );
@@ -49,6 +63,7 @@ Button.defaultProps = {
   label: false,
   primary: false,
   disabled: false,
+  loading: false,
   small: false,
   condensed: false,
   full: false,
@@ -60,6 +75,7 @@ Button.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   primary: PropTypes.bool,
   disabled: PropTypes.bool,
+  loading: PropTypes.bool,
   small: PropTypes.bool,
   condensed: PropTypes.bool,
   full: PropTypes.bool,

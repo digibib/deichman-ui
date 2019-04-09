@@ -27,6 +27,7 @@ import { Button } from 'deichman-ui';
 | --------- | ---- | ----------------- | ----------------- |
 | primary   | bool | button--primary   |                   |
 | disabled  | bool | button--disabled  |                   |
+| loading   | bool | button--loading   |                   |
 | full      | bool | button--full      |                   |
 | condensed | bool | button--condensed | Less side padding |
 | small     | bool | button--small     | Smaller font size |

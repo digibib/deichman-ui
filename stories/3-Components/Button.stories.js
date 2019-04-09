@@ -18,9 +18,11 @@ stories.add(
       <Button
         primary={boolean('primary', false)}
         disabled={boolean('disabled', false)}
+        loading={boolean('loading', false)}
         small={boolean('small', false)}
         condensed={boolean('condensed', false)}
         full={boolean('full', false)}
+        label={text('label', '')}
         icon={text('icon', '')}
         onClick={() => {}}
       >
