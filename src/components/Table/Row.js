@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Row = ({ children }) => {
+const Row = ({ children, gray, white }) => {
   const rowClass = classNames({
     table__row: true,
     'table__row--gray': gray,
@@ -13,7 +13,14 @@ const Row = ({ children }) => {
   return <tr className={rowClass}>{children}</tr>;
 };
 
+Row.defaultProps = {
+  gray: false,
+  white: false,
+};
+
 Row.propTypes = {
+  gray: PropTypes.bool,
+  white: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 
