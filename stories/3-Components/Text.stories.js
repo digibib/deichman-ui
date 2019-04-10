@@ -19,6 +19,7 @@ stories.add(
         highlight={boolean('highlight', true)}
         gray={boolean('gray', false)}
         dropCap={boolean('dropCap', false)}
+        uppercase={boolean('uppercase', false)}
         strikeThrough={boolean('strikeThrough', false)}
         error={boolean('error', false)}
       >

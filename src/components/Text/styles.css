@@ -31,4 +31,8 @@
     font-weight: bold;
     float: left;
   }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
 }

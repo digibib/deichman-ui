@@ -4,13 +4,14 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Text = ({ bold, gray, highlight, dropCap, strikeThrough, error, children }) => {
+const Text = ({ bold, gray, highlight, dropCap, uppercase, strikeThrough, error, children }) => {
   const textClass = classNames({
     text: true,
     'text--bold': bold,
     'text--gray': gray,
     'text--highlight': highlight,
     'text--drop-cap': dropCap,
+    'text--uppercase': uppercase,
     'text--strikeThrough': strikeThrough,
     'text--error': error,
   });
@@ -22,6 +23,7 @@ Text.defaultProps = {
   gray: false,
   highlight: false,
   dropCap: false,
+  uppercase: false,
   strikeThrough: false,
   error: false,
 };
@@ -31,6 +33,7 @@ Text.propTypes = {
   gray: PropTypes.bool,
   highlight: PropTypes.bool,
   dropCap: PropTypes.bool,
+  uppercase: PropTypes.bool,
   strikeThrough: PropTypes.bool,
   error: PropTypes.bool,
   children: PropTypes.node.isRequired,
