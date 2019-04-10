@@ -26,6 +26,14 @@
     &:nth-child(odd) {
       background: var(--col-gray-1);
     }
+
+    /* Explicit row styles */
+    &--gray {
+      background: var(--col-gray-1) !important;
+    }
+    &--white {
+      background: transparent !important;
+    }
   }
 
   &__cell {
