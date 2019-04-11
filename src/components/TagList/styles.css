@@ -48,7 +48,7 @@
 
   &--expanded {
     .tag-list__list {
-      max-height: auto;
+      max-height: initial;
       overflow: visible;
     }
     .tag-list__show-more {
