@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import autoBind from 'auto-bind';
 import classNames from 'classnames';
 
+import debounce from '../../helpers/debounce';
+
 import Item from './Item';
 
 import './styles.css';
@@ -12,8 +14,25 @@ class TagList extends Component {
     super(props);
     autoBind(this);
     this.state = {
+      rows: 0,
       isExpanded: false,
     };
+    this.delayedCallback = debounce(this.calculateHeight, 1000);
+    this.container = React.createRef();
+  }
+
+  componentDidMount() {
+    this.calculateHeight();
+    window.addEventListener('resize', this.delayedCallback);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.delayedCallback);
+  }
+
+  calculateHeight() {
+    const height = this.container.current.scrollHeight;
+    this.setState({ rows: height / 49 });
   }
 
   onToggleExpand(e) {
@@ -24,22 +43,26 @@ class TagList extends Component {
   }
 
   render() {
-    const { children, limited, expanded } = this.props;
+    const { rows } = this.state;
+    console.log(rows);
+    const { children, limited, maxRows, expanded } = this.props;
+    const limitActive = limited && rows > maxRows;
     const tagListClass = classNames({
       'tag-list': true,
-      'tag-list--limited': limited,
+      'tag-list--limited': limitActive,
+      [`tag-list--max-rows-${maxRows}`]: limitActive,
       'tag-list--expanded': this.state.isExpanded || expanded,
     });
 
     return (
       <div className={tagListClass}>
-        <ul className="tag-list__list">{children}</ul>
-        {limited && (
-          <li className="tag-list__show-more">
-            <a href="#expand" onClick={this.onToggleExpand}>
-              + Vis mer
-            </a>
-          </li>
+        <ul className="tag-list__list" ref={this.container}>
+          {children}
+        </ul>
+        {limitActive && (
+          <a className="tag-list__show-more" href="#expand" onClick={this.onToggleExpand}>
+            + Vis mer
+          </a>
         )}
       </div>
     );
@@ -49,11 +72,13 @@ class TagList extends Component {
 TagList.defaultProps = {
   limited: false,
   expanded: false,
+  maxRows: 2,
 };
 
 TagList.propTypes = {
   children: PropTypes.node.isRequired,
   limited: PropTypes.bool,
+  maxRows: PropTypes.number,
   expanded: PropTypes.bool,
 };
 
