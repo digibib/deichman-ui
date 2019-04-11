@@ -17,7 +17,7 @@ class TagList extends Component {
       rows: 0,
       isExpanded: false,
     };
-    this.delayedCallback = debounce(this.calculateHeight, 1000);
+    this.delayedCallback = debounce(this.calculateHeight, 100);
     this.container = React.createRef();
   }
 
