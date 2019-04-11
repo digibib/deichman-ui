@@ -44,7 +44,6 @@ class TagList extends Component {
 
   render() {
     const { rows } = this.state;
-    console.log(rows);
     const { children, limited, maxRows, expanded } = this.props;
     const limitActive = limited && rows > maxRows;
     const tagListClass = classNames({
