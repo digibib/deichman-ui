@@ -21,7 +21,7 @@ stories.add('TagList', () => (
     >
       {tags.map(tag => (
         <TagList.Item key={tag.text}>
-          <Tag text={tag.text} active showClear onClear={() => {}} />
+          <Tag text={tag.text} />
         </TagList.Item>
       ))}
     </TagList>

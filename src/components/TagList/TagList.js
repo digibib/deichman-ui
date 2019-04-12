@@ -17,7 +17,7 @@ class TagList extends Component {
       rows: 0,
       isExpanded: false,
     };
-    this.delayedCallback = debounce(this.calculateHeight, 100);
+    this.delayedCallback = debounce(this.calculateHeight, 50);
     this.container = React.createRef();
   }
 
@@ -32,7 +32,7 @@ class TagList extends Component {
 
   calculateHeight() {
     const height = this.container.current.scrollHeight;
-    this.setState({ rows: height / 49 });
+    this.setState({ rows: height / 53 });
   }
 
   onToggleExpand(e) {

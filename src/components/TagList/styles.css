@@ -17,8 +17,8 @@
   }
 
   &__show-more {
-    display: block;
-    padding-top: var(--spacing-2);
+    display: inline-block;
+    margin-top: var(--spacing-2);
     list-style: none;
   }
 
@@ -27,22 +27,28 @@
   &--limited {
     .tag-list__list {
       overflow: hidden;
+
+      /* To keep box shadow visible when overflow is hidden */
+      margin-top: -4px;
+      padding-top: 4px;
+      padding-left: 4px;
+      margin-left: -4px;
     }
   }
 
   &--max-rows-1 {
     .tag-list__list {
-      max-height: 42px;
+      max-height: 48px;
     }
   }
   &--max-rows-2 {
     .tag-list__list {
-      max-height: 90px;
+      max-height: 96px;
     }
   }
   &--max-rows-3 {
     .tag-list__list {
-      max-height: 142px;
+      max-height: 144px;
     }
   }
 
