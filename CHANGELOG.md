@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5.1.0
+
+### Changed
+
+- New `showClose` prop added to modal. Non-breaking.
+- New icons for "game" and "event" added.
+
 ## 5.0.0
 
 ### Changed
