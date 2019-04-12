@@ -10,6 +10,7 @@ import Banner from './components/Banner';
 import Burger from './components/Burger';
 import Button from './components/Button';
 import Checkbox from './components/Checkbox';
+import CircleButton from './components/CircleButton';
 import Container from './components/Container';
 import Flex from './components/Flex';
 import Hr from './components/Hr';
@@ -36,8 +37,9 @@ export {
   Block,
   Burger,
   Button,
-  Container,
   Checkbox,
+  CircleButton,
+  Container,
   Hr,
   Flex,
   Grid,
