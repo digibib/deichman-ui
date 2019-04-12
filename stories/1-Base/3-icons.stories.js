@@ -182,6 +182,18 @@ stories.add(
             </div>
             <p className="sg-icon__name">check</p>
           </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="event" />
+            </div>
+            <p className="sg-icon__name">event</p>
+          </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="game" />
+            </div>
+            <p className="sg-icon__name">game</p>
+          </div>
         </div>
       </Block>
     </article>
