@@ -51,7 +51,7 @@ class LargeModal extends Component {
             Show details
           </a>
         </Block>
-        <Modal name="Details" visible={isOpen} onClose={this.onToggle} width="wide">
+        <Modal name="Details" visible={isOpen} onClose={this.onToggle} width="wide" showClose>
           <Grid>
             <GridItem medium="two-fifths">
               <Block top={5}>

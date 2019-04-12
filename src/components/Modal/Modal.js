@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import Overlay from '../Overlay';
 
 import './styles.css';
+import CircleButton from '../CircleButton';
 
 class Modal extends React.Component {
   constructor(props) {
@@ -27,11 +28,12 @@ class Modal extends React.Component {
   }
 
   render() {
-    const { name, width, visible, onClose, children } = this.props;
+    const { name, width, visible, showClose, onClose, children } = this.props;
 
     const modalClass = classNames({
       modal: true,
       'modal--visible': visible,
+      'modal--with-close': showClose,
       'modal--narrow': width === 'narrow',
       'modal--medium': width === 'medium',
       'modal--wide': width === 'wide',
@@ -52,6 +54,11 @@ class Modal extends React.Component {
           </h1>
           {children}
         </div>
+        {showClose && (
+          <div className="modal__close">
+            <CircleButton icon="close" label="close" onClick={onClose} />
+          </div>
+        )}
       </div>
     );
   }
@@ -59,6 +66,7 @@ class Modal extends React.Component {
 
 Overlay.defaultProps = {
   visible: false,
+  showClose: false,
   onClose: false,
   width: 'default',
 };
@@ -67,6 +75,7 @@ Modal.propTypes = {
   visible: PropTypes.bool,
   name: PropTypes.string.isRequired,
   width: PropTypes.string,
+  showClose: PropTypes.bool,
   onClose: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
   children: PropTypes.node.isRequired,
 };
