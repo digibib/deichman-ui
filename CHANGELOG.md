@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 5.2.0
+
+### Breaking changes (visual only):
+
+- `Button` component changes:
+  - Updated disabled styling, use this for non-interactive buttons only
+  - For loading-states, use the `loading` prop
+
 ## 5.1.0
 
 ### Changed
