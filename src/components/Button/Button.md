@@ -23,13 +23,13 @@ import { Button } from 'deichman-ui';
 
 ### Props/modifiers:
 
-| prop name | type | without react     | Description       |
-| --------- | ---- | ----------------- | ----------------- |
-| primary   | bool | button--primary   |                   |
-| disabled  | bool | button--disabled  |                   |
-| loading   | bool | button--loading   |                   |
-| full      | bool | button--full      |                   |
-| condensed | bool | button--condensed | Less side padding |
-| small     | bool | button--small     | Smaller font size |
-| icon      | bool | button--with-icon |                   |
-| onClick   | func |                   |                   |
+| prop name | type | without react     | Description                                                     |
+| --------- | ---- | ----------------- | --------------------------------------------------------------- |
+| primary   | bool | button--primary   |                                                                 |
+| disabled  | bool | button--disabled  | Disabled state (for non-react usage, also add [disabled] attr.) |
+| loading   | bool | button--loading   | Applies loading styling (spinner)                               |
+| full      | bool | button--full      | Full width                                                      |
+| condensed | bool | button--condensed | Less side padding                                               |
+| small     | bool | button--small     | Smaller font size                                               |
+| icon      | bool | button--with-icon |                                                                 |
+| onClick   | func |                   |                                                                 |

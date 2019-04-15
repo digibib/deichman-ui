@@ -81,6 +81,12 @@
     }
   }
 
+  &--disabled {
+    background: var(--col-gray-1);
+    color: var(--col-gray-6);
+    border-color: var(--col-gray-1);
+  }
+
   &[disabled] {
     cursor: not-allowed;
   }
