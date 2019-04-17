@@ -11,8 +11,9 @@
   },
   "scripts": {
     "start": "STORYBOOK_ENV=dev start-storybook -s ./public -p 9001",
-    "build": "rollup -c",
-    "build:css": "postcss src/**/*.css -o src/styles.css",
+    "build": "npm run build:modern && npm run build:legacy",
+    "build:modern": "rollup --config rollup.config.js",
+    "build:legacy": "rollup --config rollup.config.legacy.js",
     "prepublish": "rm -rf ./dist && npm run build",
     "build-storybook": "build-storybook -s ./public",
     "deploy-storybook": "storybook-to-ghpages",

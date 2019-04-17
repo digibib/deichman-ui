@@ -51,6 +51,27 @@ stories.add('About', () => (
     </Block>
 
     <Block top={8}>
+      <h4>Legacy browsers</h4>
+    </Block>
+    <Block top={4}>
+      <p>
+        To provide support for browsers without css-variable support, use the legacy version of the
+        css-file:
+      </p>
+    </Block>
+    <Block top={4}>
+      <figure>
+        <pre>
+          <code>
+            {
+              '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@digibib/deichman-ui@{version}/dist/legacy.css">'
+            }
+          </code>
+        </pre>
+      </figure>
+    </Block>
+
+    <Block top={8}>
       <h4>A11y</h4>
     </Block>
     <Block top={4}>

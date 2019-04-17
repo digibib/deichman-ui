@@ -1,5 +1,7 @@
 webpack.config.js
 postcss.config.js
+rollup.config.js
+rollup.config.legacy.js
 .eslintrc
 .gitignore
 .prettierrc

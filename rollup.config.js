@@ -36,6 +36,9 @@ export default {
     external(),
     postcss({
       extract: true,
+      config: {
+        path: 'config/modern/postcss.config.js',
+      },
     }),
     url(),
     svgr(),
