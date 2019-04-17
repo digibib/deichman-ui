@@ -22,6 +22,11 @@ module.exports = ({ config, mode }) => {
         },
         {
           loader: 'postcss-loader',
+          options: {
+            config: {
+              path: 'config/modern/postcss.config.js',
+            },
+          },
         },
       ],
       include: path.resolve(__dirname, '../'),
