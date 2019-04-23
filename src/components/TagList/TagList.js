@@ -44,7 +44,7 @@ class TagList extends Component {
 
   render() {
     const { rows } = this.state;
-    const { children, limited, maxRows, expanded } = this.props;
+    const { children, limited, maxRows, showMoreText, expanded } = this.props;
     const limitActive = limited && rows > maxRows;
     const tagListClass = classNames({
       'tag-list': true,
@@ -60,7 +60,7 @@ class TagList extends Component {
         </ul>
         {limitActive && (
           <a className="tag-list__show-more" href="#expand" onClick={this.onToggleExpand}>
-            + Vis mer
+            + {showMoreText}
           </a>
         )}
       </div>
@@ -70,12 +70,14 @@ class TagList extends Component {
 
 TagList.defaultProps = {
   limited: false,
+  showMoreText: 'Se flere',
   expanded: false,
   maxRows: 2,
 };
 
 TagList.propTypes = {
   children: PropTypes.node.isRequired,
+  showMoreText: PropTypes.string,
   limited: PropTypes.bool,
   maxRows: PropTypes.number,
   expanded: PropTypes.bool,
