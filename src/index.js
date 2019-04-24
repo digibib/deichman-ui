@@ -25,6 +25,7 @@ import Overflow from './components/Overflow';
 import Select from './components/Select';
 import ShowMore from './components/ShowMore';
 import Sidebar from './components/Sidebar';
+import Sorter from './components/Sorter';
 import Table from './components/Table';
 import Tag from './components/Tag';
 import TagList from './components/TagList';
@@ -55,6 +56,7 @@ export {
   Select,
   ShowMore,
   Sidebar,
+  Sorter,
   Table,
   Tag,
   TagList,
