@@ -22,11 +22,11 @@ import { Breakpoint } from 'deichman-ui';
 
 ### Props/modifiers:
 
-| prop name | type | without react       | Description                 |
-| --------- | ---- | ------------------- | --------------------------- |
-| small     | bool | button--small       | Show on small screens       |
-| medium    | bool | button--medium      | Show on medium screens      |
-| large     | bool | button--large       | Show on large screens       |
-| xlarge    | bool | button--xlarge      | Show on xlarge screens      |
-| up        | bool | button--{size}-up   | Show on given size and up   |
-| down      | bool | button--{size}-down | Show on given size and down |
+| prop name | type | without react           | Description                 |
+| --------- | ---- | ----------------------- | --------------------------- |
+| small     | bool | breakpoint--small       | Show on small screens       |
+| medium    | bool | breakpoint--medium      | Show on medium screens      |
+| large     | bool | breakpoint--large       | Show on large screens       |
+| xlarge    | bool | breakpoint--xlarge      | Show on xlarge screens      |
+| up        | bool | breakpoint--{size}-up   | Show on given size and up   |
+| down      | bool | breakpoint--{size}-down | Show on given size and down |
