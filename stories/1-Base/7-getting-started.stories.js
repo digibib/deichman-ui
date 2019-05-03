@@ -12,8 +12,6 @@ const stories = storiesOf('Base', module);
 // Add knobs to stories
 stories.addDecorator(withKnobs);
 
-const mockTags = Array(50).fill({ text: 'Tag text' });
-
 stories.add(
   'Getting started',
   withReadme(readme, () => (

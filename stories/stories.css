@@ -66,6 +66,12 @@
 .sg-color__palette:hover .sg-color__hex {
   opacity: 1;
 }
+.sg-color-dot {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 
 /* Code block styling */
 

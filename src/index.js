@@ -2,6 +2,7 @@ import './index.css';
 
 // Layout
 import Block from './components/Block';
+import Breakpoint from './components/Breakpoint';
 import Grid, { GridItem } from './components/Grid';
 
 // Components
@@ -36,6 +37,7 @@ export {
   Accordion,
   Banner,
   Block,
+  Breakpoint,
   Burger,
   Button,
   Checkbox,

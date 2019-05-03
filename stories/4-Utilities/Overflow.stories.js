@@ -5,6 +5,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 
 import Overflow from '../../src/components/Overflow';
 import Block from '../../src/components/Block';
+import Tag from '../../src/components/Tag';
 import TagList from '../../src/components/TagList';
 import readme from '../../src/components/Overflow/Overflow.md';
 
@@ -22,7 +23,11 @@ stories.add(
       <Overflow>
         <Block top={1} bottom={1} left={1} right={1}>
           <ul style={{ display: 'flex' }}>
-            <TagList tags={mockTags} />
+            {mockTags.map((tag, i) => (
+              <li key={i} style={{ marginRight: '10px' }}>
+                <Tag text={tag.text} />
+              </li>
+            ))}
           </ul>
         </Block>
       </Overflow>
