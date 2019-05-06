@@ -87,3 +87,8 @@ small {
 a {
   color: currentColor;
 }
+
+.link {
+  color: currentColor;
+  text-decoration: underline;
+}

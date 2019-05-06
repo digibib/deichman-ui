@@ -53,6 +53,13 @@ stories.add('Typography', () => (
     <hr />
     <Block top={5} bottom={5}>
       <div className="sg-flex-row">
+        <p className="link">Link</p>
+        <code>{`<a/>, .link`}</code>
+      </div>
+    </Block>
+    <hr />
+    <Block top={5} bottom={5}>
+      <div className="sg-flex-row">
         <small>Body copy 2</small>
         <code>{`<small/>`}</code>
       </div>
