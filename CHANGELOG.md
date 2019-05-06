@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 6.3.0
+
+### Notable changes:
+
+- `Container` component changes:
+  - Increased max-width for huge screens.
+  - Not really a breaking change, but worth checking large screens (> 1680px).
+
 ## 5.2.0
 
 ### Breaking changes (visual only):
