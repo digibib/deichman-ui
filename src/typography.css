@@ -91,4 +91,5 @@ a {
 .link {
   color: currentColor;
   text-decoration: underline;
+  cursor: pointer;
 }
