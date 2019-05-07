@@ -6,7 +6,7 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const Select = ({ name, selected, options, onChange, label, full }) => {
+const Select = ({ name, selected, options, onChange, label, full, ...props }) => {
   const selectClass = classNames({
     select: true,
     'select--full': full,
@@ -25,7 +25,13 @@ const Select = ({ name, selected, options, onChange, label, full }) => {
         <div className="select__arrow">
           <Icon type="arrow-down" />
         </div>
-        <select className="select__field" name={name} value={selected} onChange={onChange}>
+        <select
+          className="select__field"
+          name={name}
+          value={selected}
+          onChange={onChange}
+          {...props}
+        >
           {options
             .filter(option => !option.disabled)
             .map(option => (

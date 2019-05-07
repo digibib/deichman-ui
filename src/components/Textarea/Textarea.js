@@ -4,7 +4,17 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Textarea = ({ value, rows, placeholder, error, disabled, onChange, label, full }) => {
+const Textarea = ({
+  value,
+  rows,
+  placeholder,
+  error,
+  disabled,
+  onChange,
+  label,
+  full,
+  ...props
+}) => {
   const textAreaClass = classNames({
     textarea: true,
     'textarea--disabled': disabled,
@@ -26,6 +36,7 @@ const Textarea = ({ value, rows, placeholder, error, disabled, onChange, label, 
         placeholder={placeholder}
         disabled={disabled}
         onChange={onChange}
+        {...props}
       />
       {error && <div className="textarea__error">{error}</div>}
     </div>
@@ -47,7 +58,7 @@ Textarea.propTypes = {
   label: PropTypes.string,
   rows: PropTypes.number,
   disabled: PropTypes.bool,
-  error: PropTypes.bool,
+  error: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   onChange: PropTypes.func.isRequired,
   full: PropTypes.bool,
 };

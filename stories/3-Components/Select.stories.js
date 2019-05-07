@@ -41,6 +41,8 @@ stories.add(
       <Select
         name={text('name', 'dataveledning')}
         options={object('options', mockOptions)}
+        onChange={() => {}}
+        selected="3"
         full={boolean('full', false)}
       />
     </div>

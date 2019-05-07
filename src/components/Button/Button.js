@@ -68,6 +68,7 @@ Button.defaultProps = {
   condensed: false,
   full: false,
   icon: '',
+  onClick: () => {},
 };
 
 Button.propTypes = {
@@ -80,7 +81,7 @@ Button.propTypes = {
   condensed: PropTypes.bool,
   full: PropTypes.bool,
   icon: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
 };
 

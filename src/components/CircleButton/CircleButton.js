@@ -23,11 +23,12 @@ const CircleButton = ({ label, onClick, inverted, icon }) => {
 
 CircleButton.defaultProps = {
   inverted: false,
+  onClear: () => {},
 };
 
 CircleButton.propTypes = {
   label: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   inverted: PropTypes.bool,
   icon: PropTypes.string.isRequired,
 };

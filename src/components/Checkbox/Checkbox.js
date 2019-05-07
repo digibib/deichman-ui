@@ -6,7 +6,7 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const Button = ({ name, label, onChange, checked, disabled, full }) => {
+const Button = ({ name, label, onChange, checked, disabled, full, ...props }) => {
   const checkboxClass = classNames({
     checkbox: true,
     'checkbox--full': full,
@@ -24,6 +24,7 @@ const Button = ({ name, label, onChange, checked, disabled, full }) => {
         disabled={disabled}
         checked={checked}
         onChange={onChange}
+        {...props}
       />
       <span className="checkbox__box">
         <Icon type="check" />
