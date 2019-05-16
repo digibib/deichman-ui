@@ -79,7 +79,7 @@
     }
 
     .table__cell {
-      padding: var(--spacing-3) var(--spacing-5) 0 0;
+      padding: var(--spacing-2) var(--spacing-5) 0 0;
     }
 
     /* Vertical table headers */
