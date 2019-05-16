@@ -19,6 +19,7 @@ stories.add(
         text={text('text', 'Trolldom')}
         link={text('link', '#')}
         active={boolean('active', false)}
+        disabled={boolean('disabled', false)}
         showClear={boolean('showClear', false)}
       />
     </div>
