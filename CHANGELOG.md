@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 6.4.0
+
+### Breaking changes (visual only):
+
+- `.link` and `<a>` changes:
+
+  - Hover-effect added, this might cause unwanted effects if you've used a link as a basis for another component.
+
+- `Button` component changes:
+  - Hover-effect added, this might cause unwanted effects if you've used the button as a basis for another component. (only visually)
+
 ## 6.3.0
 
 ### Notable changes:

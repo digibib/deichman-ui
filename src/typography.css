@@ -88,7 +88,6 @@ small,
 a,
 .link {
   color: currentColor;
-  color: currentColor;
   text-decoration: underline;
   cursor: pointer;
   transition: text-decoration var(--transition-smooth);
