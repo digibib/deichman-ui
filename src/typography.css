@@ -65,7 +65,8 @@ strong {
   font-weight: bold;
 }
 
-small {
+small,
+.small {
   font-size: 14px;
   line-height: 22px;
 }
@@ -81,15 +82,18 @@ small {
   font-size: 10px;
   line-height: 18px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
-a {
-  color: currentColor;
-}
-
+a,
 .link {
+  color: currentColor;
   color: currentColor;
   text-decoration: underline;
   cursor: pointer;
+  transition: text-decoration var(--transition-smooth);
+
+  &:hover {
+    text-decoration: underline solid transparent;
+  }
 }
