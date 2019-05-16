@@ -14,8 +14,12 @@
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background var(--transition-smooth);
   user-select: none;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
 
   /* Elements */
 
@@ -47,6 +51,10 @@
   &--primary {
     background: var(--col-ok-5);
     border: 1px solid var(--col-ok-5);
+
+    &:hover {
+      background: var(--col-ok-5-dark);
+    }
 
     .button__loader:before {
       border: 4px solid white;
@@ -82,9 +90,14 @@
   }
 
   &--disabled {
-    background: var(--col-gray-1);
+    background: var(--col-gray-2);
     color: var(--col-gray-6);
-    border-color: var(--col-gray-1);
+    border-color: var(--col-gray-2);
+
+    &:hover {
+      background: var(--col-gray-2);
+      border-color: var(--col-gray-2);
+    }
   }
 
   &[disabled] {
