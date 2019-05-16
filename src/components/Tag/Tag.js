@@ -15,10 +15,11 @@ const componentMap = {
   span: Span,
 };
 
-const Tag = ({ text, link, active, onClick, showClear }) => {
+const Tag = ({ text, link, disabled, active, onClick, showClear }) => {
   const tagClass = classNames({
     tag: true,
     'tag--active': active,
+    'tag--disabled': disabled,
     'tag--interactive': onClick || link,
     'tag--show-clear': showClear,
   });
@@ -48,6 +49,7 @@ Tag.defaultProps = {
   text: '',
   active: false,
   showClear: false,
+  disabled: false,
   link: false,
   onClick: false,
   onClear: false,
@@ -57,6 +59,7 @@ Tag.propTypes = {
   text: PropTypes.string,
   active: PropTypes.bool,
   showClear: PropTypes.bool,
+  disabled: PropTypes.bool,
   link: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   onClick: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
 };

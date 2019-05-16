@@ -19,6 +19,7 @@ import { Tag } from 'deichman-ui';
 | text      | string | N/A           |
 | active    | bool   | N/A           |
 | showClear | bool   | N/A           |
+| disabled  | bool   | N/A           |
 | link      | string | N/A           |
 | onClick   | func   | N/A           |
 | onClear   | func   | N/A           |

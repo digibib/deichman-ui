@@ -55,6 +55,14 @@
     cursor: pointer;
   }
 
+  &--disabled {
+    background: var(--col-gray-1);
+
+    &:after {
+      display: none;
+    }
+  }
+
   &--show-clear {
     padding-right: var(--spacing-7);
   }
