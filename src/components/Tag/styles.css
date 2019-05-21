@@ -58,6 +58,10 @@
   &--disabled {
     background: var(--col-gray-1);
 
+    &:active {
+      transform: none;
+    }
+
     &:after {
       display: none;
     }

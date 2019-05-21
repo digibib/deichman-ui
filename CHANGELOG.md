@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## 6.4.0
 
+### Changed
+
+- New `disabled` prop added to Tag, for cases where the tag is not clickable.
+- New icons for "game" and "event" added.
+
 ### Breaking changes (visual only):
 
 - `.link` and `<a>` changes:

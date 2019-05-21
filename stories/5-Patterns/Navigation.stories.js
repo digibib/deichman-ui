@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
@@ -34,7 +34,7 @@ class Navigation extends Component {
     const { isOpen } = this.state;
 
     return (
-      <Container>
+      <Fragment>
         <Sidebar open={isOpen}>
           <Block top={6} left={6} right={6}>
             <h4>Welcome!</h4>
@@ -44,7 +44,17 @@ class Navigation extends Component {
         <div style={{ position: 'fixed', bottom: '0', left: '0', zIndex: '300', padding: '40px' }}>
           <Burger open={isOpen} onClick={this.onToggle} />
         </div>
-      </Container>
+        <div
+          style={{
+            height: '2000px',
+            width: '100%',
+            position: 'absolute',
+            top: '0',
+            left: '0',
+            background: 'linear-gradient(white 50%, black 0) no-repeat',
+          }}
+        />
+      </Fragment>
     );
   }
 }
