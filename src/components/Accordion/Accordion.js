@@ -23,13 +23,14 @@ class Accordion extends Component {
 
   render() {
     const { isOpen } = this.state;
-    const { text, name, large, small, showDividers, children } = this.props;
+    const { text, name, large, small, showDividers, withSpacing, children } = this.props;
 
     const accordionClass = classNames({
       accordion: true,
       'accordion--open': isOpen,
       'accordion--large': large,
       'accordion--small': small,
+      'accordion--with-spacing': withSpacing,
       'accordion--show-dividers': showDividers,
     });
 
@@ -66,6 +67,7 @@ Accordion.defaultProps = {
   text: 'Show contents',
   large: false,
   small: false,
+  withSpacing: false,
   openByDefault: false,
 };
 
@@ -76,6 +78,7 @@ Accordion.propTypes = {
     .isRequired,
   large: PropTypes.bool,
   small: PropTypes.bool,
+  withSpacing: PropTypes.bool,
   openByDefault: PropTypes.bool,
 };
 
