@@ -8,6 +8,7 @@
   color: white;
   padding: var(--spacing-1) var(--spacing-2);
   line-height: 2.1;
+  vertical-align: top; /* Remove space beneath badge, since inline-block */
 
   &__inner {
     display: block;
