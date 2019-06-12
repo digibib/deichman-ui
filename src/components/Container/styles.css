@@ -21,7 +21,7 @@
       margin: 0 auto;
     }
 
-    @media (min-width: 105em) {
+    @media (min-width: 110em) {
       padding: 0;
     }
   }
