@@ -9,6 +9,7 @@ import Grid, { GridItem } from './components/Grid';
 import Accordion from './components/Accordion';
 import Badge from './components/Badge';
 import Banner from './components/Banner';
+import Blockquote from './components/Blockquote';
 import Burger from './components/Burger';
 import Button from './components/Button';
 import Checkbox from './components/Checkbox';
@@ -39,6 +40,7 @@ export {
   Badge,
   Banner,
   Block,
+  Blockquote,
   Breakpoint,
   Burger,
   Button,
