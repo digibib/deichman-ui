@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+
+## 6.6.0
+
+### Changed
+
+- Added extra animate-in directions: `left` and `right`. 
+
+## 6.5.0
+
+### Changed
+
+- New `Blockquote` component.
+
 ## 6.4.0
 
 ### Changed
