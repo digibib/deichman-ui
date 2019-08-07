@@ -43,7 +43,7 @@ stories.add('Animations', () => (
     <Block top={6} bottom={6}>
       <figure>
         <pre>
-          <code>{'<div data-animate-in data-animattion-order="1-10">...</div>'}</code>
+          <code>{'<div data-animate-in data-animation-order="1-10">...</div>'}</code>
         </pre>
       </figure>
     </Block>
