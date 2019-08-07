@@ -20,6 +20,28 @@
   }
 }
 
+@keyframes animate-in-from-left {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-in-from-right {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /* Animation helpers */
 
 [data-animate-in],
@@ -29,6 +51,14 @@
 
 [data-animate-in='top'] {
   animation: animate-in-from-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+[data-animate-in='left'] {
+  animation: animate-in-from-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+[data-animate-in='right'] {
+  animation: animate-in-from-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 [data-animation-order='1'] {
