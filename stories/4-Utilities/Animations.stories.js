@@ -18,6 +18,8 @@ const ColorDot = props => {
 const animationOptions = {
   top: 'top',
   bottom: 'bottom',
+  right: 'right',
+  left: 'left',
 };
 
 stories.add('Animations', () => (
