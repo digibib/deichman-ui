@@ -2,12 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 6.7.0
+
+### Changed
+
+- New logo added
+- Loader-component updated to reflect new logo
 
 ## 6.6.0
 
 ### Changed
 
-- Added extra animate-in directions: `left` and `right`. 
+- Added extra animate-in directions: `left` and `right`.
 
 ## 6.5.0
 
