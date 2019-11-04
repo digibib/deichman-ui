@@ -46,7 +46,7 @@
 
     path {
       stroke-width: 2;
-      stroke-linecap: round;
+      stroke-linecap: square;
       transition: all var(--transition-smooth);
       transform-origin: center;
       opacity: 1;
