@@ -19,6 +19,7 @@ stories.add(
         label={text('label', 'Super awesome button')}
         icon={text('icon', 'search')}
         inverted={boolean('inverted', false)}
+        disabled={boolean('disabled', false)}
         onClick={() => {}}
       />
     </div>

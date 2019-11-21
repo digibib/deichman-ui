@@ -3,13 +3,15 @@
 ```jsx
 import { CircleButton } from 'deichman-ui';
 
-<CircleButton>
-  <p>children</p>
-<CircleButton>;
+<CircleButton icon="arrow-right" />;
 ```
 
 #### Without React:
 
 ```html
-WIP
+<button class="circle-button" onClick="..." aria-label="...">
+  <span class="circle-button__inner">
+    ...
+  </span>
+</button>
 ```

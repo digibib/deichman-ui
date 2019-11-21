@@ -12,6 +12,10 @@
     }
   }
 
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
   /* Elements */
 
   &__inner {
@@ -33,6 +37,19 @@
 
     .circle-button__inner {
       background: var(--col-black);
+    }
+  }
+
+  &--disabled {
+    .circle-button__inner {
+      background: var(--col-gray-2);
+      color: var(--col-gray-6);
+      border-color: var(--col-gray-2);
+    }
+
+    &:hover .circle-button__inner {
+      background: var(--col-gray-2);
+      border-color: var(--col-gray-2);
     }
   }
 }
