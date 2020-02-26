@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 6.8.0
+
+### Changed
+
+- Added Radio component
+
 ## 6.7.0
 
 ### Changed
