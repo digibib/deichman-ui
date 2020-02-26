@@ -6,7 +6,7 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const Button = ({ name, label, onChange, checked, disabled, full, ...props }) => {
+const Checkbox = ({ name, label, onChange, checked, disabled, full, ...props }) => {
   const checkboxClass = classNames({
     checkbox: true,
     'checkbox--full': full,
@@ -34,14 +34,14 @@ const Button = ({ name, label, onChange, checked, disabled, full, ...props }) =>
   );
 };
 
-Button.defaultProps = {
+Checkbox.defaultProps = {
   checked: false,
   disabled: false,
   full: false,
   icon: '',
 };
 
-Button.propTypes = {
+Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   checked: PropTypes.bool,
@@ -50,4 +50,4 @@ Button.propTypes = {
   onChange: PropTypes.func.isRequired,
 };
 
-export default Button;
+export default Checkbox;

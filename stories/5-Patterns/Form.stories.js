@@ -10,6 +10,7 @@ import Button from '../../src/components/Button';
 import Textarea from '../../src/components/Textarea';
 import Input from '../../src/components/Input';
 import Flex from '../../src/components/Flex';
+import Radio from '../../src/components/Radio';
 
 const stories = storiesOf('Patterns', module);
 
@@ -55,6 +56,7 @@ class FormExample extends Component {
       <Container>
         <Block top={4}>
           <form onSubmit={() => {}}>
+
             <Block top={4}>
               <Input
                 value={fields.firstName}
@@ -75,6 +77,7 @@ class FormExample extends Component {
                 full
               />
             </Block>
+
             <Block top={4}>
               <Flex align="top">
                 <Block right={2}>
@@ -107,6 +110,25 @@ class FormExample extends Component {
                   />
                 </Block>
               </Flex>
+            </Block>
+
+            <Block top={4}>
+              <Radio
+                name="keepHistory"
+                label="Jeg vil lagre lånehistorikken"
+                value="option1"
+                checked={fields.keepHistory === "option1"}
+                onChange={() => this.handleChange('keepHistory', "option1")}
+              />
+            </Block>
+            <Block top={2}>
+              <Radio
+                name="keepHistory"
+                label="Jeg ønsker ikke å lagre lånehistorikken min"
+                value="option2"
+                checked={fields.keepHistory === "option2"}
+                onChange={() => this.handleChange('keepHistory', "option2")}
+              />
             </Block>
 
             <Block top={4}>
