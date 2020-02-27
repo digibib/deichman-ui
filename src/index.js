@@ -25,6 +25,7 @@ import Loader from './components/Loader';
 import Modal from './components/Modal';
 import Overlay from './components/Overlay';
 import Overflow from './components/Overflow';
+import Radio from './components/Radio';
 import Select from './components/Select';
 import ShowMore from './components/ShowMore';
 import Sidebar from './components/Sidebar';
@@ -59,6 +60,7 @@ export {
   Modal,
   Overlay,
   Overflow,
+  Radio,
   Select,
   ShowMore,
   Sidebar,
