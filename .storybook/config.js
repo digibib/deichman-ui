@@ -10,6 +10,7 @@ import IconLoader from '../src/components/IconLoader';
 addParameters({
   options: {
     theme: create({
+      base: 'light',
       brandTitle: 'Deichman UI',
       brandUrl: '#',
       brandImage: 'https://cdn.jsdelivr.net/npm/@digibib/deichman-ui/dist/logo-styleguide.svg',
