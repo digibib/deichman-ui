@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 6.9.0
+
+### Changed
+
+- Added ButtonGroup component
+
+## 6.8.1
+
+### Changed
+
+- Fix: Include Radio in exports component
+
 ## 6.8.0
 
 ### Changed

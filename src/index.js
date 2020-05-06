@@ -12,6 +12,7 @@ import Banner from './components/Banner';
 import Blockquote from './components/Blockquote';
 import Burger from './components/Burger';
 import Button from './components/Button';
+import ButtonGroup from './components/ButtonGroup';
 import Checkbox from './components/Checkbox';
 import CircleButton from './components/CircleButton';
 import Container from './components/Container';
@@ -45,6 +46,7 @@ export {
   Breakpoint,
   Burger,
   Button,
+  ButtonGroup,
   Checkbox,
   CircleButton,
   Container,
