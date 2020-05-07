@@ -22,7 +22,7 @@ stories.add(
   'ButtonGroup',
   withReadme(readme, () => (
     <div className="sg-container">
-      <ButtonGroup groupId="uniqueid" items={items} checked={''} handleChange={() => {}} />
+      <ButtonGroup groupId="uniqueid" items={items} checked={''} onChange={() => {}} />
     </div>
   )),
 );

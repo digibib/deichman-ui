@@ -5,7 +5,7 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const ButtonGroup = ({ groupId, items, checked, handleChange }) => {
+const ButtonGroup = ({ groupId, items, checked, onChange }) => {
   return (
     <div className="button-group">
       {items.map(item => {
@@ -19,7 +19,7 @@ const ButtonGroup = ({ groupId, items, checked, handleChange }) => {
               name={groupId}
               value={value}
               checked={value === checked}
-              onChange={handleChange}
+              onChange={onChange}
             />
             <span className="button-group__button">
               {icon && <Icon type={icon} />}
@@ -35,7 +35,7 @@ const ButtonGroup = ({ groupId, items, checked, handleChange }) => {
 ButtonGroup.propTypes = {
   groupId: PropTypes.string.isRequired,
   items: PropTypes.array.isRequired,
-  handleChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   checked: PropTypes.string.isRequired,
 };
 

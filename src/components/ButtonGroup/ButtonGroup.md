@@ -3,12 +3,7 @@
 ```jsx
 import { ButtonGroup } from 'deichman-ui';
 
-<ButtonGroup
-  groupId="kategori"
-  items={items}
-  checked={value}
-  handleChange={() => {})}
-/>
+<ButtonGroup groupId="kategori" items={items} checked={value} onChange={() => {}} />;
 ```
 
 #### Without React:
@@ -39,12 +34,12 @@ import { ButtonGroup } from 'deichman-ui';
 
 ### Props/modifiers:
 
-| prop name    | type   | without react | Description                      |
-| ------------ | ------ | ------------- | -------------------------------- |
-| groupId      | string | name          | Unique name for this ButtonGroup |
-| items        | array  |               | An array with items              |
-| checked      | string | checked       | Checked field                    |
-| handleChange | func   |               | onChange handler                 |
+| prop name | type   | without react | Description                      |
+| --------- | ------ | ------------- | -------------------------------- |
+| groupId   | string | name          | Unique name for this ButtonGroup |
+| items     | array  |               | An array with items              |
+| checked   | string | checked       | Checked field                    |
+| onChange  | func   |               | onChange handler                 |
 
 Example items list:
 
