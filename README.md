@@ -38,6 +38,18 @@ Before adding a new Component, make sure this is a generic utility-component. If
 | ✅  | The component is accessible | Usable with a keyboard, correct `:focus`-styles, correct `aria-roles`.            |
 | ✅  | The component is tested     | Cross-browser testing.                                                            |
 
+### Icons
+
+All icons are stored in the `/src/assets/icons` folder.
+
+##### Adding a new icon:
+
+- Make sure the new icon has the same size/style/line width as the old files.
+- Add the icon to the folder and run `npm run icons`
+- After the output file has been created (`public/icons.svg`), You need to manually replace any hex color values (taken from the source files) with `currentColor`. This will allow the icons to easily be colored when used. NB: Check the commit well to ensure you didn't edit any old icons/colors)
+- Add the new icon to the `stories/1-Base/3-icons.stories.js` file.
+- Publish new version of Deichman-UI.
+
 ### Publishing
 
 Make sure to update the [changelog](CHANGELOG.md) if there's any breaking changes.
