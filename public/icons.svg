@@ -93,16 +93,15 @@
     <path fill="currentColor" d="M14.25,9.93l-3.48,4.15L9.74,13A1,1,0,0,0,8.3,14.39l1.8,1.88a1,1,0,0,0,.72.31h0a1,1,0,0,0,.73-.35l4.2-5a1,1,0,0,0-1.53-1.29Z"/>
 
 </symbol>
-
 <symbol id="film" viewBox="0 0 24 24">
-<path d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="12" cy="8" r="2" fill="black"/>
-<circle cx="12" cy="16" r="2" fill="black"/>
-<circle cx="8" cy="12" r="2" fill="black"/>
-<circle cx="16" cy="12" r="2" fill="black"/>
-<rect x="12" y="19" width="9" height="2" rx="1" fill="black"/>
-</symbol>
+<path d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="8" r="2" fill="currentColor"/>
+<circle cx="12" cy="16" r="2" fill="currentColor"/>
+<circle cx="8" cy="12" r="2" fill="currentColor"/>
+<circle cx="16" cy="12" r="2" fill="currentColor"/>
+<rect x="12" y="19" width="9" height="2" rx="1" fill="currentColor"/>
 
+</symbol>
 <symbol id="game" viewBox="0 0 24 24">
     <path fill="currentColor" d="M17,9H15V8a1,1,0,0,0-1-1H13a2,2,0,0,1,2-2,1,1,0,1,0,0-2,4,4,0,0,0-4,4H10A1,1,0,0,0,9,8V9H7a5,5,0,0,0-5,5v2.5a4.5,4.5,0,0,0,8.88,1l2.24,0a4.5,4.5,0,0,0,8.88-1V14A5,5,0,0,0,17,9Zm.5,10a2.49,2.49,0,0,1-2.44-1.93,2,2,0,0,0-1.94-1.57H10.87a2,2,0,0,0-1.95,1.57A2.47,2.47,0,0,1,6.49,19,2.5,2.5,0,0,1,4,16.5V14a3,3,0,0,1,3-3H17a3,3,0,0,1,3,3v2.5A2.5,2.5,0,0,1,17.49,19Z"/>
     <path fill="currentColor" d="M15.47,12.69h0A2,2,0,0,0,15,14.15,2,2,0,0,0,17,16h.15a1.93,1.93,0,0,0,1.36-.68,2,2,0,0,0-.21-2.83A2,2,0,0,0,15.47,12.69Z"/>
@@ -160,19 +159,11 @@
 
 </symbol>
 <symbol id="music" viewBox="0 0 24 24">
-  <rect id="Rectangle_8377" width="24" height="24" transform="translate(591 995)" fill="none"/>
-  <g id="Group_7841">
-    <path id="Path_4775" d="M875,377a4,4,0,1,1,4-4A4,4,0,0,1,875,377Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,875,371Z"/>
-  </g>
-  <g id="Group_7842">
-    <path id="Path_4776" d="M865,379a4,4,0,1,1,4-4A4,4,0,0,1,865,379Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,865,373Z"/>
-  </g>
-  <g id="Group_7843">
-    <path id="Path_4777" d="M868,376a1,1,0,0,1-1-1v-9.2a1,1,0,0,1,2,0V375A1,1,0,0,1,868,376Z"/>
-  </g>
-  <g id="Group_7844">
-    <path id="Path_4778" d="M878,374a1,1,0,0,1-1-1v-9a1,1,0,0,0-1.287-.958l-6,1.8a.994.994,0,0,0-.713.958.87.87,0,0,0,1.119.832l4.594-1.378a1,1,0,1,1,.574,1.916l-4.594,1.378A2.868,2.868,0,0,1,867,365.8a2.982,2.982,0,0,1,2.139-2.874l6-1.8A3,3,0,0,1,879,364v9A1,1,0,0,1,878,374Z"/>
-  </g>
+  <rect width="24" height="24" transform="translate(591 995)" fill="none"/>
+  <path fill="currentColor" d="M875,377a4,4,0,1,1,4-4A4,4,0,0,1,875,377Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,875,371Z"/>
+  <path fill="currentColor" d="M865,379a4,4,0,1,1,4-4A4,4,0,0,1,865,379Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,865,373Z"/>
+  <path fill="currentColor" d="M868,376a1,1,0,0,1-1-1v-9.2a1,1,0,0,1,2,0V375A1,1,0,0,1,868,376Z"/>
+  <path fill="currentColor" d="M878,374a1,1,0,0,1-1-1v-9a1,1,0,0,0-1.287-.958l-6,1.8a.994.994,0,0,0-.713.958.87.87,0,0,0,1.119.832l4.594-1.378a1,1,0,1,1,.574,1.916l-4.594,1.378A2.868,2.868,0,0,1,867,365.8a2.982,2.982,0,0,1,2.139-2.874l6-1.8A3,3,0,0,1,879,364v9A1,1,0,0,1,878,374Z"/>
 
 </symbol>
 <symbol id="new-tab" viewBox="0 0 24 24">
