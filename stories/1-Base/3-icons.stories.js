@@ -28,6 +28,12 @@ stories.add(
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">
+              <Icon type="comic" />
+            </div>
+            <p className="sg-icon__name">comic</p>
+          </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
               <Icon type="date" />
             </div>
             <p className="sg-icon__name">date</p>
@@ -85,6 +91,18 @@ stories.add(
               <Icon type="e-book" />
             </div>
             <p className="sg-icon__name">e-book</p>
+          </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="film" />
+            </div>
+            <p className="sg-icon__name">film</p>
+          </div>
+          <div className="sg-icon">
+            <div className="sg-icon__fig">
+              <Icon type="music" />
+            </div>
+            <p className="sg-icon__name">music</p>
           </div>
           <div className="sg-icon">
             <div className="sg-icon__fig">

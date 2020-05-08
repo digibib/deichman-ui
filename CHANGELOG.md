@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 7.0.0
+
+### Changed
+
+- Added three new icons: Comic, Film and Music
+
 ## 6.9.0
 
 ### Changed

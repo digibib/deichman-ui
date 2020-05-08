@@ -191,4 +191,42 @@
 <path d="M9.993 13H14.007C14.6627 13 15.312 13.1291 15.9177 13.3801C16.5235 13.631 17.0739 13.9988 17.5376 14.4624C18.0012 14.9261 18.369 15.4765 18.6199 16.0823C18.8709 16.688 19 17.3373 19 17.993V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V17.993C5 16.6688 5.52605 15.3988 6.46242 14.4624C7.39878 13.526 8.66877 13 9.993 13V13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12 10C13.933 10 15.5 8.433 15.5 6.5C15.5 4.567 13.933 3 12 3C10.067 3 8.5 4.567 8.5 6.5C8.5 8.433 10.067 10 12 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
-</symbol></svg>
+</symbol>
+
+<symbol id="music" viewBox="0 0 24 24">
+  <g id="Group_7885" transform="translate(-591 -995)">
+    <rect id="Rectangle_8377" width="24" height="24" transform="translate(591 995)" fill="none"/>
+    <g id="Group_7845" transform="translate(-267 637)">
+        <path fill="currentColor" id="Path_4775" d="M875,377a4,4,0,1,1,4-4A4,4,0,0,1,875,377Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,875,371Z"/>
+        <path fill="currentColor" id="Path_4776" d="M865,379a4,4,0,1,1,4-4A4,4,0,0,1,865,379Zm0-6a2,2,0,1,0,2,2A2,2,0,0,0,865,373Z"/>
+        <path fill="currentColor" id="Path_4777" d="M868,376a1,1,0,0,1-1-1v-9.2a1,1,0,0,1,2,0V375A1,1,0,0,1,868,376Z"/>
+        <path fill="currentColor" id="Path_4778" d="M878,374a1,1,0,0,1-1-1v-9a1,1,0,0,0-1.287-.958l-6,1.8a.994.994,0,0,0-.713.958.87.87,0,0,0,1.119.832l4.594-1.378a1,1,0,1,1,.574,1.916l-4.594,1.378A2.868,2.868,0,0,1,867,365.8a2.982,2.982,0,0,1,2.139-2.874l6-1.8A3,3,0,0,1,879,364v9A1,1,0,0,1,878,374Z"/>
+    </g>
+  </g>
+</symbol>
+
+<symbol id="comic" viewBox="0 0 24 24">
+  <g id="Group_7888" data-name="Group 7888" transform="translate(-288 -1010)">
+    <rect id="Rectangle_8291" data-name="Rectangle 8291" width="24" height="24" transform="translate(288 1010)" fill="none"/>
+    <g id="Group_7849" data-name="Group 7849" transform="translate(-610 612)">
+      <line id="Line_2152" data-name="Line 2152" x2="8" transform="translate(906 406)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line id="Line_2153" data-name="Line 2153" x2="6" transform="translate(906 410)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_4782" data-name="Path 4782" d="M907.6,414.8,910,418l2.4-3.2a2,2,0,0,1,1.6-.8h2a2,2,0,0,0,2-2v-8a2,2,0,0,0-2-2H904a2,2,0,0,0-2,2v8a2,2,0,0,0,2,2h2A2,2,0,0,1,907.6,414.8Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</symbol>
+
+<symbol id="film" viewBox="0 0 18 18">
+  <g id="Group_7886" data-name="Group 7886" transform="translate(-841 -401)">
+    <circle id="Ellipse_406" data-name="Ellipse 406" cx="8" cy="8" r="8" transform="translate(842 402)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_407" data-name="Ellipse 407" cx="1" cy="1" r="1" transform="translate(849 409)"/>
+    <circle id="Ellipse_408" data-name="Ellipse 408" cx="1" cy="1" r="1" transform="translate(849 405)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_409" data-name="Ellipse 409" cx="1" cy="1" r="1" transform="translate(853 409)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_410" data-name="Ellipse 410" cx="1" cy="1" r="1" transform="translate(849 413)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_411" data-name="Ellipse 411" cx="1" cy="1" r="1" transform="translate(845 409)" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_2149" data-name="Line 2149" x2="8" transform="translate(850 418)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</symbol>
+
+
+</svg>
