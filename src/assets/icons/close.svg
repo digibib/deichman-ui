@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
   <g transform="translate(-158 -438)">
-    <line id="Line_2082" data-name="Line 2082" x2="18" transform="translate(163.5 455.622) rotate(-45)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="2"/>
-    <line id="Line_2084" data-name="Line 2084" x2="18" transform="translate(163.5 443.5) rotate(45)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="2"/>
-    <rect id="Rectangle_8372" data-name="Rectangle 8372" width="24" height="24" transform="translate(158 438)" fill="none"/>
+    <line id="Line_2082" x2="18" transform="translate(163.5 455.622) rotate(-45)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="2"/>
+    <line id="Line_2084" x2="18" transform="translate(163.5 443.5) rotate(45)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="2"/>
+    <rect id="Rectangle_8372" width="24" height="24" transform="translate(158 438)" fill="none"/>
   </g>
 </svg>

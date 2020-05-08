@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <g id="Group_7902" data-name="Group 7902" transform="translate(-144 -3139)">
-    <rect id="Rectangle_8291" data-name="Rectangle 8291" width="24" height="24" transform="translate(144 3139)" fill="none"/>
-    <g id="Group_7706" data-name="Group 7706" transform="translate(-29.484 2252.752) rotate(45)">
-      <line id="Line_2147" data-name="Line 2147" y1="11.25" x2="11.25" transform="translate(761 498.75)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-      <path id="Path_4693" data-name="Path 4693" d="M715,371v-9h-9" transform="translate(58 136)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+  <g id="Group_7902" transform="translate(-144 -3139)">
+    <rect id="Rectangle_8291" width="24" height="24" transform="translate(144 3139)" fill="none"/>
+    <g id="Group_7706" transform="translate(-29.484 2252.752) rotate(45)">
+      <line id="Line_2147" y1="11.25" x2="11.25" transform="translate(761 498.75)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_4693" d="M715,371v-9h-9" transform="translate(58 136)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
     </g>
   </g>
 </svg>
