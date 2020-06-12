@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withReadme } from 'storybook-readme';
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 
 import Block from '../../src/components/Block';
 import Button from '../../src/components/Button';
@@ -13,11 +13,16 @@ const stories = storiesOf('Components', module);
 // Add knobs to stories
 stories.addDecorator(withKnobs);
 
+const positionOptions = {
+  left: 'left (default)',
+  right: 'right',
+};
+
 stories.add(
   'Sidebar',
   withReadme(readme, () => (
     <div>
-      <Sidebar open={boolean('open', false)}>
+      <Sidebar open={boolean('open', false)} position={select('position', positionOptions, 'left')}>
         <Block top={6} left={6} right={6}>
           <h1 className="h3">Sidebar title</h1>
           <Block top={2}>

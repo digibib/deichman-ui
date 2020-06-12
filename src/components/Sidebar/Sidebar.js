@@ -4,9 +4,10 @@ import classNames from 'classnames';
 
 import './styles.css';
 
-const Sidebar = ({ open, children }) => {
+const Sidebar = ({ open, position, children }) => {
   const sidebarClass = classNames({
     sidebar: true,
+    'sidebar--position-right': position === "right",
     'sidebar--open': open,
   });
 
@@ -19,10 +20,12 @@ const Sidebar = ({ open, children }) => {
 
 Sidebar.defaultProps = {
   open: false,
+  position: "left",
 };
 
 Sidebar.propTypes = {
   open: PropTypes.bool,
+  position: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 

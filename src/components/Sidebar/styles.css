@@ -39,4 +39,14 @@
       transition: transform var(--transition-smooth);
     }
   }
+
+  &--position-right {
+    left: 100%;
+    right: auto;
+  }
+
+  &--position-right.sidebar--open .sidebar__inner {
+    transform: translateX(-100%);
+  }
 }
+
