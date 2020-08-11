@@ -8,6 +8,14 @@ import { Icon } from 'deichman-ui';
 <Icon type="book" />;
 ```
 
+Note: You also have to include the IconLoader once per site. Place this in your global app-wrapper or similar, preferably right after the opening `<body>` tag.
+
+```jsx
+import { IconLoader } from 'deichman-ui';
+
+<IconLoader />;
+```
+
 #### Without React:
 
 ```html
