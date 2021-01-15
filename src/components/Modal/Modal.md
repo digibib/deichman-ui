@@ -22,3 +22,4 @@ N/A
 | name      | string | required                |
 | width     | string | narrow/medium/wide/full |
 | onClose   | func   |                         |
+| sizeW     | string | optinal width sizing. Values can be px, em etc | 
