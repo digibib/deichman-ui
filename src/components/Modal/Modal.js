@@ -28,7 +28,8 @@ class Modal extends React.Component {
   }
 
   render() {
-    const { name, width, visible, showClose, onClose, children } = this.props;
+    const { name, width, visible, showClose, onClose, children, sizeW } = this.props;
+    const sizeWidth = sizeW && sizeW !== "0px" ? {maxWidth: sizeW} : {};
 
     const modalClass = classNames({
       modal: true,
@@ -48,6 +49,7 @@ class Modal extends React.Component {
           role="dialog"
           aria-labelledby={`${name}-modal`}
           aria-hidden={!visible}
+          style={sizeWidth}
         >
           <h1 className="modal__title sr" id={`${name}-modal`}>
             {name}
@@ -55,7 +57,7 @@ class Modal extends React.Component {
           {children}
         </div>
         {showClose && (
-          <div className="modal__close">
+          <div className="modal__close" style={sizeWidth}>
             <CircleButton icon="close" label="close" onClick={onClose} />
           </div>
         )}
@@ -69,6 +71,7 @@ Overlay.defaultProps = {
   showClose: false,
   onClose: false,
   width: 'default',
+  sizeW: "0px"
 };
 
 Modal.propTypes = {
@@ -78,6 +81,7 @@ Modal.propTypes = {
   showClose: PropTypes.bool,
   onClose: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
   children: PropTypes.node.isRequired,
+  sizeW: PropTypes.string
 };
 
 export default Modal;

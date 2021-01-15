@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 7.1.1
+
+### Changed
+
+- added width size property (sizeW) in the Modal component
+
 ## 7.0.0
 
 ### Changed

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withReadme } from 'storybook-readme';
-import { withKnobs, boolean, select } from '@storybook/addon-knobs';
+import { withKnobs, boolean, select, text } from '@storybook/addon-knobs';
 
 import Block from '../../src/components/Block';
 import Modal from '../../src/components/Modal';
@@ -17,6 +17,7 @@ const sizeOptions = {
   default: 'default',
   narrow: 'narrow',
   medium: 'medium',
+  wide: 'wide',
   full: 'full',
 };
 
@@ -28,6 +29,7 @@ stories.add(
         visible={boolean('visible', false)}
         showClose={boolean('showClose', false)}
         width={select('width', sizeOptions, 'default')}
+        sizeW={text('sizeW', '0px')}
       >
         <h3>Modal contents</h3>
         <Block top={3}>
