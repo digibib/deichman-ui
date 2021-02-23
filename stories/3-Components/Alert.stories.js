@@ -22,10 +22,10 @@ stories.add(
   withReadme(readme, () => (
     <div>
       <Alert
-        name={text('name', 'Informasjon')}
         type={select('type', typeOptions, 'warning')}
         centered={boolean('centered', false)}
         showClose={boolean('showClose', true)}
+        closeLabel={text('closeLabel', 'Lukk')}
         onClose={() => {}}
       >
         <Block top={4} bottom={4}>
