@@ -1,0 +1,41 @@
+.alert {
+  display: block;
+  z-index: var(--z-index-alert);
+  margin: var(--spacing-4);
+  border: 2px solid black;
+  border-radius: 8px;
+
+  /* Elements */
+
+  &__inner {
+    display: block;
+    width: 100%;
+    padding: 0 0 0 var(--spacing-5);
+  }
+
+  &__close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: var(--spacing-5);
+    cursor: pointer;
+  }
+
+  /* Modifiers */
+
+  &--warning {
+    border-color: var(--col-red);
+  }
+
+  &--show-close {
+    .alert__inner {
+      position: relative;
+      padding-right: var(--spacing-5);
+    }
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}

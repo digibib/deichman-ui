@@ -86,4 +86,5 @@
   --z-index-burger: 300;
   --z-index-modal: 400;
   --z-index-banner: 500;
+  --z-index-alert: 501;
 }

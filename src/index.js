@@ -7,6 +7,7 @@ import Grid, { GridItem } from './components/Grid';
 
 // Components
 import Accordion from './components/Accordion';
+import Alert from './components/Alert';
 import Badge from './components/Badge';
 import Banner from './components/Banner';
 import Blockquote from './components/Blockquote';
@@ -39,6 +40,7 @@ import Textarea from './components/Textarea';
 
 export {
   Accordion,
+  Alert,
   Badge,
   Banner,
   Block,
