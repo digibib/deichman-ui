@@ -1,7 +1,7 @@
 .alert {
   display: block;
   z-index: var(--z-index-alert);
-  margin: var(--spacing-4);
+  margin: var(--spacing-4) 0;
   border: 2px solid black;
   border-radius: 8px;
 

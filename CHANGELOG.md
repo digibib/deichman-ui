@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 7.2.1
+
+- Fix margin on Alert
+
+## 7.2.0
+
+- Add Alert component 
+
 ## 7.1.1
 
 ### Changed
