@@ -21,12 +21,23 @@ stories.add(
   'Alert',
   withReadme(readme, () => (
     <div>
+      <p>With close button</p>
       <Alert
         type={select('type', typeOptions, 'warning')}
         centered={boolean('centered', false)}
-        showClose={boolean('showClose', true)}
         closeLabel={text('closeLabel', 'Lukk')}
         onClose={() => {}}
+      >
+        <Block top={4} bottom={4}>
+          <strong>Hitchhiker's Guide to the Galaxy</strong> av Douglas Adams har forfalt. <a href="/">Gå til mine lån</a>.
+        </Block>
+      </Alert>
+
+      <p>Without close button</p>
+      <Alert
+        type={select('type', typeOptions, 'warning')}
+        centered={boolean('centered', false)}
+        closeLabel={text('closeLabel', 'Lukk')}
       >
         <Block top={4} bottom={4}>
           <strong>Hitchhiker's Guide to the Galaxy</strong> av Douglas Adams har forfalt. <a href="/">Gå til mine lån</a>.

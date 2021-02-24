@@ -6,19 +6,19 @@ import Icon from '../Icon';
 
 import './styles.css';
 
-const Alert = ({ type, centered, children, showClose, closeLabel, onClose }) => {
+const Alert = ({ type, centered, children, closeLabel, onClose }) => {
   const alertClass = classNames({
     alert: true,
     [`alert--${type}`]: true,
     'alert--centered': centered,
-    'alert--show-close': showClose,
+    'alert--show-close': !!onClose,
   });
 
   return (
     <aside className={alertClass} role="dialog" aria-hidden={false}>
       <div className="alert__inner">
         {children}
-        {showClose && (
+        {!!onClose && (
           <button className="alert__close" onClick={onClose} aria-label={closeLabel}>
             <Icon type="close" />
           </button>
@@ -31,16 +31,14 @@ const Alert = ({ type, centered, children, showClose, closeLabel, onClose }) => 
 Alert.defaultProps = {
   type: 'notification',
   centered: false,
-  showClose: true,
   closeLabel: 'Close',
 };
 
 Alert.propTypes = {
   type: PropTypes.oneOf(['notification', 'warning']),
   centered: PropTypes.bool,
-  showClose: PropTypes.bool,
   closeLabel: PropTypes.string,
-  onClose: PropTypes.func.isRequired,
+  onClose: PropTypes.func ,
   children: PropTypes.node.isRequired,
 };
 
