@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: 'OsloSans', Helvetica, Arial;
+  font-family: var(--font-family);
   font-size: 16px;
   line-height: 24px;
 }
