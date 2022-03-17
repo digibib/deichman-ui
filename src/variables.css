@@ -3,7 +3,7 @@
    * Typography.
    */
 
-  --font-family: 'OsloSans';
+  --font-family: OsloSans,Helvetica,Arial;
   --font-size-default: calc(var(--root-unit) / 16 * 1rem);
   --font-size-small: calc(var(--font-size-default) - 2px);
   --font-size-large: calc(var(--font-size-default) + 2px);
