@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 7.2.3
+
+- Added fallback font to fix Firefox issue related to custom font in option element 
+
 ## 7.2.1
 
 - Fix margin on Alert
