@@ -212,12 +212,6 @@ stories.add(
             </div>
             <p className="sg-icon__name">game</p>
           </div>
-          <div className="sg-icon">
-            <div className="sg-icon__fig">
-              <Icon type="podcast" />
-            </div>
-            <p className="sg-icon__name">podcast</p>
-          </div>
         </div>
       </Block>
     </article>
