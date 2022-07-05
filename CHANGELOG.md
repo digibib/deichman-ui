@@ -2,9 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 7.3.1
+
+- Add new icon: podcast
+
 ## 7.2.3
 
-- Added fallback font to fix Firefox issue related to custom font in option element 
+- Added fallback font to fix Firefox issue related to custom font in option element
 
 ## 7.2.1
 
@@ -12,7 +16,7 @@ All notable changes to this project will be documented in this file.
 
 ## 7.2.0
 
-- Add Alert component 
+- Add Alert component
 
 ## 7.1.1
 
