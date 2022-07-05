@@ -222,4 +222,21 @@
     <rect id="Rectangle_8372" width="24" height="24" transform="translate(158 438)" fill="none"/>
   </g>
 
-</symbol></svg>
+</symbol>
+
+<symbol id="podcast" viewBox="0 0 604.2 604.2">
+  <defs>
+      <style>.cls-1{stroke-width:33px;}.cls-1,.cls-2{fill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;}.cls-2{stroke-width:37.73px;}</style>
+  </defs>
+  <path class="cls-1" d="M139.2,287.37c8.39,80.49,81.85,141.86,166.85,140.15,83.83-1.69,153.86-64.23,160.14-143.76"/>
+  <path class="cls-1" d="M395.24,160.15c-3.56-51.6-43.19-92.18-90.64-93.28-48.11-1.11-89.69,38.71-94.44,90.93l.53,106.89c4.75,52.22,46.32,92.04,94.44,90.93,47.45-1.1,87.08-41.67,90.64-93.28l-.53-102.2Z"/>
+  <path class="cls-1" d="M88.5,84.91s-40.36,48.51-8.67,145.5"/>
+  <path class="cls-1" d="M518.97,85.09s39.83,48.94,7.12,145.58"/>
+  <path class="cls-1" d="M456.01,121.77s20,26.13,3.79,77.55"/>
+  <path class="cls-1" d="M149.75,122.68s-20.28,25.91-4.62,77.5"/>
+  <line class="cls-1" x1="302.97" y1="539.74" x2="302.97" y2="427.51"/>
+  <line class="cls-2" x1="375.63" y1="539.74" x2="228.92" y2="539.74"/>
+
+</symbol>
+
+</svg>
