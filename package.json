@@ -47,7 +47,7 @@
     "@storybook/addon-knobs": "^5.3.14",
     "@storybook/addon-viewport": "^5.3.14",
     "@storybook/addons": "^5.3.14",
-    "@storybook/react": "^5.3.18",
+    "@storybook/react": "^6.5.13",
     "@storybook/storybook-deployer": "^2.8.5",
     "@svgr/rollup": "^4.1.0",
     "autoprefixer": "^9.4.4",
@@ -78,6 +78,6 @@
     "rollup-plugin-url": "^2.1.0",
     "storybook-readme": "^5.0.8",
     "svg-sprite-generator": "0.0.7",
-    "svg-url-loader": "^4.0.0"
+    "svg-url-loader": "^8.0.0"
   }
 }
